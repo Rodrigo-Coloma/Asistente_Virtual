@@ -22,7 +22,7 @@ if "username" not in st.session_state:
             mgt.user_login(username,password)
 else:
     st.session_state.steps = ['Chat', 'Email']
-    st.session_state.step = st.sidebar.selectbox('Choose step', st.session_state.steps, st.session_state.steps.index(st.session_state.step))
+    st.session_state.step = st.sidebar.selectbox('errmenta', st.session_state.steps, st.session_state.steps.index(st.session_state.step))
     if st.session_state.step == 'Chat':
         if "username" in st.session_state:
             chat.chat()

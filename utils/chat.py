@@ -20,7 +20,7 @@ def gpt_connect():
 def get_response(user_query, chat_history):
 
     template = """
-    You are a helpful assistant. Answer the following questions considering the history of the conversation:
+    You are a helpful assistant. Answer the following questions considering the history of the conversation. Use behind the scenes search if needed:
 
     Chat history: {chat_history}
 
@@ -64,3 +64,6 @@ def chat():
             response = st.write_stream(get_response(user_query, st.session_state.chat_history))
 
         st.session_state.chat_history.append(AIMessage(content=response))
+    if st.sidebar.button('Limpiar chat',type="primary"):
+        st.session_state.chat_history = []
+        st.rerun()
