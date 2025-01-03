@@ -12,7 +12,7 @@ import time
 
 def gpt_connect():
     try:
-        st.session_state.gpt_key = dotenv_values('../.env')['token_gpt']
+        st.session_state.gpt_key = dotenv_values('./.env')['token_gpt']
     except:
         st.session_state.gpt_key = st.secrets['GPTAPIKEY']
     os.environ["OPENAI_API_KEY"] = st.session_state.gpt_key
@@ -29,7 +29,7 @@ def get_response(user_query, chat_history):
 
     prompt = ChatPromptTemplate.from_template(template)
 
-    llm = ChatOpenAI()
+    llm = ChatOpenAI(model="gpt-4o-mini")
         
     chain = prompt | llm | StrOutputParser()
     
