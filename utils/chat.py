@@ -17,7 +17,7 @@ def gpt_connect():
         st.session_state.gpt_key = st.secrets['GPTAPIKEY']
     os.environ["OPENAI_API_KEY"] = st.session_state.gpt_key
 
-def get_response(user_query, chat_history):
+def get_response(user_query, model, chat_history):
 
     template = """
     You are a helpful assistant. Answer the following questions considering the history of the conversation. Use behind the scenes search if needed:
@@ -29,7 +29,7 @@ def get_response(user_query, chat_history):
 
     prompt = ChatPromptTemplate.from_template(template)
 
-    llm = ChatOpenAI(model="gpt-4o-mini")
+    llm = ChatOpenAI(model=model)
         
     chain = prompt | llm | StrOutputParser()
     
@@ -42,6 +42,7 @@ def get_response(user_query, chat_history):
 def chat():
     gpt_connect()
     #Conversation
+    model = st.sidebar.selectbox('modelo',["gpt-4o-mini", "gpt-4o"],index=0)
     if "chat_history" in st.session_state:
         for message in st.session_state.chat_history:
             if isinstance(message, HumanMessage):
@@ -61,7 +62,7 @@ def chat():
             st.markdown(user_query)
 
         with st.chat_message("AI"):
-            response = st.write_stream(get_response(user_query, st.session_state.chat_history))
+            response = st.write_stream(get_response(user_query, model, st.session_state.chat_history))
 
         st.session_state.chat_history.append(AIMessage(content=response))
     if st.sidebar.button('Limpiar chat',type="primary"):
