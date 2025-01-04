@@ -95,6 +95,7 @@ def get_response_rag(user_query, model, temperature, chat_history):
     return chain.stream({
         "chat_history": chat_history,
         "user_question": user_query,
+        "context": context
     })
 
 def chat():
