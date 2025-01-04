@@ -4,11 +4,7 @@ from time import time
 import streamlit as st
 
 from langchain_community.document_loaders.text import TextLoader
-from langchain_community.document_loaders import (
-    WebBaseLoader, 
-    PyPDFLoader, 
-    Docx2txtLoader,
-)
+from langchain_community.document_loaders import WebBaseLoader, PyPDFLoader, Docx2txtLoader
 # pip install docx2txt, pypdf
 from langchain_community.vectorstores import Chroma
 from langchain.text_splitter import RecursiveCharacterTextSplitter
