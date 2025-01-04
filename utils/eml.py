@@ -72,7 +72,7 @@ def email():
     language = st.sidebar.selectbox(' Idioma ', idiomas, placeholder="Eligen el idioma del email", index = 0)
     if language == "Español":
         tto = st.sidebar.selectbox(' Tratamiento ', ['Tú', 'Usted'], placeholder="Eligen el tratamiento para el email", index = 0)
-        tto = f"El email debe dirigirse al receptor o receptores de {tto}"
+        tto = f"El email debe dirigirse al receptor o receptores de {tto} independientemente del tratamiento del meail original y del nivel de formalidad especificado"
     else:
         tto = ""
     characteristics['politeness'] = dic[st.sidebar.slider('Educacion', 0, 10,7)]

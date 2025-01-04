@@ -2,18 +2,28 @@ import streamlit as st
 from dotenv import dotenv_values
 import pandas as pd
 import numpy as np
-import time
+import uuid
 import utils.mgt as mgt
 import utils.chat as chat
 import utils.eml as eml
-
+import os
+import requests
 
 def main():
+    
     # Header
     st.components.v1.html('<h2 style="text-align: center;">&#128202 Asistente &#128640 </h2>', width=None, height=50, scrolling=False)
+    
+    
+    # --- Initial Setup ---
 
+    if "session_id" not in st.session_state:
+        st.session_state.session_id = str(uuid.uuid4())
 
-    # We choose the step (page) to work on
+    if "rag_sources" not in st.session_state:
+        st.session_state.rag_sources = []
+
+    # --- user authentification --- 
     if "username" not in st.session_state:
         with st.form('credentials'):
             username = st.text_input('Username: ',placeholder='your_username')
