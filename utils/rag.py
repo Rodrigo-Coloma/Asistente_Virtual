@@ -99,7 +99,7 @@ def initialize_vector_db(docs):
 
     # We need to manage the number of collections that we have in memory, we will keep the last 20
     chroma_client = vector_db._client
-    collection_names = sorted([collection.name for collection in chroma_client.list_collections()])
+    collection_names = sorted([name for name in chroma_client.list_collections()])
     print("Number of collections:", len(collection_names))
     while len(collection_names) > 20:
         chroma_client.delete_collection(collection_names[0])

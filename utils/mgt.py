@@ -42,9 +42,12 @@ def user_login(username,password):
         st.warning('Usuario no válido')
     if real_pass == password:
         st.session_state.username = username
-        if username not in os.listdir('./users/'):
-            os.mkdir(f'./users/{username}')
-        st.rerun()
+        try:
+            os.mkdir('./users/')
+        except:
+            if username not in os.listdir('./users/'):
+                os.mkdir(f'./users/{username}')
+            st.rerun()
     else:
         st.error('Contraseña incorrecta')
     
