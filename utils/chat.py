@@ -42,7 +42,7 @@ def get_response(user_query, model, temperature, chat_history):
         "user_question": user_query,
     })
 
-def get_context_retriever_chain(user_query,vector_db, llm):
+def get_context_retriever_chain(vector_db, llm):
     retriever = vector_db.as_retriever()
     prompt = ChatPromptTemplate.from_messages([
         MessagesPlaceholder(variable_name="messages"),
