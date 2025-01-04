@@ -44,7 +44,6 @@ def user_login(username,password):
         st.session_state.username = username
         if username not in os.listdir('./users/'):
             os.mkdir(f'./users/{username}')
-        st.session_state.step = 'Chat'
         st.rerun()
     else:
         st.error('Contraseña incorrecta')
