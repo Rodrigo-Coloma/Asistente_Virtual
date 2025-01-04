@@ -147,5 +147,5 @@ def chat():
                 st.write_stream(stream_llm_rag_response(llm_stream, messages))
             
     if st.sidebar.button('Limpiar chat',type="primary"):
-        st.session_state.chat_history = []
+        st.session_state.messages = []
         st.rerun()
