@@ -42,7 +42,7 @@ def get_response(user_query, model, temperature, chat_history):
         "user_question": user_query,
     })
 
-def get_context_retriever_chain(vector_db, llm):
+def get_context_retriever_chain(user_query,vector_db, llm):
     retriever = vector_db.as_retriever()
     prompt = ChatPromptTemplate.from_messages([
         MessagesPlaceholder(variable_name="messages"),
@@ -69,40 +69,30 @@ def get_conversational_rag_chain(llm):
 
     return create_retrieval_chain(retriever_chain, stuff_documents_chain)
 
+def stream_llm_response(llm_stream, messages):
+    response_message = ""
 
-def get_response_rag(user_query, model, temperature, chat_history):
+    for chunk in llm_stream.stream(messages):
+        response_message += chunk.content
+        yield chunk
 
-    llm = ChatOpenAI(model=model, temperature=temperature)
-
-    context = get_conversational_rag_chain(llm)
-
-    template = """
-    You are a helpful assistant. Answer the following questions considering the history of the conversation and the context:
-
-    Chat history: {chat_history}
-
-    context: {context}
-
-    User question: {user_question}
-    """
-
-    prompt = ChatPromptTemplate.from_template(template)
-
+    st.session_state.messages.append({"role": "assistant", "content": response_message})
     
-        
-    chain = prompt | llm | StrOutputParser()
-    
-    return chain.stream({
-        "chat_history": chat_history,
-        "user_question": user_query,
-        "context": context
-    })
+def stream_llm_rag_response(llm_stream, messages):
+    conversation_rag_chain = get_conversational_rag_chain(llm_stream)
+    response_message = "*(RAG Response)*\n"
+    for chunk in conversation_rag_chain.pick("answer").stream({"messages": messages[:-1], "input": messages[-1].content}):
+        response_message += chunk
+        yield chunk
+
+    st.session_state.messages.append({"role": "assistant", "content": response_message})
 
 def chat():
     gpt_connect()
     
     model = st.sidebar.selectbox('modelo',["gpt-4o-mini", "gpt-4o"],index=0)
     temperature = st.sidebar.slider("Temperatura",0.0,1.0,0.5)
+    llm_stream = ChatOpenAI(model=model, temperature=temperature)
     is_vector_db_loaded = ("vector_db" in st.session_state and st.session_state.vector_db is not None)
     st.sidebar.toggle(
                 "RAG", 
@@ -131,32 +121,31 @@ def chat():
 
 
     # Conversation
-    if "chat_history" in st.session_state:
-        for message in st.session_state.chat_history:
-            if isinstance(message, HumanMessage):
-                with st.chat_message("User"):
-                    st.markdown(message.content)
-            if isinstance(message, AIMessage):
-                with st.chat_message("AI"):
-                    st.markdown(message.content)
-    if "chat_history" not in st.session_state:
-        st.session_state.chat_history = []
+    if "messages" not in st.session_state:
+        st.session_state.messages = [
+            {"role": "user", "content": "Hello"},
+            {"role": "assistant", "content": "Hi there! How can I assist you today?"}
+]
+    for message in st.session_state.messages:
+        with st.chat_message(message["role"]):
+            st.markdown(message["content"])
 
-    user_query = st.chat_input("Type your message here...")
-    if user_query is not None and user_query != "":
-        st.session_state.chat_history.append(HumanMessage(content=user_query))
+    if prompt := st.chat_input("Your message"):
+        st.session_state.messages.append({"role": "user", "content": prompt})
+        with st.chat_message("user"):
+            st.markdown(prompt)
 
-        with st.chat_message("Human"):
-            st.markdown(user_query)
+        with st.chat_message("assistant"):
+            message_placeholder = st.empty()
+            full_response = ""
 
-        with st.chat_message("AI"):
+            messages = [HumanMessage(content=m["content"]) if m["role"] == "user" else AIMessage(content=m["content"]) for m in st.session_state.messages]
+
             if not st.session_state.use_rag:
-                response = st.write_stream(get_response(user_query, model, temperature, st.session_state.chat_history))
+                st.write_stream(stream_llm_response(llm_stream, messages))
             else:
-                response = st.write_stream(get_response_rag(user_query, model, temperature, st.session_state.chat_history))
+                st.write_stream(stream_llm_rag_response(llm_stream, messages))
             
-
-        st.session_state.chat_history.append(AIMessage(content=response))
     if st.sidebar.button('Limpiar chat',type="primary"):
         st.session_state.chat_history = []
         st.rerun()
