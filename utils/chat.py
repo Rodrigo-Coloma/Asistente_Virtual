@@ -101,7 +101,7 @@ def chat():
                 disabled=not is_vector_db_loaded,
             )
     st.sidebar.file_uploader(
-            "📄 Upload a document", 
+            "📄 Sube tus documentos", 
             type=["pdf", "txt", "docx", "md"],
             accept_multiple_files=True,
             on_change= rag.load_doc_to_db,
@@ -123,8 +123,7 @@ def chat():
     # Conversation
     if "messages" not in st.session_state:
         st.session_state.messages = [
-            {"role": "user", "content": "Hello"},
-            {"role": "assistant", "content": "Hi there! How can I assist you today?"}
+            {"role": "assistant", "content": "Como puedo ayudarte hoy?"}
 ]
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):

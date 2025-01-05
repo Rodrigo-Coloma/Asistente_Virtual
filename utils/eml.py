@@ -1,14 +1,10 @@
 import streamlit as st
-from langchain_core.messages import AIMessage, HumanMessage
 from langchain_openai import ChatOpenAI
-from dotenv import load_dotenv
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate
 from dotenv import dotenv_values
-import pandas as pd
 import streamlit as st
 import os
-import time
 
 
 def gpt_connect():
@@ -41,7 +37,7 @@ def get_response_email(email, tto, language, characteristics):
 
     prompt = ChatPromptTemplate.from_template(template)
 
-    llm = ChatOpenAI(model="gpt-4o-mini")
+    llm = ChatOpenAI(model="gpt-4o")
         
     chain = prompt | llm | StrOutputParser()
     

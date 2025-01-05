@@ -1,13 +1,10 @@
 import streamlit as st
-from dotenv import dotenv_values
-import pandas as pd
-import numpy as np
 import uuid
 import utils.mgt as mgt
 import utils.chat as chat
 import utils.eml as eml
 import os
-import requests
+
 # check if it's linux so it works on Streamlit Cloud
 if os.name == 'posix':
     __import__('pysqlite3')
