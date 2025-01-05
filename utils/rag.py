@@ -95,7 +95,7 @@ def initialize_vector_db(docs):
         documents=docs,
         embedding=embedding,
         collection_name=f"{str(time()).replace('.', '')[:14]}_" + st.session_state['session_id'],
-        persist_directory=f"./users/{st.session_state.username}")
+        persist_directory=f"./users/{st.session_state.username}/")
 
     # We need to manage the number of collections that we have in memory, we will keep the last 20
     chroma_client = vector_db._client
@@ -120,3 +120,5 @@ def _split_and_load_docs(docs):
         st.session_state.vector_db = initialize_vector_db(docs)
     else:
         st.session_state.vector_db.add_documents(document_chunks)
+
+    st.session_state.vector_db.persist()
