@@ -3,6 +3,7 @@ import uuid
 import utils.mgt as mgt
 import utils.chat as chat
 import utils.eml as eml
+import utils.code as code
 import os
 
 
@@ -36,13 +37,16 @@ def main():
             if st.form_submit_button('Login',type='primary'):
                 mgt.user_login(username,password)
     else:
-        st.session_state.tools = ['Chat', 'Email']
+        st.session_state.tools = ['Chat', 'Email', 'Code']
         st.session_state.tool = st.sidebar.selectbox('Herramienta', st.session_state.tools,0)
         if st.session_state.tool == 'Chat':
             chat.chat()
 
         if st.session_state.tool == 'Email':
             eml.email()
+
+        if st.session_state.tool == 'Code':
+            code.code()
 
 if __name__=="__main__":
     main()
