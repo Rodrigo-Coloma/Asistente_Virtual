@@ -5,6 +5,7 @@ from langchain_core.prompts import ChatPromptTemplate
 from dotenv import dotenv_values
 import streamlit as st
 import os
+import json
 
 
 def gpt_connect():
@@ -69,6 +70,14 @@ def code():
     query = st.text_area("Como puedo ayudarte?", height=140)
 
     if st.button("Ayudame con el codigo"):
-        response = get_response_code(script, query, language)
-        script_output = response.get('script', '')
-        st.write_stream(script_output)
+        response_generator = get_response_code(script, query, language)
+        # Stream only the 'script' part from the generator
+        for response in response_generator[:0]:
+            # Assuming response is a JSON-like string, you need to parse it
+            try:
+                response_json = json.loads(response)  # Convert the response to a JSON object
+                script_output = response_json.get('script', '')  # Extract the 'script'
+                st.write(script_output)  # Stream the script output
+            except json.JSONDecodeError:
+                # Handle the case where the response isn't valid JSON
+                st.write(response) 
