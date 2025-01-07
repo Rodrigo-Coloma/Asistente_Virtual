@@ -8,7 +8,7 @@ import os
 
 # check if it's linux so it works on Streamlit Cloud
 if os.name == 'posix':
-    import(‘pysqlite3’)
+    import('pysqlite3')
     import sys
     sys.modules[‘sqlite3’] = sys.modules.pop(‘pysqlite3’)
 
