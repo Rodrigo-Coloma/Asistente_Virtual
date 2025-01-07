@@ -21,6 +21,7 @@ def gpt_connect():
         st.session_state.gpt_key = dotenv_values('./.env')['token_gpt']
     except:
         st.session_state.gpt_key = st.secrets['GPTAPIKEY']
+        st.session_state.per_key = st.secrets['per_key']
     os.environ["OPENAI_API_KEY"] = st.session_state.gpt_key
 
 
@@ -48,7 +49,15 @@ def get_response(user_query, model, temperature, chat_history):
         "user_question": user_query,
     })
 
+def get_factos(llm_factos, messages):
+    
+    response_message = ""
 
+    for chunk in llm_factos.stream(messages):
+        response_message += chunk.content
+        yield chunk
+
+    st.session_state.messages.append({"role": "assistant", "content": response_message})
 
 def get_context_retriever_chain(vector_db, llm):
     retriever = vector_db.as_retriever()
@@ -158,7 +167,7 @@ def chat():
             messages = [HumanMessage(content=m["content"]) if m["role"] == "user" else AIMessage(content=m["content"]) for m in st.session_state.messages]
             
             if st.session_state.factos:
-                st.write_stream(stream_llm_response(llm_factos, messages))
+                st.write_stream(get_factos(llm_factos, messages))
             elif not st.session_state.use_rag:
                 st.write_stream(stream_llm_response(llm_stream, messages))
             else:
