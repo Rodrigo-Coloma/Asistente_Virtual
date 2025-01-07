@@ -56,13 +56,13 @@ def get_factos(llm, messages, user_query):
 
     Chat history: {messages}
 
-    User question: {user_query}
+    User question: {input}
     """
 
     prompt = ChatPromptTemplate.from_template(template)
     chain = prompt | llm |StrOutputParser
 
-    response = chain.invoke()
+    response = chain.invoke({"input":user_query})
     response_content = response.content
 
     st.session_state.messages.append({"role": "assistant", "content": response_content})
