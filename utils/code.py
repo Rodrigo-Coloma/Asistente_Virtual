@@ -5,7 +5,6 @@ from langchain_core.prompts import ChatPromptTemplate
 from dotenv import dotenv_values
 import streamlit as st
 import os
-import json
 
 
 def gpt_connect():
@@ -15,18 +14,17 @@ def gpt_connect():
         st.session_state.gpt_key = st.secrets['GPTAPIKEY']
     os.environ["OPENAI_API_KEY"] = st.session_state.gpt_key
 
+
 def get_response_code(script, query, language):
 
     template = """
-    You are a helpful assistant tasked with resolving coding problems in {language}. Your goal is to respond with a JSON object with two items script and explanation:
+    You are a helpful assistant tasked with resolving coding problems in {language}:
 
     Output format:
 
         script: the script solving the problem
 
         explanation: explanation of the script
-
-    Problem to solve:
 
     {script}
 
@@ -70,9 +68,4 @@ def code():
     query = st.text_area("Como puedo ayudarte?", height=140)
 
     if st.button("Ayudame con el codigo"):
-        response_generator = get_response_code(script, query, language)
-        # Stream only the 'script' part from the generator
-        response = "".join(res for res in response_generator)
-        response_json = json.loads(response)  # Convert the response to a JSON object
-        script_output = response_json.get('script', '')  # Extract the 'script'
-        st.write(script_output)  # Stream the script output
+        st.write_stream(get_response_code(script, query, language))

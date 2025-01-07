@@ -13,6 +13,8 @@ import pandas as pd
 import streamlit as st
 import os
 import time
+from openai import OpenAI
+import json
 
 def gpt_connect():
     try:
@@ -21,7 +23,11 @@ def gpt_connect():
         st.session_state.gpt_key = st.secrets['GPTAPIKEY']
     os.environ["OPENAI_API_KEY"] = st.session_state.gpt_key
 
+
+
 def get_response(user_query, model, temperature, chat_history):
+
+    st.session_state.client = OpenAI(api_key=st.session_state.gpt_key)
 
     template = """
     You are a helpful assistant. Answer the following questions considering the history of the conversation. Use behind the scenes search if needed:
