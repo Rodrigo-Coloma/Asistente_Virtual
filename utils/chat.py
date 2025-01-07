@@ -31,7 +31,7 @@ def get_response(user_query, model, temperature, chat_history):
     st.session_state.client = OpenAI(api_key=st.session_state.gpt_key)
 
     template = """
-    You are a helpful assistant. Answer the following questions considering the history of the conversation. Use behind the scenes search if needed:
+    You are a helpful assistant. Answer the following questions considering the history of the conversation:
 
     Chat history: {chat_history}
 
@@ -49,11 +49,20 @@ def get_response(user_query, model, temperature, chat_history):
         "user_question": user_query,
     })
 
-def get_factos(llm_factos, messages):
+def get_factos(llm, messages, user_query):
     
-    response_message = ""
+    template = f"""
+    You are a helpful assistant. Answer the following questions considering the history of the conversation:
 
-    for chunk in llm_factos.stream(messages):
+    Chat history: {messages}
+
+    User question: {user_query}
+    """
+
+    prompt = ChatPromptTemplate.from_template(template)
+    chain = prompt | llm |StrOutputParser
+
+    for chunk in chain.stream(messages):
         response_message += chunk.content
         yield chunk
 
