@@ -18,17 +18,9 @@ def gpt_connect():
 def get_response_code(script, query, language):
 
     template = """
-    You are a helpful assistant tasked with resolving coding problems in {language}:
+    You are a helpful assistant tasked with resolving coding problems in {language}. Your task is to {query}
 
-    Output format:
-
-        script: the script solving the problem
-
-        explanation: explanation of the script
-
-    {script}
-
-    Help me to: {query}
+    original script: {script}
 
     
 """
@@ -64,6 +56,8 @@ def code():
 
 
     script = st.text_area("Copia aqui el script con el que necesites ayuda:", height=280)
+
+    script = f"Original script: {script}"
 
     query = st.text_area("Como puedo ayudarte?", height=140)
 
