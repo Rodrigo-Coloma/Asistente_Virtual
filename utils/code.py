@@ -17,7 +17,7 @@ def gpt_connect():
 
 def get_response_code(script, query, language):
 
-    template = f"""
+    template = """
     You are a helpful assistant tasked with resolving coding problems in {language}. Your goal is to respond with a JSON object with two items script and explanation:
 
     Output format:
@@ -41,8 +41,11 @@ def get_response_code(script, query, language):
         
     chain = prompt | llm | StrOutputParser()
     
-    return chain.stream()
-
+    return chain.stream({
+        "language": language,
+        "script": script,
+        "query": query,
+    })
 def code():
     gpt_connect()
     programming_languages = [
