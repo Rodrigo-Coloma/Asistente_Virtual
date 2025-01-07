@@ -4,7 +4,7 @@ from langchain_openai import ChatOpenAI
 from dotenv import load_dotenv
 from langchain_core.output_parsers import StrOutputParser
 from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
-
+from langchain_community.chat_models import ChatPerplexity
 from langchain.chains import create_history_aware_retriever, create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from dotenv import dotenv_values
@@ -14,7 +14,7 @@ import streamlit as st
 import os
 import time
 from openai import OpenAI
-import json
+import requests
 
 def gpt_connect():
     try:
@@ -47,6 +47,8 @@ def get_response(user_query, model, temperature, chat_history):
         "chat_history": chat_history,
         "user_question": user_query,
     })
+
+
 
 def get_context_retriever_chain(vector_db, llm):
     retriever = vector_db.as_retriever()
@@ -99,13 +101,26 @@ def chat():
     model = st.sidebar.selectbox('modelo',["gpt-4o-mini", "gpt-4o"],index=0)
     temperature = st.sidebar.slider("Temperatura",0.0,1.0,0.5)
     llm_stream = ChatOpenAI(model=model, temperature=temperature)
+    llm_factos = ChatPerplexity(temperature=0.2, pplx_api_key=st.session_state.per _key, model="llama-3.1-sonar-large-128k-online"
+)
     is_vector_db_loaded = ("vector_db" in st.session_state and st.session_state.vector_db is not None)
-    st.sidebar.toggle(
-                "RAG", 
-                value=is_vector_db_loaded, 
-                key="use_rag", 
-                disabled=not is_vector_db_loaded,
-            )
+    cols = st.sidebar.columns(2)
+    
+    with cols[0]:
+        st.sidebar.toggle(
+                    "RAG", 
+                    value=False, 
+                    key="use_rag", 
+                    disabled=not is_vector_db_loaded,
+                )
+    with cols[1]:
+        st.sidebar.toggle(
+                    "Factos", 
+                    value=False, 
+                    key="factos", 
+                    disabled=False,
+                )
+        
     st.sidebar.file_uploader(
             "📄 Sube tus documentos", 
             type=["pdf", "txt", "docx", "md"],
@@ -145,8 +160,10 @@ def chat():
             full_response = ""
 
             messages = [HumanMessage(content=m["content"]) if m["role"] == "user" else AIMessage(content=m["content"]) for m in st.session_state.messages]
-
-            if not st.session_state.use_rag:
+            
+            if st.session_state.factos:
+                st.write_stream(stream_llm_response(llm_factos, messages))
+            elif not st.session_state.use_rag:
                 st.write_stream(stream_llm_response(llm_stream, messages))
             else:
                 st.write_stream(stream_llm_rag_response(llm_stream, messages))

@@ -17,7 +17,7 @@ if os.name == 'posix':
 
 def main():
     
-    st.set_page_config(layout="wide")
+
     # Header
     st.components.v1.html('<h2 style="text-align: center;">&#128202 Asistente &#128640 </h2>', width=None, height=50, scrolling=False)
     
@@ -38,6 +38,7 @@ def main():
             if st.form_submit_button('Login',type='primary'):
                 mgt.user_login(username,password)
     else:
+        st.set_page_config(layout="wide")
         st.session_state.tools = ['Chat', 'Email', 'Code']
         st.session_state.tool = st.sidebar.selectbox('Herramienta', st.session_state.tools,0)
         if st.session_state.tool == 'Chat':
