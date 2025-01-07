@@ -17,6 +17,7 @@ if os.name == 'posix':
 
 def main():
     
+    st.set_page_config(layout="wide")
     # Header
     st.components.v1.html('<h2 style="text-align: center;">&#128202 Asistente &#128640 </h2>', width=None, height=50, scrolling=False)
     

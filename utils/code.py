@@ -6,7 +6,7 @@ from dotenv import dotenv_values
 import streamlit as st
 import os
 
-st.set_page_config(layout="wide")
+
 
 def gpt_connect():
     try:
@@ -38,6 +38,7 @@ def get_response_code(script, query, language):
         "query": query,
     })
 def code():
+
     gpt_connect()
     programming_languages = [
     "DAX",
