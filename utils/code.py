@@ -72,7 +72,7 @@ def code():
     if st.button("Ayudame con el codigo"):
         response_generator = get_response_code(script, query, language)
         # Stream only the 'script' part from the generator
-        for response in response_generator[:0]:
+        for response in response_generator:
             # Assuming response is a JSON-like string, you need to parse it
             try:
                 response_json = json.loads(response)  # Convert the response to a JSON object
