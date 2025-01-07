@@ -60,10 +60,7 @@ def get_factos(llm, messages, user_query):
     prompt = ChatPromptTemplate.from_messages(messages)
     chain = prompt | llm
 
-    response = chain.invoke({"input": user_query})
-    response_content = response.content
-
-    st.session_state.messages.append({"role": "assistant", "content": response_content})
+    return chain.stream({"input": user_query})
 
 def get_context_retriever_chain(vector_db, llm):
     retriever = vector_db.as_retriever()
@@ -173,7 +170,7 @@ def chat():
             messages = [HumanMessage(content=m["content"]) if m["role"] == "user" else AIMessage(content=m["content"]) for m in st.session_state.messages]
             
             if st.session_state.factos:
-                st.write(get_factos(llm_factos, messages, prompt))
+                st.write_stream(get_factos(llm_factos, messages, prompt))
             elif not st.session_state.use_rag:
                 st.write_stream(stream_llm_response(llm_stream, messages))
             else:
