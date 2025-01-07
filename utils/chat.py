@@ -60,11 +60,11 @@ def get_factos(llm, messages, user_query):
     prompt = ChatPromptTemplate.from_messages(messages)
     chain = prompt | llm
 
-    response = chain.invoke({"input": user_query})
-    response_content = response.content
-
-    st.session_state.messages.append({"role": "assistant", "content": response_content})
-    st.rerun()
+    with st.spinner():
+        response = chain.invoke({"input": user_query})
+        response_content = response.content
+        st.session_state.messages.append({"role": "assistant", "content": response_content})
+        st.rerun()
 
 def get_context_retriever_chain(vector_db, llm):
     retriever = vector_db.as_retriever()
@@ -127,7 +127,7 @@ def chat():
                 )
 
     st.sidebar.toggle(
-                "Factos", 
+                "Busqueda web (Tiempo Real)", 
                 value=False, 
                 key="factos", 
                 disabled=False,
