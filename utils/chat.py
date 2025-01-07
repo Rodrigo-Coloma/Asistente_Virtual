@@ -62,11 +62,10 @@ def get_factos(llm, messages, user_query):
     prompt = ChatPromptTemplate.from_template(template)
     chain = prompt | llm |StrOutputParser
 
-    for chunk in chain.stream(messages):
-        response_message += chunk.content
-        yield chunk
+    response = chain.invoke({"topic": "cats"})
+    response_content = response.content
 
-    st.session_state.messages.append({"role": "assistant", "content": response_message})
+    st.session_state.messages.append({"role": "assistant", "content": response_content})
 
 def get_context_retriever_chain(vector_db, llm):
     retriever = vector_db.as_retriever()
