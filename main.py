@@ -35,7 +35,7 @@ def main():
 
     # --- user authentification --- 
     if "username" not in st.session_state:
-        log_cols = (1,2,1)
+        log_cols = ([1,2,1])
         with log_cols[1]:
             with st.form('credentials'):
                 username = st.text_input('Username: ',placeholder='your_username')
