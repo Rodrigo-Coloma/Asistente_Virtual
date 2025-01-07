@@ -20,7 +20,7 @@ def get_response_code(script, query, language):
     template = """
     Eres un asistente servicial encargado de resolver problemas de codificación en {language}. Tu tarea es {query}
 
-    script original: {script}
+    Código original: {script}
 
     
 """
@@ -54,15 +54,12 @@ def code():
 
     language = st.sidebar.selectbox(' Lenguaje ', programming_languages, placeholder="Eligen el lenguaje con el que quieres trabajar", index = 0)
 
-    col = st.columns(2)
 
-    with col[0]:
-        script = st.text_area("Copia aqui el script con el que necesites ayuda:", height=360)
+    script = st.text_area("Copia aqui el script con el que necesites ayuda:", height=280)
 
-        script = f"Original script: {script}"
+    script = f"Original script: {script}"
 
-        query = st.text_area("Como puedo ayudarte?", height=140)
+    query = st.text_area("Como puedo ayudarte?", height=140)
 
     if st.button("Ayudame con el codigo"):
-        with col[1]:
-            st.write_stream(get_response_code(script, query, language))
+        st.write_stream(get_response_code(script, query, language))
