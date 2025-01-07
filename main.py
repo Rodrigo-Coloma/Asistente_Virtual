@@ -4,13 +4,13 @@ import utils.mgt as mgt
 import utils.chat as chat
 import utils.eml as eml
 import os
-
+"""
 # check if it's linux so it works on Streamlit Cloud
 if os.name == 'posix':
     __import__('pysqlite3')
     import sys
     sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
-
+"""
 
 
 
