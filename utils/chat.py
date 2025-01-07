@@ -101,8 +101,7 @@ def chat():
     model = st.sidebar.selectbox('modelo',["gpt-4o-mini", "gpt-4o"],index=0)
     temperature = st.sidebar.slider("Temperatura",0.0,1.0,0.5)
     llm_stream = ChatOpenAI(model=model, temperature=temperature)
-    llm_factos = ChatPerplexity(temperature=0.2, pplx_api_key=st.session_state.per _key, model="llama-3.1-sonar-large-128k-online"
-)
+    llm_factos = ChatPerplexity(temperature=0.2, pplx_api_key=st.session_state.per_key, model="llama-3.1-sonar-large-128k-online")
     is_vector_db_loaded = ("vector_db" in st.session_state and st.session_state.vector_db is not None)
     st.sidebar.toggle(
                     "RAG", 
