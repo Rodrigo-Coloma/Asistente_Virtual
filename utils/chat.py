@@ -51,18 +51,15 @@ def get_response(user_query, model, temperature, chat_history):
 
 def get_factos(llm, messages, user_query):
     
-    template = """
-    You are a helpful assistant. Answer the following questions considering the history of the conversation:
+    user = "{input}"
+    messages = [(mess['role'],mess['content']) for mess in st.session_state.messages]
+    messages.append(("user", user))
+    
 
-    Chat history: {messages}
+    prompt = ChatPromptTemplate.from_messages(messages)
+    chain = prompt | llm
 
-    User question: {input}
-    """
-
-    prompt = ChatPromptTemplate.from_template(template)
-    chain = prompt | llm |StrOutputParser
-
-    response = chain.invoke({"input":user_query, "messages": messages})
+    response = chain.invoke({"input": user_query})
     response_content = response.content
 
     st.session_state.messages.append({"role": "assistant", "content": response_content})
