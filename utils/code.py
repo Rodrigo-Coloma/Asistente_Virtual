@@ -6,6 +6,7 @@ from dotenv import dotenv_values
 import streamlit as st
 import os
 
+st.set_page_config(layout="wide")
 
 def gpt_connect():
     try:
@@ -54,12 +55,15 @@ def code():
 
     language = st.sidebar.selectbox(' Lenguaje ', programming_languages, placeholder="Eligen el lenguaje con el que quieres trabajar", index = 0)
 
+    cols = st.columns(2)
 
-    script = st.text_area("Copia aqui el script con el que necesites ayuda:", height=280)
+    with cols[0]:
+        script = st.text_area("Copia aqui el script con el que necesites ayuda:", height=280)
 
-    script = f"Original script: {script}"
+        script = f"Original script: {script}"
 
-    query = st.text_area("Como puedo ayudarte?", height=140)
+        query = st.text_area("Como puedo ayudarte?", height=140)
 
     if st.button("Ayudame con el codigo"):
-        st.write_stream(get_response_code(script, query, language))
+        with cols[1]:
+            st.write_stream(get_response_code(script, query, language))
