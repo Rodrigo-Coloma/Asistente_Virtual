@@ -6,6 +6,7 @@ import utils.eml as eml
 import utils.code as code
 import os
 
+st.set_page_config(layout="wide")
 
 # check if it's linux so it works on Streamlit Cloud
 if os.name == 'posix':
@@ -40,7 +41,6 @@ def main():
             if st.form_submit_button('Login',type='primary'):
                 mgt.user_login(username,password)
     else:
-        st.set_page_config(layout="wide")
         st.session_state.tools = ['Chat', 'Email', 'Code']
         st.session_state.tool = st.sidebar.selectbox('Herramienta', st.session_state.tools,0)
         if st.session_state.tool == 'Chat':
