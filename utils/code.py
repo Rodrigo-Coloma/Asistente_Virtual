@@ -69,4 +69,6 @@ def code():
     query = st.text_area("Como puedo ayudarte?", height=140)
 
     if st.button("Ayudame con el codigo"):
-        st.write_stream(get_response_code(script,query, language)['script'])
+        response = get_response_code(script, query, language)
+        script_output = response.get('script', '')
+        st.write_stream(script_output)
