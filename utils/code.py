@@ -51,6 +51,7 @@ def code():
     "DAX",
     "Python",
     "SQL",
+    "Excel",
     "JavaScript",
     "Java",
     "C#",
@@ -67,5 +68,5 @@ def code():
 
     query = st.text_area("Como puedo ayudarte?", height=140)
 
-    if st.button("Ayudame con el email"):
-        st.write_stream(get_response_code(script,query, language))
+    if st.button("Ayudame con el codigo"):
+        st.write_stream(get_response_code(script,query, language)['script'])
