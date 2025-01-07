@@ -62,7 +62,7 @@ def get_factos(llm, messages, user_query):
     prompt = ChatPromptTemplate.from_template(template)
     chain = prompt | llm |StrOutputParser
 
-    response = chain.invoke({"topic": "cats"})
+    response = chain.invoke()
     response_content = response.content
 
     st.session_state.messages.append({"role": "assistant", "content": response_content})
