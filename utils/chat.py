@@ -104,23 +104,20 @@ def chat():
     llm_factos = ChatPerplexity(temperature=0.2, pplx_api_key=st.session_state.per _key, model="llama-3.1-sonar-large-128k-online"
 )
     is_vector_db_loaded = ("vector_db" in st.session_state and st.session_state.vector_db is not None)
-    cols = st.sidebar.columns(2)
-    
-    with cols[0]:
-        st.sidebar.toggle(
+    st.sidebar.toggle(
                     "RAG", 
                     value=False, 
                     key="use_rag", 
                     disabled=not is_vector_db_loaded,
                 )
-    with cols[1]:
-        st.sidebar.toggle(
-                    "Factos", 
-                    value=False, 
-                    key="factos", 
-                    disabled=False,
-                )
-        
+
+    st.sidebar.toggle(
+                "Factos", 
+                value=False, 
+                key="factos", 
+                disabled=False,
+            )
+    
     st.sidebar.file_uploader(
             "📄 Sube tus documentos", 
             type=["pdf", "txt", "docx", "md"],
