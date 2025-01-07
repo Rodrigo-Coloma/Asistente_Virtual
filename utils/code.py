@@ -18,9 +18,9 @@ def gpt_connect():
 def get_response_code(script, query, language):
 
     template = """
-    You are a helpful assistant tasked with resolving coding problems in {language}. Your task is to {query}
+    Eres un asistente servicial encargado de resolver problemas de codificación en {language}. Tu tarea es {query}
 
-    original script: {script}
+    script original: {script}
 
     
 """
