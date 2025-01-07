@@ -10,7 +10,7 @@ import os
 if os.name == 'posix':
     __import__('pysqlite3')
     import sys
-    sys.modules['sqlite'] = sys.modules.pop("pysqlite3")
+    # sys.modules['sqlite'] = sys.modules.pop("pysqlite3")
 
 
 
