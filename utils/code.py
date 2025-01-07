@@ -41,11 +41,8 @@ def get_response_code(script, query, language):
         
     chain = prompt | llm | StrOutputParser()
     
-    return chain.stream({
-        "language": language,
-        "script": script,
-        "query": query,
-    })
+    return chain.stream()
+
 def code():
     gpt_connect()
     programming_languages = [
