@@ -12,10 +12,13 @@ st.set_page_config(layout="wide")
 if os.name == 'posix':
     try:
         __import__('pysqlite3')
+    except:
+        st.write("no se pudo importar pysqlite3")
+    try:    
         import sys
         sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
     except:
-        pass
+        st.write("no se pudo asignar pysqlite3")
 
 
 def main():
