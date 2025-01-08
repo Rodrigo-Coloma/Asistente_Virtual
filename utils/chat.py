@@ -50,27 +50,19 @@ def get_response(user_query, model, temperature, chat_history):
     })
 
 def get_factos(llm, messages, user_query):
-    '''
-    messages = [("system", "eres un aistente cuya mision es proveer de los datos mas actuales y precisos que puedas encontrar")]
-    for mess in st.session_state.messages:
+    
+    messages = [("system", "eres un aistente cuya mision es proveer de los datos mas actuales y precisos que puedas encontrar para responder a las preguntas que te hagan")]
+    for mess in st.session_state.messages[1:]:
         messages.append((mess['role'],mess['content']))
     messages.append(("user", user_query))
-    '''
+    
 
-    # prompt = ChatPromptTemplate.from_messages(messages)
-    prompt = ChatPromptTemplate.from_messages([
-        MessagesPlaceholder(variable_name="messages"),
-        ("user", "{input}"),
-        ("user", "Given the above conversation, generate a search query to look up in order to get inforamtion relevant to the conversation, focusing on the most recent messages."),
-    ])
-
-
-
-
+    prompt = ChatPromptTemplate.from_messages(messages)
+    
     chain = prompt | llm
 
     with st.spinner():
-        response = chain.invoke({"input": user_query, "messages": st.session_state.messages})
+        response = chain.invoke({"input": user_query})
         response_content = response.content
         st.session_state.messages.append({"role": "assistant", "content": response_content})
         st.rerun()
