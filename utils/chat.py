@@ -54,7 +54,6 @@ def get_factos(llm, messages, user_query):
     messages = [("system", "eres un aistente cuya mision es proveer de los datos mas actuales y precisos que puedas encontrar para responder a las preguntas que te hagan")]
     for mess in st.session_state.messages[1:]:
         messages.append((mess['role'],mess['content']))
-    messages.append(("user", user_query))
     
 
     prompt = ChatPromptTemplate.from_messages(messages)
