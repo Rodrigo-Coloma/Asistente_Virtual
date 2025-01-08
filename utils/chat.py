@@ -52,7 +52,7 @@ def get_response(user_query, model, temperature, chat_history):
 def get_factos(llm, messages, user_query):
     
     messages = [("system", "eres un aistente cuya mision es proveer de los datos mas actuales y precisos que puedas encontrar para responder a las preguntas que te hagan")]
-    for mess in st.session_state.messages[1:]:
+    for mess in st.session_state.messages:
         messages.append((mess['role'],mess['content']))
     
     st.write(messages)
