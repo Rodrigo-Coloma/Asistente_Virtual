@@ -120,7 +120,9 @@ def chat():
     llm_factos = ChatPerplexity(temperature=0.2, pplx_api_key=st.session_state.per_key, model="llama-3.1-sonar-large-128k-online")
     is_vector_db_loaded = ("vector_db" in st.session_state and st.session_state.vector_db is not None)
     
-    
+    if "use_rag" not in st.session_state:
+        st.session_state.use_rag = False
+
     st.sidebar.toggle(
                 "Busqueda web (Tiempo Real)", 
                 value=False, 
