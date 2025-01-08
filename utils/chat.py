@@ -50,14 +50,23 @@ def get_response(user_query, model, temperature, chat_history):
     })
 
 def get_factos(llm, messages, user_query):
-    
-    user = "{input}"
+    '''
     messages = [("system", "eres un aistente cuya mision es proveer de los datos mas actuales y precisos que puedas encontrar")]
     for mess in st.session_state.messages:
         messages.append((mess['role'],mess['content']))
-    
+    messages.append(("user", user_query))
+    '''
 
-    prompt = ChatPromptTemplate.from_messages(messages)
+    # prompt = ChatPromptTemplate.from_messages(messages)
+    prompt = ChatPromptTemplate.from_messages([
+        MessagesPlaceholder(variable_name="messages"),
+        ("user", f"{user_query}"),
+        ("user", "Given the above conversation, generate a search query to look up in order to get inforamtion relevant to the conversation, focusing on the most recent messages."),
+    ])
+
+
+
+
     chain = prompt | llm
 
     with st.spinner():
@@ -178,7 +187,7 @@ def chat():
             messages = [HumanMessage(content=m["content"]) if m["role"] == "user" else AIMessage(content=m["content"]) for m in st.session_state.messages]
             
             if st.session_state.factos:
-                st.write(get_factos(llm_factos, messages, prompt))
+                st.markdown(get_factos(llm_factos, messages))
             elif not st.session_state.use_rag:
                 st.write_stream(stream_llm_response(llm_stream, messages))
             else:
