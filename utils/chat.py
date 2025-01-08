@@ -53,7 +53,7 @@ def get_factos(llm, messages, user_query):
     
     messages = [("system", "eres un aistente cuya mision es proveer de los datos mas actuales y precisos que puedas encontrar para responder a las preguntas que te hagan")]
     for i, mess in enumerate(st.session_state.messages):
-        if i != 0 or mess['role'] != "asistant":
+        if i != 0 or mess['role'] != "assistant":
             messages.append((mess['role'],mess['content']))
     
     st.write(messages)
