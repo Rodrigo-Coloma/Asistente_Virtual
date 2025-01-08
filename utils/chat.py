@@ -60,7 +60,7 @@ def get_factos(llm, messages, user_query):
     # prompt = ChatPromptTemplate.from_messages(messages)
     prompt = ChatPromptTemplate.from_messages([
         MessagesPlaceholder(variable_name="messages"),
-        ("user", f"{user_query}"),
+        ("user", "{input}"),
         ("user", "Given the above conversation, generate a search query to look up in order to get inforamtion relevant to the conversation, focusing on the most recent messages."),
     ])
 
@@ -70,7 +70,7 @@ def get_factos(llm, messages, user_query):
     chain = prompt | llm
 
     with st.spinner():
-        response = chain.invoke({"input": user_query})
+        response = chain.invoke({"input": user_query, "messages": st.session_state.messages})
         response_content = response.content
         st.session_state.messages.append({"role": "assistant", "content": response_content})
         st.rerun()
