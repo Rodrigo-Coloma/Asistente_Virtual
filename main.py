@@ -1,24 +1,20 @@
+import os
+if os.name == 'posix':
+    __import__('pysqlite3')
+    import sys
+    sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
+
+
 import streamlit as st
 import uuid
 import utils.mgt as mgt
 import utils.chat as chat
 import utils.eml as eml
 import utils.code as code
-import os
+
 
 st.set_page_config(layout="wide")
-
-# check if it's linux so it works on Streamlit Cloud
-if os.name == 'posix':
-    try:
-        __import__('pysqlite3')
-    except:
-        print("no se pudo importar pysqlite3")
-    try:    
-        import sys
-        sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
-    except:
-        print("no se pudo asignar pysqlite3")
 
 
 def main():
