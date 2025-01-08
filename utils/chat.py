@@ -119,28 +119,27 @@ def chat():
     llm_stream = ChatOpenAI(model=model, temperature=temperature)
     llm_factos = ChatPerplexity(temperature=0.2, pplx_api_key=st.session_state.per_key, model="llama-3.1-sonar-large-128k-online")
     is_vector_db_loaded = ("vector_db" in st.session_state and st.session_state.vector_db is not None)
-    st.sidebar.toggle(
-                    "RAG", 
-                    value=False, 
-                    key="use_rag", 
-                    disabled=not is_vector_db_loaded,
-                )
-
+    
+    
     st.sidebar.toggle(
                 "Busqueda web (Tiempo Real)", 
                 value=False, 
                 key="factos", 
-                disabled=False,
+                disabled= st.session_state.use_rag,
             )
-    
+    st.sidebar.toggle(
+                    "RAG", 
+                    value=False, 
+                    key="use_rag", 
+                    disabled=not is_vector_db_loaded or st.session_state.factos,
+                )
     st.sidebar.file_uploader(
             "📄 Sube tus documentos", 
             type=["pdf", "txt", "docx", "md"],
             accept_multiple_files=True,
             on_change= rag.load_doc_to_db,
-            key="rag_docs",
+            key="rag_docs",           
         )
-
     # URL input for RAG with websites
     st.sidebar.text_input(
         "🌐 Introduce a URL", 
@@ -152,6 +151,9 @@ def chat():
     with st.sidebar.expander(f"📚 Documents in DB ({0 if not is_vector_db_loaded else len(st.session_state.rag_sources)})"):
         st.write([] if not is_vector_db_loaded else [source for source in st.session_state.rag_sources])
 
+    if st.sidebar.button('Limpiar chat',type="primary"):
+        st.session_state.messages = []
+        st.rerun()
 
     # Conversation
     if "messages" not in st.session_state:
@@ -180,6 +182,3 @@ def chat():
             else:
                 st.write_stream(stream_llm_rag_response(llm_stream, messages))
             
-    if st.sidebar.button('Limpiar chat',type="primary"):
-        st.session_state.messages = []
-        st.rerun()
