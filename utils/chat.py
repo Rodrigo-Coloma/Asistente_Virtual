@@ -55,7 +55,7 @@ def get_factos(llm, messages, user_query):
     for mess in st.session_state.messages[1:]:
         messages.append((mess['role'],mess['content']))
     
-
+    st.write(messages)
     prompt = ChatPromptTemplate.from_messages(messages)
     
     chain = prompt | llm
