@@ -41,18 +41,21 @@ def code():
 
     gpt_connect()
     programming_languages = [
-    "DAX",
-    "Python",
-    "SQL",
-    "Excel",
-    "JavaScript",
-    "Java",
-    "C#",
-    "C++",
-    "TypeScript",
-    "PHP",
-    "Ruby"
-]
+                                "DAX",
+                                "Python",
+                                "SQL",
+                                "Excel",
+                                "React",
+                                "JavaScript",
+                                "Html",
+                                "Css",
+                                "Java",
+                                "C#",
+                                "C++",
+                                "TypeScript",
+                                "PHP",
+                                "Ruby"
+                            ]
 
     language = st.sidebar.selectbox(' Lenguaje ', programming_languages, placeholder="Eligen el lenguaje con el que quieres trabajar", index = 0)
 
