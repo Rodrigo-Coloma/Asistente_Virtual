@@ -28,7 +28,7 @@ def get_plan_context(vector_db, llm):
     prompt = ChatPromptTemplate.from_messages([
         MessagesPlaceholder(variable_name="messages"),
         ("user", "Retrieve all the available information about the Plantilla Plan de acción{input}"),
-    })
+    ])
     retriever_chain = create_history_aware_retriever(llm, retriever, prompt)
 
     return retriever_chain
