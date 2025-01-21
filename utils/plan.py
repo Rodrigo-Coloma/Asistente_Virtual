@@ -95,4 +95,4 @@ def plan():
 
             messages = [HumanMessage(content=m["content"]) if m["role"] == "user" else AIMessage(content=m["content"]) for m in st.session_state.messages]
             st.write_stream(stream_llm_plan_response(llm_stream, messages))
-    st.text_area("Full response", value=full_response, height=200)
+    st.text_area("Full response", height=200)
