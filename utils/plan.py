@@ -61,6 +61,9 @@ def stream_llm_plan_response(llm_stream, messages):
 
 def plan():
     gpt_connect()
+    if "sample" not in st.session_state:
+        rag.default_load()
+        st.session_state.sample = True
     rag.default_load()
     
     llm_stream = ChatOpenAI(model="gpt-4o", temperature=0.4)
