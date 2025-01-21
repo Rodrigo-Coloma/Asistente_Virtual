@@ -76,6 +76,6 @@ def plan():
 
         instructions = f"Instrucciones adicionales: {instructions}"
 
-    if st.button("Ayudame con el codigo"):
+    if st.button("Crear el Plan de Acción"):
         with cols[1]:
             st.write_stream(get_plan_response(llm_stream, notes, instructions))
