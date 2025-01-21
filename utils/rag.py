@@ -66,6 +66,22 @@ def load_doc_to_db():
             st.toast(f"Document *{str([doc_file.name for doc_file in st.session_state.rag_docs])[1:-1]}* loaded successfully.", icon="✅")
 
 
+def default_load():
+    # Use loader according to doc type
+    if not st.session_state.loaded_sample:
+        file_path= "../data/samples/Plantilla Plan de Acción.docx"
+        docs = [] 
+        loader = Docx2txtLoader(file_path)
+        docs.extend(loader.load())
+    if docs:
+        _split_and_load_docs(docs)
+
+
+
+
+
+
+
 def load_url_to_db():
     if "rag_url" in st.session_state and st.session_state.rag_url:
         url = st.session_state.rag_url

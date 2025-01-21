@@ -9,12 +9,9 @@ from langchain.chains import create_history_aware_retriever, create_retrieval_ch
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from dotenv import dotenv_values
 import utils.rag as rag
-import pandas as pd
 import streamlit as st
 import os
-import time
 from openai import OpenAI
-import requests
 
 def gpt_connect():
     try:
@@ -56,7 +53,6 @@ def get_factos(llm, messages, user_query):
         if i != 0 or mess['role'] != "assistant":
             messages.append((mess['role'],mess['content']))
     
-    st.write(messages)
     prompt = ChatPromptTemplate.from_messages(messages)
     
     chain = prompt | llm
@@ -72,7 +68,7 @@ def get_context_retriever_chain(vector_db, llm):
     prompt = ChatPromptTemplate.from_messages([
         MessagesPlaceholder(variable_name="messages"),
         ("user", "{input}"),
-        ("user", "Given the above conversation, generate a search query to look up in order to get inforamtion relevant to the conversation, focusing on the most recent messages."),
+        ("user", "Given the above conversation, generate a search query to look up in order to get information relevant to the conversation, focusing on the most recent messages."),
     ])
     retriever_chain = create_history_aware_retriever(llm, retriever, prompt)
 
