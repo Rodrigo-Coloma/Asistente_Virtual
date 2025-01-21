@@ -38,7 +38,7 @@ def get_plan_rag_chain(llm):
 
     prompt = ChatPromptTemplate.from_messages([
         ("system",
-        """Eres un asistente de redacción de planes de acción para el deparatamento de datos de una empresa hotelera. Ayudame a redactar un plan de acción en base a la siguiente plantilla: 
+        """Eres un asistente de redacción de planes de acción para el departamento de datos de una empresa hotelera. Ayudame a redactar un plan de acción en base a la siguiente plantilla: 
         \n {context}\n
           y las notas aportadas por el usuario\n
         """),
@@ -95,3 +95,4 @@ def plan():
 
             messages = [HumanMessage(content=m["content"]) if m["role"] == "user" else AIMessage(content=m["content"]) for m in st.session_state.messages]
             st.write_stream(stream_llm_plan_response(llm_stream, messages))
+            st.text_area("Full response", value=full_response, height=200)
