@@ -68,7 +68,7 @@ def load_doc_to_db():
 
 def default_load():
     # Use loader according to doc type
-    file_path= "../data/samples/Plantilla Plan de Acción.docx"
+    file_path= "./data/samples/Plantilla Plan de Acción.docx"
     docs = [] 
     loader = Docx2txtLoader(file_path)
     docs.extend(loader.load())
