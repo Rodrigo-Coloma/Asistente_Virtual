@@ -68,13 +68,13 @@ def load_doc_to_db():
 
 def default_load():
     # Use loader according to doc type
-    if not st.session_state.loaded_sample:
+    if "loaded_sample" not in st.session_state:
         file_path= "../data/samples/Plantilla Plan de Acción.docx"
         docs = [] 
         loader = Docx2txtLoader(file_path)
         docs.extend(loader.load())
-    if docs:
         _split_and_load_docs(docs)
+        st.session_state.loaded_sample = True
 
 
 
