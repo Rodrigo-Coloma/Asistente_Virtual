@@ -1,0 +1,2560 @@
+{
+    "Tables": [
+        {
+            "$id": "3",
+            "Model": {
+                "$ref": "1"
+            },
+            "TableName": "DDBB",
+            "RowsCount": 2466,
+            "Description": "",
+            "IsReferenced": true,
+            "IsDateTable": false,
+            "Columns": [
+                {
+                    "$id": "4",
+                    "Table": {
+                        "$ref": "3"
+                    },
+                    "ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+                    "DataType": "Int64",
+                    "ColumnType": "RowNumber",
+                    "IsHidden": true,
+                    "Encoding": "VALUE",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsKey": true,
+                    "IsUnique": true,
+                    "State": "Ready",
+                    "IsRowNumber": true,
+                    "DictionarySize": 128,
+                    "DataSize": 128,
+                    "TotalSize": 256,
+                    "ColumnSegments": [
+                        {
+                            "$id": "5",
+                            "Column": {
+                                "$ref": "4"
+                            },
+                            "Partition": {
+                                "$id": "6",
+                                "Table": {
+                                    "$ref": "3"
+                                },
+                                "PartitionName": "DDBB",
+                                "Description": null,
+                                "State": 1,
+                                "Type": 4,
+                                "Mode": 0,
+                                "RefreshedTime": "2024-11-27T22:14:04.926667"
+                            },
+                            "SegmentRows": 2466,
+                            "UsedSize": 128,
+                            "CompressionType": "C123",
+                            "VertipaqState": "SKIPPED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "7",
+                    "Table": {
+                        "$ref": "3"
+                    },
+                    "ColumnName": "REGION",
+                    "ColumnCardinality": 13,
+                    "DataType": "String",
+                    "ColumnType": "Data",
+                    "Encoding": "HASH",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "State": "Ready",
+                    "DictionarySize": 17438,
+                    "DataSize": 488,
+                    "HierarchiesSize": 112,
+                    "TotalSize": 18038,
+                    "Selectivity": 0.0052716950527169504,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "8",
+                            "Column": {
+                                "$ref": "7"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 56
+                        },
+                        {
+                            "$id": "9",
+                            "Column": {
+                                "$ref": "7"
+                            },
+                            "StructureName": "ID_TO_POS",
+                            "UsedSize": 56
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "10",
+                            "Column": {
+                                "$ref": "7"
+                            },
+                            "Partition": {
+                                "$ref": "6"
+                            },
+                            "SegmentRows": 2466,
+                            "UsedSize": 488,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 4,
+                            "BookmarkBitsCount": 8,
+                            "VertipaqState": "COMPLETED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "11",
+                    "Table": {
+                        "$ref": "3"
+                    },
+                    "ColumnName": "Oficina",
+                    "ColumnCardinality": 173,
+                    "DataType": "String",
+                    "ColumnType": "Data",
+                    "Encoding": "HASH",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "State": "Ready",
+                    "IsReferenced": true,
+                    "DictionarySize": 22376,
+                    "DataSize": 1808,
+                    "HierarchiesSize": 1392,
+                    "TotalSize": 25576,
+                    "Selectivity": 0.07015409570154096,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "12",
+                            "Column": {
+                                "$ref": "11"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 696
+                        },
+                        {
+                            "$id": "13",
+                            "Column": {
+                                "$ref": "11"
+                            },
+                            "StructureName": "ID_TO_POS",
+                            "UsedSize": 696
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "14",
+                            "Column": {
+                                "$ref": "11"
+                            },
+                            "Partition": {
+                                "$ref": "6"
+                            },
+                            "SegmentRows": 2466,
+                            "UsedSize": 1808,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 8,
+                            "BookmarkBitsCount": 1,
+                            "VertipaqState": "COMPLETED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "15",
+                    "Table": {
+                        "$ref": "3"
+                    },
+                    "ColumnName": "Gestor",
+                    "ColumnCardinality": 555,
+                    "DataType": "String",
+                    "ColumnType": "Data",
+                    "Encoding": "HASH",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "State": "Ready",
+                    "IsReferenced": true,
+                    "DictionarySize": 33496,
+                    "DataSize": 2368,
+                    "HierarchiesSize": 4448,
+                    "TotalSize": 40312,
+                    "Selectivity": 0.22506082725060828,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "16",
+                            "Column": {
+                                "$ref": "15"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 2224
+                        },
+                        {
+                            "$id": "17",
+                            "Column": {
+                                "$ref": "15"
+                            },
+                            "StructureName": "ID_TO_POS",
+                            "UsedSize": 2224
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "18",
+                            "Column": {
+                                "$ref": "15"
+                            },
+                            "Partition": {
+                                "$ref": "6"
+                            },
+                            "SegmentRows": 2466,
+                            "UsedSize": 2368,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 10,
+                            "BookmarkBitsCount": 1,
+                            "VertipaqState": "COMPLETED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "19",
+                    "Table": {
+                        "$ref": "3"
+                    },
+                    "ColumnName": "Empresa",
+                    "ColumnCardinality": 1650,
+                    "DataType": "String",
+                    "ColumnType": "Data",
+                    "Encoding": "HASH",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "State": "Ready",
+                    "DictionarySize": 57565,
+                    "DataSize": 2816,
+                    "HierarchiesSize": 13216,
+                    "TotalSize": 73597,
+                    "Selectivity": 0.6690997566909975,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "20",
+                            "Column": {
+                                "$ref": "19"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 6608
+                        },
+                        {
+                            "$id": "21",
+                            "Column": {
+                                "$ref": "19"
+                            },
+                            "StructureName": "ID_TO_POS",
+                            "UsedSize": 6608
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "22",
+                            "Column": {
+                                "$ref": "19"
+                            },
+                            "Partition": {
+                                "$ref": "6"
+                            },
+                            "SegmentRows": 2466,
+                            "UsedSize": 2816,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 12,
+                            "BookmarkBitsCount": 1,
+                            "VertipaqState": "COMPLETED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "23",
+                    "Table": {
+                        "$ref": "3"
+                    },
+                    "ColumnName": "Estado",
+                    "ColumnCardinality": 7,
+                    "DataType": "String",
+                    "ColumnType": "Data",
+                    "Encoding": "HASH",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "State": "Ready",
+                    "DictionarySize": 17346,
+                    "DataSize": 416,
+                    "HierarchiesSize": 64,
+                    "TotalSize": 17826,
+                    "Selectivity": 0.00283860502838605,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "24",
+                            "Column": {
+                                "$ref": "23"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 32
+                        },
+                        {
+                            "$id": "25",
+                            "Column": {
+                                "$ref": "23"
+                            },
+                            "StructureName": "ID_TO_POS",
+                            "UsedSize": 32
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "26",
+                            "Column": {
+                                "$ref": "23"
+                            },
+                            "Partition": {
+                                "$ref": "6"
+                            },
+                            "SegmentRows": 2466,
+                            "UsedSize": 416,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 3,
+                            "BookmarkBitsCount": 13,
+                            "VertipaqState": "COMPLETED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "27",
+                    "Table": {
+                        "$ref": "3"
+                    },
+                    "ColumnName": "Ticket anual",
+                    "ColumnCardinality": 405,
+                    "DataType": "Double",
+                    "ColumnType": "Data",
+                    "Encoding": "VALUE",
+                    "DisplayFolder": "",
+                    "FormatString": "#,0.00\\ \"€\";-#,0.00\\ \"€\";#,0.00\\ \"€\"",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "State": "Ready",
+                    "IsReferenced": true,
+                    "DictionarySize": 128,
+                    "DataSize": 2872,
+                    "HierarchiesSize": 1624,
+                    "TotalSize": 4624,
+                    "Selectivity": 0.16423357664233576,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "28",
+                            "Column": {
+                                "$ref": "27"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 1624
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "29",
+                            "Column": {
+                                "$ref": "27"
+                            },
+                            "Partition": {
+                                "$ref": "6"
+                            },
+                            "SegmentRows": 2466,
+                            "UsedSize": 2872,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 32,
+                            "BookmarkBitsCount": 2,
+                            "VertipaqState": "COMPLETED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "30",
+                    "Table": {
+                        "$ref": "3"
+                    },
+                    "ColumnName": "Fecha lead",
+                    "ColumnCardinality": 254,
+                    "DataType": "DateTime",
+                    "ColumnType": "Data",
+                    "Encoding": "HASH",
+                    "DisplayFolder": "",
+                    "FormatString": "Long Date",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "State": "Ready",
+                    "IsReferenced": true,
+                    "DictionarySize": 10504,
+                    "DataSize": 1808,
+                    "HierarchiesSize": 2048,
+                    "TotalSize": 14360,
+                    "Selectivity": 0.1030008110300081,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "31",
+                            "Column": {
+                                "$ref": "30"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 1024
+                        },
+                        {
+                            "$id": "32",
+                            "Column": {
+                                "$ref": "30"
+                            },
+                            "StructureName": "ID_TO_POS",
+                            "UsedSize": 1024
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "33",
+                            "Column": {
+                                "$ref": "30"
+                            },
+                            "Partition": {
+                                "$ref": "6"
+                            },
+                            "SegmentRows": 2466,
+                            "UsedSize": 1808,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 8,
+                            "BookmarkBitsCount": 1,
+                            "VertipaqState": "COMPLETED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "34",
+                    "Table": {
+                        "$ref": "3"
+                    },
+                    "ColumnName": "Fecha cierre",
+                    "ColumnCardinality": 101,
+                    "DataType": "DateTime",
+                    "ColumnType": "Data",
+                    "Encoding": "HASH",
+                    "DisplayFolder": "",
+                    "FormatString": "Long Date",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "State": "Ready",
+                    "IsReferenced": true,
+                    "DictionarySize": 5172,
+                    "DataSize": 264,
+                    "HierarchiesSize": 816,
+                    "TotalSize": 6252,
+                    "Selectivity": 0.040957015409570155,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "35",
+                            "Column": {
+                                "$ref": "34"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 408
+                        },
+                        {
+                            "$id": "36",
+                            "Column": {
+                                "$ref": "34"
+                            },
+                            "StructureName": "ID_TO_POS",
+                            "UsedSize": 408
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "37",
+                            "Column": {
+                                "$ref": "34"
+                            },
+                            "Partition": {
+                                "$ref": "6"
+                            },
+                            "SegmentRows": 2466,
+                            "UsedSize": 264,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 7,
+                            "BookmarkBitsCount": 2,
+                            "VertipaqState": "COMPLETED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "38",
+                    "Table": {
+                        "$ref": "3"
+                    },
+                    "ColumnName": "AE Factorial",
+                    "ColumnCardinality": 141,
+                    "DataType": "String",
+                    "ColumnType": "Data",
+                    "Encoding": "HASH",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "State": "Ready",
+                    "DictionarySize": 19940,
+                    "DataSize": 1160,
+                    "HierarchiesSize": 1136,
+                    "TotalSize": 22236,
+                    "Selectivity": 0.057177615571776155,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "39",
+                            "Column": {
+                                "$ref": "38"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 568
+                        },
+                        {
+                            "$id": "40",
+                            "Column": {
+                                "$ref": "38"
+                            },
+                            "StructureName": "ID_TO_POS",
+                            "UsedSize": 568
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "41",
+                            "Column": {
+                                "$ref": "38"
+                            },
+                            "Partition": {
+                                "$ref": "6"
+                            },
+                            "SegmentRows": 2466,
+                            "UsedSize": 1160,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 8,
+                            "BookmarkBitsCount": 3,
+                            "VertipaqState": "COMPLETED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "42",
+                    "Table": {
+                        "$ref": "3"
+                    },
+                    "ColumnName": "Industria",
+                    "ColumnCardinality": 11,
+                    "DataType": "String",
+                    "ColumnType": "Data",
+                    "Encoding": "HASH",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "State": "Ready",
+                    "DictionarySize": 17536,
+                    "DataSize": 968,
+                    "HierarchiesSize": 96,
+                    "TotalSize": 18600,
+                    "Selectivity": 0.004460665044606651,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "43",
+                            "Column": {
+                                "$ref": "42"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 48
+                        },
+                        {
+                            "$id": "44",
+                            "Column": {
+                                "$ref": "42"
+                            },
+                            "StructureName": "ID_TO_POS",
+                            "UsedSize": 48
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "45",
+                            "Column": {
+                                "$ref": "42"
+                            },
+                            "Partition": {
+                                "$ref": "6"
+                            },
+                            "SegmentRows": 2466,
+                            "UsedSize": 968,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 4,
+                            "BookmarkBitsCount": 1,
+                            "VertipaqState": "COMPLETED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "46",
+                    "Table": {
+                        "$ref": "3"
+                    },
+                    "ColumnName": "tiempo de cierre",
+                    "ColumnCardinality": 96,
+                    "DataType": "Int64",
+                    "ColumnType": "Calculated",
+                    "Encoding": "HASH",
+                    "ColumnExpression": "datediff(DDBB[Fecha lead],DDBB[Fecha cierre],DAY)",
+                    "DisplayFolder": "",
+                    "FormatString": "0",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "State": "Ready",
+                    "DictionarySize": 2716,
+                    "DataSize": 264,
+                    "HierarchiesSize": 784,
+                    "TotalSize": 3764,
+                    "Selectivity": 0.038929440389294405,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "47",
+                            "Column": {
+                                "$ref": "46"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 392
+                        },
+                        {
+                            "$id": "48",
+                            "Column": {
+                                "$ref": "46"
+                            },
+                            "StructureName": "ID_TO_POS",
+                            "UsedSize": 392
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "49",
+                            "Column": {
+                                "$ref": "46"
+                            },
+                            "Partition": {
+                                "$ref": "6"
+                            },
+                            "SegmentRows": 2466,
+                            "UsedSize": 264,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 7,
+                            "BookmarkBitsCount": 2,
+                            "VertipaqState": "SKIPPED"
+                        }
+                    ]
+                }
+            ],
+            "Measures": [
+                {
+                    "$id": "50",
+                    "Table": {
+                        "$ref": "3"
+                    },
+                    "MeasureName": "Facturacion",
+                    "MeasureExpression": "CALCULATE(SUM(DDBB[Ticket anual]))",
+                    "DisplayFolder": "",
+                    "Description": "",
+                    "DataType": "Double",
+                    "FormatString": "",
+                    "IsReferenced": true
+                },
+                {
+                    "$id": "51",
+                    "Table": {
+                        "$ref": "3"
+                    },
+                    "MeasureName": "No de gestores",
+                    "MeasureExpression": "CALCULATE(SUM(OFICINA[Numero de gestores]))",
+                    "DisplayFolder": "",
+                    "Description": "",
+                    "DataType": "Int64",
+                    "FormatString": "0",
+                    "IsReferenced": true
+                },
+                {
+                    "$id": "52",
+                    "Table": {
+                        "$ref": "3"
+                    },
+                    "MeasureName": "Facturacion por gestor",
+                    "MeasureExpression": "dIVIDE([Facturacion],[No de gestores])",
+                    "DisplayFolder": "",
+                    "Description": "",
+                    "DataType": "Double",
+                    "FormatString": ""
+                }
+            ],
+            "Partitions": [
+                {
+                    "$ref": "6"
+                }
+            ]
+        },
+        {
+            "$id": "53",
+            "Model": {
+                "$ref": "1"
+            },
+            "TableName": "DateTableTemplate_1c4c6ece-94fd-4ea2-94c3-e145959bb2f7",
+            "TableType": "CalculatedTable",
+            "IsHidden": true,
+            "IsPrivate": true,
+            "IsTemplateDateTable": true,
+            "TableExpression": "Calendar(Date(2015,1,1), Date(2015,1,1))",
+            "RowsCount": 1,
+            "Description": "",
+            "IsReferenced": true,
+            "IsDateTable": false,
+            "Columns": [
+                {
+                    "$id": "54",
+                    "Table": {
+                        "$ref": "53"
+                    },
+                    "ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+                    "DataType": "Int64",
+                    "ColumnType": "RowNumber",
+                    "IsHidden": true,
+                    "Encoding": "VALUE",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsKey": true,
+                    "IsUnique": true,
+                    "State": "Ready",
+                    "IsRowNumber": true,
+                    "DictionarySize": 128,
+                    "DataSize": 128,
+                    "TotalSize": 256,
+                    "ColumnSegments": [
+                        {
+                            "$id": "55",
+                            "Column": {
+                                "$ref": "54"
+                            },
+                            "Partition": {
+                                "$id": "56",
+                                "Table": {
+                                    "$ref": "53"
+                                },
+                                "PartitionName": "DateTableTemplate_1c4c6ece-94fd-4ea2-94c3-e145959bb2f7",
+                                "Description": null,
+                                "State": 1,
+                                "Type": 2,
+                                "Mode": 0,
+                                "RefreshedTime": "2024-11-27T21:13:56.603333"
+                            },
+                            "SegmentRows": 1,
+                            "UsedSize": 128,
+                            "CompressionType": "C123",
+                            "VertipaqState": "SKIPPED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "57",
+                    "Table": {
+                        "$ref": "53"
+                    },
+                    "ColumnName": "Date",
+                    "ColumnCardinality": 1,
+                    "DataType": "DateTime",
+                    "ColumnType": "CalculatedTableColumn",
+                    "IsHidden": true,
+                    "Encoding": "VALUE",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "State": "Ready",
+                    "IsReferenced": true,
+                    "DictionarySize": 128,
+                    "DataSize": 136,
+                    "HierarchiesSize": 8,
+                    "TotalSize": 272,
+                    "Selectivity": 1.0,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "58",
+                            "Column": {
+                                "$ref": "57"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 8
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "59",
+                            "Column": {
+                                "$ref": "57"
+                            },
+                            "Partition": {
+                                "$ref": "56"
+                            },
+                            "SegmentRows": 1,
+                            "UsedSize": 136,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 1,
+                            "VertipaqState": "COMPLETED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "60",
+                    "Table": {
+                        "$ref": "53"
+                    },
+                    "ColumnName": "Year",
+                    "ColumnCardinality": 1,
+                    "DataType": "Int64",
+                    "ColumnType": "Calculated",
+                    "IsHidden": true,
+                    "Encoding": "VALUE",
+                    "ColumnExpression": "YEAR([Date])",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "State": "Ready",
+                    "IsReferenced": true,
+                    "DictionarySize": 128,
+                    "DataSize": 136,
+                    "HierarchiesSize": 8,
+                    "TotalSize": 272,
+                    "Selectivity": 1.0,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "61",
+                            "Column": {
+                                "$ref": "60"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 8
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "62",
+                            "Column": {
+                                "$ref": "60"
+                            },
+                            "Partition": {
+                                "$ref": "56"
+                            },
+                            "SegmentRows": 1,
+                            "UsedSize": 136,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 1,
+                            "VertipaqState": "SKIPPED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "63",
+                    "Table": {
+                        "$ref": "53"
+                    },
+                    "ColumnName": "MonthNo",
+                    "ColumnCardinality": 1,
+                    "DataType": "Int64",
+                    "ColumnType": "Calculated",
+                    "IsHidden": true,
+                    "Encoding": "VALUE",
+                    "ColumnExpression": "MONTH([Date])",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "State": "Ready",
+                    "IsReferenced": true,
+                    "DictionarySize": 128,
+                    "DataSize": 136,
+                    "HierarchiesSize": 8,
+                    "TotalSize": 272,
+                    "Selectivity": 1.0,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "64",
+                            "Column": {
+                                "$ref": "63"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 8
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "65",
+                            "Column": {
+                                "$ref": "63"
+                            },
+                            "Partition": {
+                                "$ref": "56"
+                            },
+                            "SegmentRows": 1,
+                            "UsedSize": 136,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 1,
+                            "VertipaqState": "SKIPPED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "66",
+                    "Table": {
+                        "$ref": "53"
+                    },
+                    "ColumnName": "Month",
+                    "ColumnCardinality": 1,
+                    "DataType": "String",
+                    "ColumnType": "Calculated",
+                    "IsHidden": true,
+                    "Encoding": "HASH",
+                    "ColumnExpression": "FORMAT([Date], \"MMMM\")",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "SortByColumnName": "MonthNo",
+                    "State": "Ready",
+                    "IsReferenced": true,
+                    "DictionarySize": 17112,
+                    "DataSize": 136,
+                    "HierarchiesSize": 16,
+                    "TotalSize": 17264,
+                    "Selectivity": 1.0,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "67",
+                            "Column": {
+                                "$ref": "66"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 8
+                        },
+                        {
+                            "$id": "68",
+                            "Column": {
+                                "$ref": "66"
+                            },
+                            "StructureName": "ID_TO_POS",
+                            "UsedSize": 8
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "69",
+                            "Column": {
+                                "$ref": "66"
+                            },
+                            "Partition": {
+                                "$ref": "56"
+                            },
+                            "SegmentRows": 1,
+                            "UsedSize": 136,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 1,
+                            "VertipaqState": "SKIPPED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "70",
+                    "Table": {
+                        "$ref": "53"
+                    },
+                    "ColumnName": "QuarterNo",
+                    "ColumnCardinality": 1,
+                    "DataType": "Int64",
+                    "ColumnType": "Calculated",
+                    "IsHidden": true,
+                    "Encoding": "VALUE",
+                    "ColumnExpression": "INT(([MonthNo] + 2) / 3)",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "State": "Ready",
+                    "IsReferenced": true,
+                    "DictionarySize": 128,
+                    "DataSize": 136,
+                    "HierarchiesSize": 8,
+                    "TotalSize": 272,
+                    "Selectivity": 1.0,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "71",
+                            "Column": {
+                                "$ref": "70"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 8
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "72",
+                            "Column": {
+                                "$ref": "70"
+                            },
+                            "Partition": {
+                                "$ref": "56"
+                            },
+                            "SegmentRows": 1,
+                            "UsedSize": 136,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 1,
+                            "VertipaqState": "SKIPPED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "73",
+                    "Table": {
+                        "$ref": "53"
+                    },
+                    "ColumnName": "Quarter",
+                    "ColumnCardinality": 1,
+                    "DataType": "String",
+                    "ColumnType": "Calculated",
+                    "IsHidden": true,
+                    "Encoding": "HASH",
+                    "ColumnExpression": "\"Qtr \" & [QuarterNo]",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "SortByColumnName": "QuarterNo",
+                    "State": "Ready",
+                    "IsReferenced": true,
+                    "DictionarySize": 17108,
+                    "DataSize": 136,
+                    "HierarchiesSize": 16,
+                    "TotalSize": 17260,
+                    "Selectivity": 1.0,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "74",
+                            "Column": {
+                                "$ref": "73"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 8
+                        },
+                        {
+                            "$id": "75",
+                            "Column": {
+                                "$ref": "73"
+                            },
+                            "StructureName": "ID_TO_POS",
+                            "UsedSize": 8
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "76",
+                            "Column": {
+                                "$ref": "73"
+                            },
+                            "Partition": {
+                                "$ref": "56"
+                            },
+                            "SegmentRows": 1,
+                            "UsedSize": 136,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 1,
+                            "VertipaqState": "SKIPPED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "77",
+                    "Table": {
+                        "$ref": "53"
+                    },
+                    "ColumnName": "Day",
+                    "ColumnCardinality": 1,
+                    "DataType": "Int64",
+                    "ColumnType": "Calculated",
+                    "IsHidden": true,
+                    "Encoding": "VALUE",
+                    "ColumnExpression": "DAY([Date])",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "State": "Ready",
+                    "IsReferenced": true,
+                    "DictionarySize": 128,
+                    "DataSize": 136,
+                    "HierarchiesSize": 8,
+                    "TotalSize": 272,
+                    "Selectivity": 1.0,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "78",
+                            "Column": {
+                                "$ref": "77"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 8
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "79",
+                            "Column": {
+                                "$ref": "77"
+                            },
+                            "Partition": {
+                                "$ref": "56"
+                            },
+                            "SegmentRows": 1,
+                            "UsedSize": 136,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 1,
+                            "VertipaqState": "SKIPPED"
+                        }
+                    ]
+                }
+            ],
+            "UserHierarchies": [
+                {
+                    "$id": "80",
+                    "Table": {
+                        "$ref": "53"
+                    },
+                    "HierarchyName": "Date Hierarchy",
+                    "UsedSize": 96,
+                    "Levels": [
+                        {
+                            "$ref": "60"
+                        },
+                        {
+                            "$ref": "73"
+                        },
+                        {
+                            "$ref": "66"
+                        },
+                        {
+                            "$ref": "77"
+                        }
+                    ]
+                }
+            ],
+            "Partitions": [
+                {
+                    "$ref": "56"
+                }
+            ]
+        },
+        {
+            "$id": "81",
+            "Model": {
+                "$ref": "1"
+            },
+            "TableName": "LocalDateTable_14a1e0b2-0da7-4d84-8c53-5fb42c921433",
+            "TableType": "CalculatedTable",
+            "IsHidden": true,
+            "IsLocalDateTable": true,
+            "TableExpression": "Calendar(Date(Year(MIN('DDBB'[Fecha cierre])), 1, 1), Date(Year(MAX('DDBB'[Fecha cierre])), 12, 31))",
+            "RowsCount": 731,
+            "ReferentialIntegrityViolationCount": 1,
+            "Description": "",
+            "IsReferenced": true,
+            "IsDateTable": true,
+            "Columns": [
+                {
+                    "$id": "82",
+                    "Table": {
+                        "$ref": "81"
+                    },
+                    "ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+                    "DataType": "Int64",
+                    "ColumnType": "RowNumber",
+                    "IsHidden": true,
+                    "Encoding": "VALUE",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsKey": true,
+                    "IsUnique": true,
+                    "State": "Ready",
+                    "IsRowNumber": true,
+                    "DictionarySize": 128,
+                    "DataSize": 128,
+                    "TotalSize": 256,
+                    "ColumnSegments": [
+                        {
+                            "$id": "83",
+                            "Column": {
+                                "$ref": "82"
+                            },
+                            "Partition": {
+                                "$id": "84",
+                                "Table": {
+                                    "$ref": "81"
+                                },
+                                "PartitionName": "LocalDateTable_14a1e0b2-0da7-4d84-8c53-5fb42c921433",
+                                "Description": null,
+                                "State": 1,
+                                "Type": 2,
+                                "Mode": 0,
+                                "RefreshedTime": "2024-11-27T22:14:04.966667"
+                            },
+                            "SegmentRows": 731,
+                            "UsedSize": 128,
+                            "CompressionType": "C123",
+                            "VertipaqState": "SKIPPED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "85",
+                    "Table": {
+                        "$ref": "81"
+                    },
+                    "ColumnName": "Date",
+                    "ColumnCardinality": 731,
+                    "DataType": "DateTime",
+                    "ColumnType": "CalculatedTableColumn",
+                    "IsHidden": true,
+                    "Encoding": "HASH",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "State": "Ready",
+                    "IsReferenced": true,
+                    "DictionarySize": 22616,
+                    "DataSize": 1104,
+                    "HierarchiesSize": 5856,
+                    "TotalSize": 29576,
+                    "Selectivity": 1.0,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "86",
+                            "Column": {
+                                "$ref": "85"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 2928
+                        },
+                        {
+                            "$id": "87",
+                            "Column": {
+                                "$ref": "85"
+                            },
+                            "StructureName": "ID_TO_POS",
+                            "UsedSize": 2928
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "88",
+                            "Column": {
+                                "$ref": "85"
+                            },
+                            "Partition": {
+                                "$ref": "84"
+                            },
+                            "SegmentRows": 731,
+                            "UsedSize": 1104,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 10,
+                            "VertipaqState": "SKIPPED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "89",
+                    "Table": {
+                        "$ref": "81"
+                    },
+                    "ColumnName": "Year",
+                    "ColumnCardinality": 2,
+                    "DataType": "Int64",
+                    "ColumnType": "Calculated",
+                    "IsHidden": true,
+                    "Encoding": "HASH",
+                    "ColumnExpression": "YEAR([Date])",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "State": "Ready",
+                    "IsReferenced": true,
+                    "DictionarySize": 1320,
+                    "DataSize": 136,
+                    "HierarchiesSize": 32,
+                    "TotalSize": 1488,
+                    "Selectivity": 0.0027359781121751026,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "90",
+                            "Column": {
+                                "$ref": "89"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 16
+                        },
+                        {
+                            "$id": "91",
+                            "Column": {
+                                "$ref": "89"
+                            },
+                            "StructureName": "ID_TO_POS",
+                            "UsedSize": 16
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "92",
+                            "Column": {
+                                "$ref": "89"
+                            },
+                            "Partition": {
+                                "$ref": "84"
+                            },
+                            "SegmentRows": 731,
+                            "UsedSize": 136,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 1,
+                            "BookmarkBitsCount": 2,
+                            "VertipaqState": "SKIPPED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "93",
+                    "Table": {
+                        "$ref": "81"
+                    },
+                    "ColumnName": "MonthNo",
+                    "ColumnCardinality": 12,
+                    "DataType": "Int64",
+                    "ColumnType": "Calculated",
+                    "IsHidden": true,
+                    "Encoding": "HASH",
+                    "ColumnExpression": "MONTH([Date])",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "State": "Ready",
+                    "IsReferenced": true,
+                    "DictionarySize": 1360,
+                    "DataSize": 496,
+                    "HierarchiesSize": 112,
+                    "TotalSize": 1968,
+                    "Selectivity": 0.016415868673050615,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "94",
+                            "Column": {
+                                "$ref": "93"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 56
+                        },
+                        {
+                            "$id": "95",
+                            "Column": {
+                                "$ref": "93"
+                            },
+                            "StructureName": "ID_TO_POS",
+                            "UsedSize": 56
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "96",
+                            "Column": {
+                                "$ref": "93"
+                            },
+                            "Partition": {
+                                "$ref": "84"
+                            },
+                            "SegmentRows": 731,
+                            "UsedSize": 496,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 4,
+                            "VertipaqState": "SKIPPED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "97",
+                    "Table": {
+                        "$ref": "81"
+                    },
+                    "ColumnName": "Month",
+                    "ColumnCardinality": 12,
+                    "DataType": "String",
+                    "ColumnType": "Calculated",
+                    "IsHidden": true,
+                    "Encoding": "HASH",
+                    "ColumnExpression": "FORMAT([Date], \"MMMM\")",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "SortByColumnName": "MonthNo",
+                    "State": "Ready",
+                    "IsReferenced": true,
+                    "DictionarySize": 17356,
+                    "DataSize": 496,
+                    "HierarchiesSize": 112,
+                    "TotalSize": 17964,
+                    "Selectivity": 0.016415868673050615,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "98",
+                            "Column": {
+                                "$ref": "97"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 56
+                        },
+                        {
+                            "$id": "99",
+                            "Column": {
+                                "$ref": "97"
+                            },
+                            "StructureName": "ID_TO_POS",
+                            "UsedSize": 56
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "100",
+                            "Column": {
+                                "$ref": "97"
+                            },
+                            "Partition": {
+                                "$ref": "84"
+                            },
+                            "SegmentRows": 731,
+                            "UsedSize": 496,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 4,
+                            "VertipaqState": "SKIPPED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "101",
+                    "Table": {
+                        "$ref": "81"
+                    },
+                    "ColumnName": "QuarterNo",
+                    "ColumnCardinality": 4,
+                    "DataType": "Int64",
+                    "ColumnType": "Calculated",
+                    "IsHidden": true,
+                    "Encoding": "HASH",
+                    "ColumnExpression": "INT(([MonthNo] + 2) / 3)",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "State": "Ready",
+                    "IsReferenced": true,
+                    "DictionarySize": 1328,
+                    "DataSize": 136,
+                    "HierarchiesSize": 48,
+                    "TotalSize": 1512,
+                    "Selectivity": 0.005471956224350205,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "102",
+                            "Column": {
+                                "$ref": "101"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 24
+                        },
+                        {
+                            "$id": "103",
+                            "Column": {
+                                "$ref": "101"
+                            },
+                            "StructureName": "ID_TO_POS",
+                            "UsedSize": 24
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "104",
+                            "Column": {
+                                "$ref": "101"
+                            },
+                            "Partition": {
+                                "$ref": "84"
+                            },
+                            "SegmentRows": 731,
+                            "UsedSize": 136,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 2,
+                            "BookmarkBitsCount": 8,
+                            "VertipaqState": "SKIPPED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "105",
+                    "Table": {
+                        "$ref": "81"
+                    },
+                    "ColumnName": "Quarter",
+                    "ColumnCardinality": 4,
+                    "DataType": "String",
+                    "ColumnType": "Calculated",
+                    "IsHidden": true,
+                    "Encoding": "HASH",
+                    "ColumnExpression": "\"Qtr \" & [QuarterNo]",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "SortByColumnName": "QuarterNo",
+                    "State": "Ready",
+                    "IsReferenced": true,
+                    "DictionarySize": 17168,
+                    "DataSize": 136,
+                    "HierarchiesSize": 48,
+                    "TotalSize": 17352,
+                    "Selectivity": 0.005471956224350205,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "106",
+                            "Column": {
+                                "$ref": "105"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 24
+                        },
+                        {
+                            "$id": "107",
+                            "Column": {
+                                "$ref": "105"
+                            },
+                            "StructureName": "ID_TO_POS",
+                            "UsedSize": 24
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "108",
+                            "Column": {
+                                "$ref": "105"
+                            },
+                            "Partition": {
+                                "$ref": "84"
+                            },
+                            "SegmentRows": 731,
+                            "UsedSize": 136,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 2,
+                            "BookmarkBitsCount": 8,
+                            "VertipaqState": "SKIPPED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "109",
+                    "Table": {
+                        "$ref": "81"
+                    },
+                    "ColumnName": "Day",
+                    "ColumnCardinality": 31,
+                    "DataType": "Int64",
+                    "ColumnType": "Calculated",
+                    "IsHidden": true,
+                    "Encoding": "HASH",
+                    "ColumnExpression": "DAY([Date])",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "State": "Ready",
+                    "IsReferenced": true,
+                    "DictionarySize": 1436,
+                    "DataSize": 616,
+                    "HierarchiesSize": 256,
+                    "TotalSize": 2308,
+                    "Selectivity": 0.04240766073871409,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "110",
+                            "Column": {
+                                "$ref": "109"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 128
+                        },
+                        {
+                            "$id": "111",
+                            "Column": {
+                                "$ref": "109"
+                            },
+                            "StructureName": "ID_TO_POS",
+                            "UsedSize": 128
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "112",
+                            "Column": {
+                                "$ref": "109"
+                            },
+                            "Partition": {
+                                "$ref": "84"
+                            },
+                            "SegmentRows": 731,
+                            "UsedSize": 616,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 5,
+                            "VertipaqState": "SKIPPED"
+                        }
+                    ]
+                }
+            ],
+            "UserHierarchies": [
+                {
+                    "$id": "113",
+                    "Table": {
+                        "$ref": "81"
+                    },
+                    "HierarchyName": "Date Hierarchy",
+                    "UsedSize": 12256,
+                    "Levels": [
+                        {
+                            "$ref": "89"
+                        },
+                        {
+                            "$ref": "105"
+                        },
+                        {
+                            "$ref": "97"
+                        },
+                        {
+                            "$ref": "109"
+                        }
+                    ]
+                }
+            ],
+            "Partitions": [
+                {
+                    "$ref": "84"
+                }
+            ]
+        },
+        {
+            "$id": "114",
+            "Model": {
+                "$ref": "1"
+            },
+            "TableName": "OFICINA",
+            "RowsCount": 968,
+            "Description": "",
+            "IsReferenced": true,
+            "IsDateTable": false,
+            "Columns": [
+                {
+                    "$id": "115",
+                    "Table": {
+                        "$ref": "114"
+                    },
+                    "ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+                    "DataType": "Int64",
+                    "ColumnType": "RowNumber",
+                    "IsHidden": true,
+                    "Encoding": "VALUE",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsKey": true,
+                    "IsUnique": true,
+                    "State": "Ready",
+                    "IsRowNumber": true,
+                    "DictionarySize": 128,
+                    "DataSize": 128,
+                    "TotalSize": 256,
+                    "ColumnSegments": [
+                        {
+                            "$id": "116",
+                            "Column": {
+                                "$ref": "115"
+                            },
+                            "Partition": {
+                                "$id": "117",
+                                "Table": {
+                                    "$ref": "114"
+                                },
+                                "PartitionName": "OFICINA",
+                                "Description": null,
+                                "State": 1,
+                                "Type": 4,
+                                "Mode": 0,
+                                "RefreshedTime": "2024-11-27T21:13:56.383333"
+                            },
+                            "SegmentRows": 968,
+                            "UsedSize": 128,
+                            "CompressionType": "C123",
+                            "VertipaqState": "SKIPPED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "118",
+                    "Table": {
+                        "$ref": "114"
+                    },
+                    "ColumnName": "Oficina",
+                    "ColumnCardinality": 135,
+                    "DataType": "String",
+                    "ColumnType": "Data",
+                    "Encoding": "HASH",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "State": "Ready",
+                    "IsReferenced": true,
+                    "DictionarySize": 21190,
+                    "DataSize": 272,
+                    "HierarchiesSize": 1088,
+                    "TotalSize": 22550,
+                    "Selectivity": 0.13946280991735538,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "119",
+                            "Column": {
+                                "$ref": "118"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 544
+                        },
+                        {
+                            "$id": "120",
+                            "Column": {
+                                "$ref": "118"
+                            },
+                            "StructureName": "ID_TO_POS",
+                            "UsedSize": 544
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "121",
+                            "Column": {
+                                "$ref": "118"
+                            },
+                            "Partition": {
+                                "$ref": "117"
+                            },
+                            "SegmentRows": 968,
+                            "UsedSize": 272,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 8,
+                            "BookmarkBitsCount": 1,
+                            "VertipaqState": "COMPLETED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "122",
+                    "Table": {
+                        "$ref": "114"
+                    },
+                    "ColumnName": "Numero de gestores",
+                    "ColumnCardinality": 16,
+                    "DataType": "Int64",
+                    "ColumnType": "Data",
+                    "Encoding": "HASH",
+                    "DisplayFolder": "",
+                    "FormatString": "0",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "State": "Ready",
+                    "IsReferenced": true,
+                    "DictionarySize": 1372,
+                    "DataSize": 200,
+                    "HierarchiesSize": 144,
+                    "TotalSize": 1716,
+                    "Selectivity": 0.01652892561983471,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "123",
+                            "Column": {
+                                "$ref": "122"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 72
+                        },
+                        {
+                            "$id": "124",
+                            "Column": {
+                                "$ref": "122"
+                            },
+                            "StructureName": "ID_TO_POS",
+                            "UsedSize": 72
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "125",
+                            "Column": {
+                                "$ref": "122"
+                            },
+                            "Partition": {
+                                "$ref": "117"
+                            },
+                            "SegmentRows": 968,
+                            "UsedSize": 200,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 4,
+                            "BookmarkBitsCount": 1,
+                            "VertipaqState": "COMPLETED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "126",
+                    "Table": {
+                        "$ref": "114"
+                    },
+                    "ColumnName": "N2",
+                    "ColumnCardinality": 13,
+                    "DataType": "Int64",
+                    "ColumnType": "Calculated",
+                    "Encoding": "HASH",
+                    "ColumnExpression": "CALCULATE(DISTINCTCOUNTNOBLANK(DDBB[Gestor]))",
+                    "DisplayFolder": "",
+                    "FormatString": "0",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "State": "Ready",
+                    "DictionarySize": 1360,
+                    "DataSize": 200,
+                    "HierarchiesSize": 112,
+                    "TotalSize": 1672,
+                    "Selectivity": 0.013429752066115703,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "127",
+                            "Column": {
+                                "$ref": "126"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 56
+                        },
+                        {
+                            "$id": "128",
+                            "Column": {
+                                "$ref": "126"
+                            },
+                            "StructureName": "ID_TO_POS",
+                            "UsedSize": 56
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "129",
+                            "Column": {
+                                "$ref": "126"
+                            },
+                            "Partition": {
+                                "$ref": "117"
+                            },
+                            "SegmentRows": 968,
+                            "UsedSize": 200,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 4,
+                            "BookmarkBitsCount": 1,
+                            "VertipaqState": "SKIPPED"
+                        }
+                    ]
+                }
+            ],
+            "Partitions": [
+                {
+                    "$ref": "117"
+                }
+            ]
+        },
+        {
+            "$id": "130",
+            "Model": {
+                "$ref": "1"
+            },
+            "TableName": "LocalDateTable_b2b95d67-8753-4203-a2fc-f3475db0070c",
+            "TableType": "CalculatedTable",
+            "IsHidden": true,
+            "IsLocalDateTable": true,
+            "TableExpression": "Calendar(Date(Year(MIN('DDBB'[Fecha lead])), 1, 1), Date(Year(MAX('DDBB'[Fecha lead])), 12, 31))",
+            "RowsCount": 1461,
+            "ReferentialIntegrityViolationCount": 1,
+            "Description": "",
+            "IsReferenced": true,
+            "IsDateTable": true,
+            "Columns": [
+                {
+                    "$id": "131",
+                    "Table": {
+                        "$ref": "130"
+                    },
+                    "ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+                    "DataType": "Int64",
+                    "ColumnType": "RowNumber",
+                    "IsHidden": true,
+                    "Encoding": "VALUE",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsKey": true,
+                    "IsUnique": true,
+                    "State": "Ready",
+                    "IsRowNumber": true,
+                    "DictionarySize": 128,
+                    "DataSize": 128,
+                    "TotalSize": 256,
+                    "ColumnSegments": [
+                        {
+                            "$id": "132",
+                            "Column": {
+                                "$ref": "131"
+                            },
+                            "Partition": {
+                                "$id": "133",
+                                "Table": {
+                                    "$ref": "130"
+                                },
+                                "PartitionName": "LocalDateTable_b2b95d67-8753-4203-a2fc-f3475db0070c",
+                                "Description": null,
+                                "State": 1,
+                                "Type": 2,
+                                "Mode": 0,
+                                "RefreshedTime": "2024-11-27T22:14:05.04"
+                            },
+                            "SegmentRows": 1461,
+                            "UsedSize": 128,
+                            "CompressionType": "C123",
+                            "VertipaqState": "SKIPPED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "134",
+                    "Table": {
+                        "$ref": "130"
+                    },
+                    "ColumnName": "Date",
+                    "ColumnCardinality": 1461,
+                    "DataType": "DateTime",
+                    "ColumnType": "CalculatedTableColumn",
+                    "IsHidden": true,
+                    "Encoding": "HASH",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "State": "Ready",
+                    "IsReferenced": true,
+                    "DictionarySize": 48860,
+                    "DataSize": 2472,
+                    "HierarchiesSize": 11696,
+                    "TotalSize": 63028,
+                    "Selectivity": 1.0,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "135",
+                            "Column": {
+                                "$ref": "134"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 5848
+                        },
+                        {
+                            "$id": "136",
+                            "Column": {
+                                "$ref": "134"
+                            },
+                            "StructureName": "ID_TO_POS",
+                            "UsedSize": 5848
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "137",
+                            "Column": {
+                                "$ref": "134"
+                            },
+                            "Partition": {
+                                "$ref": "133"
+                            },
+                            "SegmentRows": 1461,
+                            "UsedSize": 2472,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 12,
+                            "VertipaqState": "COMPLETED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "138",
+                    "Table": {
+                        "$ref": "130"
+                    },
+                    "ColumnName": "Year",
+                    "ColumnCardinality": 4,
+                    "DataType": "Int64",
+                    "ColumnType": "Calculated",
+                    "IsHidden": true,
+                    "Encoding": "HASH",
+                    "ColumnExpression": "YEAR([Date])",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "State": "Ready",
+                    "IsReferenced": true,
+                    "DictionarySize": 1328,
+                    "DataSize": 136,
+                    "HierarchiesSize": 48,
+                    "TotalSize": 1512,
+                    "Selectivity": 0.0027378507871321013,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "139",
+                            "Column": {
+                                "$ref": "138"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 24
+                        },
+                        {
+                            "$id": "140",
+                            "Column": {
+                                "$ref": "138"
+                            },
+                            "StructureName": "ID_TO_POS",
+                            "UsedSize": 24
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "141",
+                            "Column": {
+                                "$ref": "138"
+                            },
+                            "Partition": {
+                                "$ref": "133"
+                            },
+                            "SegmentRows": 1461,
+                            "UsedSize": 136,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 2,
+                            "BookmarkBitsCount": 4,
+                            "VertipaqState": "SKIPPED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "142",
+                    "Table": {
+                        "$ref": "130"
+                    },
+                    "ColumnName": "MonthNo",
+                    "ColumnCardinality": 12,
+                    "DataType": "Int64",
+                    "ColumnType": "Calculated",
+                    "IsHidden": true,
+                    "Encoding": "HASH",
+                    "ColumnExpression": "MONTH([Date])",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "State": "Ready",
+                    "IsReferenced": true,
+                    "DictionarySize": 1360,
+                    "DataSize": 864,
+                    "HierarchiesSize": 112,
+                    "TotalSize": 2336,
+                    "Selectivity": 0.008213552361396304,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "143",
+                            "Column": {
+                                "$ref": "142"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 56
+                        },
+                        {
+                            "$id": "144",
+                            "Column": {
+                                "$ref": "142"
+                            },
+                            "StructureName": "ID_TO_POS",
+                            "UsedSize": 56
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "145",
+                            "Column": {
+                                "$ref": "142"
+                            },
+                            "Partition": {
+                                "$ref": "133"
+                            },
+                            "SegmentRows": 1461,
+                            "UsedSize": 864,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 4,
+                            "VertipaqState": "SKIPPED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "146",
+                    "Table": {
+                        "$ref": "130"
+                    },
+                    "ColumnName": "Month",
+                    "ColumnCardinality": 12,
+                    "DataType": "String",
+                    "ColumnType": "Calculated",
+                    "IsHidden": true,
+                    "Encoding": "HASH",
+                    "ColumnExpression": "FORMAT([Date], \"MMMM\")",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "SortByColumnName": "MonthNo",
+                    "State": "Ready",
+                    "IsReferenced": true,
+                    "DictionarySize": 17356,
+                    "DataSize": 864,
+                    "HierarchiesSize": 112,
+                    "TotalSize": 18332,
+                    "Selectivity": 0.008213552361396304,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "147",
+                            "Column": {
+                                "$ref": "146"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 56
+                        },
+                        {
+                            "$id": "148",
+                            "Column": {
+                                "$ref": "146"
+                            },
+                            "StructureName": "ID_TO_POS",
+                            "UsedSize": 56
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "149",
+                            "Column": {
+                                "$ref": "146"
+                            },
+                            "Partition": {
+                                "$ref": "133"
+                            },
+                            "SegmentRows": 1461,
+                            "UsedSize": 864,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 4,
+                            "VertipaqState": "SKIPPED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "150",
+                    "Table": {
+                        "$ref": "130"
+                    },
+                    "ColumnName": "QuarterNo",
+                    "ColumnCardinality": 4,
+                    "DataType": "Int64",
+                    "ColumnType": "Calculated",
+                    "IsHidden": true,
+                    "Encoding": "HASH",
+                    "ColumnExpression": "INT(([MonthNo] + 2) / 3)",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "State": "Ready",
+                    "IsReferenced": true,
+                    "DictionarySize": 1328,
+                    "DataSize": 264,
+                    "HierarchiesSize": 48,
+                    "TotalSize": 1640,
+                    "Selectivity": 0.0027378507871321013,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "151",
+                            "Column": {
+                                "$ref": "150"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 24
+                        },
+                        {
+                            "$id": "152",
+                            "Column": {
+                                "$ref": "150"
+                            },
+                            "StructureName": "ID_TO_POS",
+                            "UsedSize": 24
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "153",
+                            "Column": {
+                                "$ref": "150"
+                            },
+                            "Partition": {
+                                "$ref": "133"
+                            },
+                            "SegmentRows": 1461,
+                            "UsedSize": 264,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 2,
+                            "BookmarkBitsCount": 16,
+                            "VertipaqState": "SKIPPED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "154",
+                    "Table": {
+                        "$ref": "130"
+                    },
+                    "ColumnName": "Quarter",
+                    "ColumnCardinality": 4,
+                    "DataType": "String",
+                    "ColumnType": "Calculated",
+                    "IsHidden": true,
+                    "Encoding": "HASH",
+                    "ColumnExpression": "\"Qtr \" & [QuarterNo]",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "SortByColumnName": "QuarterNo",
+                    "State": "Ready",
+                    "IsReferenced": true,
+                    "DictionarySize": 17168,
+                    "DataSize": 264,
+                    "HierarchiesSize": 48,
+                    "TotalSize": 17480,
+                    "Selectivity": 0.0027378507871321013,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "155",
+                            "Column": {
+                                "$ref": "154"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 24
+                        },
+                        {
+                            "$id": "156",
+                            "Column": {
+                                "$ref": "154"
+                            },
+                            "StructureName": "ID_TO_POS",
+                            "UsedSize": 24
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "157",
+                            "Column": {
+                                "$ref": "154"
+                            },
+                            "Partition": {
+                                "$ref": "133"
+                            },
+                            "SegmentRows": 1461,
+                            "UsedSize": 264,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 2,
+                            "BookmarkBitsCount": 16,
+                            "VertipaqState": "SKIPPED"
+                        }
+                    ]
+                },
+                {
+                    "$id": "158",
+                    "Table": {
+                        "$ref": "130"
+                    },
+                    "ColumnName": "Day",
+                    "ColumnCardinality": 31,
+                    "DataType": "Int64",
+                    "ColumnType": "Calculated",
+                    "IsHidden": true,
+                    "Encoding": "HASH",
+                    "ColumnExpression": "DAY([Date])",
+                    "DisplayFolder": "",
+                    "FormatString": "",
+                    "Description": "",
+                    "EncodingHint": "Default",
+                    "IsAvailableInMDX": true,
+                    "IsNullable": true,
+                    "State": "Ready",
+                    "IsReferenced": true,
+                    "DictionarySize": 1436,
+                    "DataSize": 1104,
+                    "HierarchiesSize": 256,
+                    "TotalSize": 2796,
+                    "Selectivity": 0.021218343600273786,
+                    "ColumnHierarchies": [
+                        {
+                            "$id": "159",
+                            "Column": {
+                                "$ref": "158"
+                            },
+                            "StructureName": "POS_TO_ID",
+                            "UsedSize": 128
+                        },
+                        {
+                            "$id": "160",
+                            "Column": {
+                                "$ref": "158"
+                            },
+                            "StructureName": "ID_TO_POS",
+                            "UsedSize": 128
+                        }
+                    ],
+                    "ColumnSegments": [
+                        {
+                            "$id": "161",
+                            "Column": {
+                                "$ref": "158"
+                            },
+                            "Partition": {
+                                "$ref": "133"
+                            },
+                            "SegmentRows": 1461,
+                            "UsedSize": 1104,
+                            "CompressionType": "NOSPLIT",
+                            "BitsCount": 5,
+                            "VertipaqState": "SKIPPED"
+                        }
+                    ]
+                }
+            ],
+            "UserHierarchies": [
+                {
+                    "$id": "162",
+                    "Table": {
+                        "$ref": "130"
+                    },
+                    "HierarchyName": "Date Hierarchy",
+                    "UsedSize": 24480,
+                    "Levels": [
+                        {
+                            "$ref": "138"
+                        },
+                        {
+                            "$ref": "154"
+                        },
+                        {
+                            "$ref": "146"
+                        },
+                        {
+                            "$ref": "158"
+                        }
+                    ]
+                }
+            ],
+            "Partitions": [
+                {
+                    "$ref": "133"
+                }
+            ]
+        }
+    ],
+    "Measures": null,
+    "Relationships": [
+        {
+            "$id": "163",
+            "FromColumn": {
+                "$ref": "34"
+            },
+            "FromCardinalityType": "Many",
+            "ToColumn": {
+                "$ref": "85"
+            },
+            "ToCardinalityType": "One",
+            "JoinOnDateBehavior": "DatePartOnly",
+            "CrossFilteringBehavior": "OneDirection",
+            "Type": "SingleColumn",
+            "IsActive": true,
+            "Name": "ea48a4ad-a368-4eeb-8622-f035ae37e5a5",
+            "SecurityFilteringBehavior": "OneDirection",
+            "UsedSizeFrom": 144,
+            "MissingKeys": 1,
+            "InvalidRows": 2314
+        },
+        {
+            "$id": "164",
+            "FromColumn": {
+                "$ref": "11"
+            },
+            "FromCardinalityType": "Many",
+            "ToColumn": {
+                "$ref": "118"
+            },
+            "ToCardinalityType": "Many",
+            "JoinOnDateBehavior": "DateAndTime",
+            "CrossFilteringBehavior": "BothDirections",
+            "Type": "SingleColumn",
+            "IsActive": true,
+            "Name": "54ad6c49-e84e-46c1-b2bf-7bfd1584d51b",
+            "SecurityFilteringBehavior": "OneDirection",
+            "MissingKeys": 1,
+            "InvalidRows": 793
+        },
+        {
+            "$id": "165",
+            "FromColumn": {
+                "$ref": "30"
+            },
+            "FromCardinalityType": "Many",
+            "ToColumn": {
+                "$ref": "134"
+            },
+            "ToCardinalityType": "One",
+            "JoinOnDateBehavior": "DatePartOnly",
+            "CrossFilteringBehavior": "OneDirection",
+            "Type": "SingleColumn",
+            "IsActive": true,
+            "Name": "7ccfb177-dee2-4dd8-9584-e73fed476e81",
+            "SecurityFilteringBehavior": "OneDirection",
+            "UsedSizeFrom": 416,
+            "MissingKeys": 1,
+            "InvalidRows": 790
+        }
+    ]
+}

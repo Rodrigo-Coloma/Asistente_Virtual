@@ -1,0 +1,8712 @@
+{
+"Tables": [
+{
+"TableId": "3",
+"TableName": "factDescripcionHoteles",
+"Columns": [
+{
+"ColumnId": "4",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7",
+"ColumnName": "codigo_empresa",
+"DataType": "String"
+},
+{
+"ColumnId": "11",
+"ColumnName": "codigo_hotel",
+"DataType": "String"
+},
+{
+"ColumnId": "15",
+"ColumnName": "nombre_hotel",
+"DataType": "String"
+},
+{
+"ColumnId": "19",
+"ColumnName": "direccion",
+"DataType": "String"
+},
+{
+"ColumnId": "23",
+"ColumnName": "telefono1",
+"DataType": "String"
+},
+{
+"ColumnId": "27",
+"ColumnName": "telefono2",
+"DataType": "String"
+},
+{
+"ColumnId": "31",
+"ColumnName": "fax",
+"DataType": "String"
+},
+{
+"ColumnId": "35",
+"ColumnName": "telex",
+"DataType": "String"
+},
+{
+"ColumnId": "39",
+"ColumnName": "correo",
+"DataType": "String"
+},
+{
+"ColumnId": "43",
+"ColumnName": "cunas",
+"DataType": "Int64"
+},
+{
+"ColumnId": "46",
+"ColumnName": "suple",
+"DataType": "Int64"
+},
+{
+"ColumnId": "49",
+"ColumnName": "garaje",
+"DataType": "Int64"
+},
+{
+"ColumnId": "52",
+"ColumnName": "feact",
+"DataType": "String"
+},
+{
+"ColumnId": "56",
+"ColumnName": "codigo_postal",
+"DataType": "String"
+},
+{
+"ColumnId": "60",
+"ColumnName": "poblacion",
+"DataType": "String"
+},
+{
+"ColumnId": "64",
+"ColumnName": "provincia",
+"DataType": "String"
+},
+{
+"ColumnId": "68",
+"ColumnName": "redon",
+"DataType": "String"
+},
+{
+"ColumnId": "72",
+"ColumnName": "IVA",
+"DataType": "String"
+},
+{
+"ColumnId": "76",
+"ColumnName": "euro",
+"DataType": "String"
+},
+{
+"ColumnId": "80",
+"ColumnName": "imati",
+"DataType": "Double"
+},
+{
+"ColumnId": "83",
+"ColumnName": "crm",
+"DataType": "String"
+},
+{
+"ColumnId": "87",
+"ColumnName": "codpol",
+"DataType": "String"
+},
+{
+"ColumnId": "91",
+"ColumnName": "conpol",
+"DataType": "Int64"
+},
+{
+"ColumnId": "94",
+"ColumnName": "desti",
+"DataType": "String"
+},
+{
+"ColumnId": "98",
+"ColumnName": "categoria",
+"DataType": "String"
+},
+{
+"ColumnId": "102",
+"ColumnName": "urldes",
+"DataType": "String"
+},
+{
+"ColumnId": "106",
+"ColumnName": "urlmap",
+"DataType": "String"
+},
+{
+"ColumnId": "110",
+"ColumnName": "latitud",
+"DataType": "Double"
+},
+{
+"ColumnId": "113",
+"ColumnName": "longitud",
+"DataType": "Double"
+},
+{
+"ColumnId": "116",
+"ColumnName": "pedadm",
+"DataType": "String"
+},
+{
+"ColumnId": "120",
+"ColumnName": "lismi",
+"DataType": "String"
+},
+{
+"ColumnId": "124",
+"ColumnName": "modal",
+"DataType": "String"
+},
+{
+"ColumnId": "128",
+"ColumnName": "registro",
+"DataType": "String"
+},
+{
+"ColumnId": "132",
+"ColumnName": "tipo",
+"DataType": "String"
+},
+{
+"ColumnId": "136",
+"ColumnName": "id_reviewpro",
+"DataType": "Int64"
+},
+{
+"ColumnId": "139",
+"ColumnName": "id_STR",
+"DataType": "Int64"
+},
+{
+"ColumnId": "142",
+"ColumnName": "key_Hotel",
+"DataType": "String"
+},
+{
+"ColumnId": "146",
+"ColumnName": "Region",
+"DataType": "String"
+},
+{
+"ColumnId": "150",
+"ColumnName": "codigo_empresa_opera",
+"DataType": "String"
+},
+{
+"ColumnId": "154",
+"ColumnName": "nombre_hotel_calc",
+"DataType": "String"
+},
+{
+"ColumnId": "158",
+"ColumnName": "Zona",
+"DataType": "String"
+},
+{
+"ColumnId": "162",
+"ColumnName": "Condición",
+"DataType": "String"
+}
+]
+},
+{
+"TableId": "166",
+"TableName": "DateTableTemplate_9572c55a-09df-4c3d-96c9-3825768845c4",
+"Columns": [
+{
+"ColumnId": "167",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "170",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "173",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "176",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "179",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "183",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "186",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "190",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "194",
+"TableName": "view_fact_estadogrupo_unificado",
+"Columns": [
+{
+"ColumnId": "195",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "211",
+"ColumnName": "codigo_empresa",
+"DataType": "String"
+},
+{
+"ColumnId": "228",
+"ColumnName": "codigo_hotel",
+"DataType": "String"
+},
+{
+"ColumnId": "245",
+"ColumnName": "codigo_empresa_opera",
+"DataType": "String"
+},
+{
+"ColumnId": "262",
+"ColumnName": "fecha_modificacion",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "279",
+"ColumnName": "fecha_reserva",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "296",
+"ColumnName": "reserva",
+"DataType": "Int64"
+},
+{
+"ColumnId": "312",
+"ColumnName": "numero_habitacion",
+"DataType": "Int64"
+},
+{
+"ColumnId": "329",
+"ColumnName": "grupo",
+"DataType": "Int64"
+},
+{
+"ColumnId": "345",
+"ColumnName": "estado",
+"DataType": "String"
+},
+{
+"ColumnId": "362",
+"ColumnName": "agencia",
+"DataType": "String"
+},
+{
+"ColumnId": "379",
+"ColumnName": "delegacion_agencia",
+"DataType": "Int64"
+},
+{
+"ColumnId": "396",
+"ColumnName": "provincia_agencia",
+"DataType": "String"
+},
+{
+"ColumnId": "413",
+"ColumnName": "comercial_agencia",
+"DataType": "String"
+},
+{
+"ColumnId": "430",
+"ColumnName": "agrupacion_agencia",
+"DataType": "String"
+},
+{
+"ColumnId": "447",
+"ColumnName": "empresa",
+"DataType": "String"
+},
+{
+"ColumnId": "464",
+"ColumnName": "delegacion_empresa",
+"DataType": "Int64"
+},
+{
+"ColumnId": "481",
+"ColumnName": "provincia_empresa",
+"DataType": "String"
+},
+{
+"ColumnId": "498",
+"ColumnName": "comercial_empresa",
+"DataType": "String"
+},
+{
+"ColumnId": "515",
+"ColumnName": "agrupacion_empresa",
+"DataType": "String"
+},
+{
+"ColumnId": "532",
+"ColumnName": "segundo_intermediario",
+"DataType": "String"
+},
+{
+"ColumnId": "549",
+"ColumnName": "delegacion_segundo",
+"DataType": "Int64"
+},
+{
+"ColumnId": "566",
+"ColumnName": "provincia_segundo",
+"DataType": "String"
+},
+{
+"ColumnId": "583",
+"ColumnName": "comercial_segundo",
+"DataType": "String"
+},
+{
+"ColumnId": "600",
+"ColumnName": "agrupacion_segundo",
+"DataType": "String"
+},
+{
+"ColumnId": "617",
+"ColumnName": "tipo_huesped",
+"DataType": "String"
+},
+{
+"ColumnId": "634",
+"ColumnName": "huesped",
+"DataType": "String"
+},
+{
+"ColumnId": "651",
+"ColumnName": "provincia_huesped_cod",
+"DataType": "String"
+},
+{
+"ColumnId": "668",
+"ColumnName": "provincia_huesped_nombre",
+"DataType": "String"
+},
+{
+"ColumnId": "685",
+"ColumnName": "pais_huesped",
+"DataType": "String"
+},
+{
+"ColumnId": "702",
+"ColumnName": "email_huesped",
+"DataType": "String"
+},
+{
+"ColumnId": "719",
+"ColumnName": "dia_llegada",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "736",
+"ColumnName": "dia_salida",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "753",
+"ColumnName": "fecha_emision",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "770",
+"ColumnName": "fecha_creacion",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "787",
+"ColumnName": "tipo_habitacion",
+"DataType": "String"
+},
+{
+"ColumnId": "804",
+"ColumnName": "tipo_regimen",
+"DataType": "String"
+},
+{
+"ColumnId": "821",
+"ColumnName": "tarifa",
+"DataType": "String"
+},
+{
+"ColumnId": "838",
+"ColumnName": "tipo_tarifa",
+"DataType": "String"
+},
+{
+"ColumnId": "855",
+"ColumnName": "grupo_tarifa",
+"DataType": "String"
+},
+{
+"ColumnId": "872",
+"ColumnName": "subgrupo_tarifa",
+"DataType": "String"
+},
+{
+"ColumnId": "889",
+"ColumnName": "canal",
+"DataType": "String"
+},
+{
+"ColumnId": "906",
+"ColumnName": "pax",
+"DataType": "Int64"
+},
+{
+"ColumnId": "923",
+"ColumnName": "room_nights",
+"DataType": "Int64"
+},
+{
+"ColumnId": "940",
+"ColumnName": "produccion_alojamiento",
+"DataType": "Double"
+},
+{
+"ColumnId": "957",
+"ColumnName": "produccion_regimen",
+"DataType": "Double"
+},
+{
+"ColumnId": "974",
+"ColumnName": "produccion_salones",
+"DataType": "Double"
+},
+{
+"ColumnId": "991",
+"ColumnName": "produccion_resto_agencia",
+"DataType": "Double"
+},
+{
+"ColumnId": "1008",
+"ColumnName": "produccion_resto_huesped",
+"DataType": "Double"
+},
+{
+"ColumnId": "1025",
+"ColumnName": "porcentaje_comision",
+"DataType": "Double"
+},
+{
+"ColumnId": "1042",
+"ColumnName": "importe_comision",
+"DataType": "Double"
+},
+{
+"ColumnId": "1059",
+"ColumnName": "neto",
+"DataType": "String"
+},
+{
+"ColumnId": "1076",
+"ColumnName": "tipo_produccion",
+"DataType": "String"
+},
+{
+"ColumnId": "1093",
+"ColumnName": "dia_entrada",
+"DataType": "String"
+},
+{
+"ColumnId": "1110",
+"ColumnName": "ppto_hab",
+"DataType": "Double"
+},
+{
+"ColumnId": "1127",
+"ColumnName": "ppto_serv",
+"DataType": "Double"
+},
+{
+"ColumnId": "1144",
+"ColumnName": "est_gru",
+"DataType": "String"
+},
+{
+"ColumnId": "1161",
+"ColumnName": "horcan",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "1178",
+"ColumnName": "reemb",
+"DataType": "String"
+},
+{
+"ColumnId": "1195",
+"ColumnName": "est_gru_uni",
+"DataType": "String"
+},
+{
+"ColumnId": "1212",
+"ColumnName": "pais_iso2",
+"DataType": "String"
+},
+{
+"ColumnId": "1229",
+"ColumnName": "subsegmento_unificado",
+"DataType": "String"
+},
+{
+"ColumnId": "1246",
+"ColumnName": "ALLOT_HEADER_ID",
+"DataType": "String"
+},
+{
+"ColumnId": "1263",
+"ColumnName": "booked_room_category",
+"DataType": "String"
+},
+{
+"ColumnId": "1280",
+"ColumnName": "key_Hotel",
+"DataType": "String"
+}
+]
+},
+{
+"TableId": "1329",
+"TableName": "LocalDateTable_d4fb36a3-9ca4-4f81-97f6-129bfe80f145",
+"Columns": [
+{
+"ColumnId": "1330",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1333",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "1337",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1341",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1345",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "1349",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1353",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "1357",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "1362",
+"TableName": "LocalDateTable_ef8d2333-832a-4b05-b5bb-1ed21e8dde3b",
+"Columns": [
+{
+"ColumnId": "1363",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1366",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "1370",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1374",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1378",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "1382",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1386",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "1390",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "1395",
+"TableName": "LocalDateTable_b32a1451-d42b-40cf-95ef-852e75515be9",
+"Columns": [
+{
+"ColumnId": "1396",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1399",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "1403",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1407",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1411",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "1415",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1419",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "1423",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "1428",
+"TableName": "LocalDateTable_bf0b8604-2d08-435a-bc49-6cdb0c7cb131",
+"Columns": [
+{
+"ColumnId": "1429",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1432",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "1436",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1440",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1444",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "1448",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1452",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "1456",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "1461",
+"TableName": "LocalDateTable_719302ca-c13f-415e-9ddc-c90ffa5a72ff",
+"Columns": [
+{
+"ColumnId": "1462",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1465",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "1469",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1473",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1477",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "1481",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1485",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "1489",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "1494",
+"TableName": "DimCalendar",
+"Columns": [
+{
+"ColumnId": "1495",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1498",
+"ColumnName": "TheDate",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "1502",
+"ColumnName": "TheDay",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1506",
+"ColumnName": "TheDaySuffix",
+"DataType": "String"
+},
+{
+"ColumnId": "1510",
+"ColumnName": "TheDayName",
+"DataType": "String"
+},
+{
+"ColumnId": "1514",
+"ColumnName": "TheDayOfWeek",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1518",
+"ColumnName": "TheDayOfWeekInMonth",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1522",
+"ColumnName": "TheDayOfYear",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1525",
+"ColumnName": "IsWeekend",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1529",
+"ColumnName": "TheWeek",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1533",
+"ColumnName": "TheISOweek",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1537",
+"ColumnName": "TheFirstOfWeek",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "1541",
+"ColumnName": "TheLastOfWeek",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "1545",
+"ColumnName": "TheWeekOfMonth",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1549",
+"ColumnName": "TheMonth",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1553",
+"ColumnName": "TheMonthName",
+"DataType": "String"
+},
+{
+"ColumnId": "1557",
+"ColumnName": "TheFirstOfMonth",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "1561",
+"ColumnName": "TheLastOfMonth",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "1565",
+"ColumnName": "TheFirstOfNextMonth",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "1569",
+"ColumnName": "TheLastOfNextMonth",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "1573",
+"ColumnName": "TheQuarter",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1577",
+"ColumnName": "TheFirstOfQuarter",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "1581",
+"ColumnName": "TheLastOfQuarter",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "1585",
+"ColumnName": "TheYear",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1589",
+"ColumnName": "TheISOYear",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1593",
+"ColumnName": "TheFirstOfYear",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "1597",
+"ColumnName": "TheLastOfYear",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "1601",
+"ColumnName": "IsLeapYear",
+"DataType": "Boolean"
+},
+{
+"ColumnId": "1605",
+"ColumnName": "Has53Weeks",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1609",
+"ColumnName": "Has53ISOWeeks",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1613",
+"ColumnName": "MMYYYY",
+"DataType": "String"
+},
+{
+"ColumnId": "1617",
+"ColumnName": "Style101",
+"DataType": "String"
+},
+{
+"ColumnId": "1621",
+"ColumnName": "Style103",
+"DataType": "String"
+},
+{
+"ColumnId": "1625",
+"ColumnName": "Style112",
+"DataType": "String"
+},
+{
+"ColumnId": "1629",
+"ColumnName": "Style120",
+"DataType": "String"
+},
+{
+"ColumnId": "1633",
+"ColumnName": "EOM",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "1637",
+"ColumnName": "TheDayNameSP",
+"DataType": "String"
+},
+{
+"ColumnId": "1641",
+"ColumnName": "TheDayOfWeekSP",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "1645",
+"TableName": "LocalDateTable_5bce95b3-3412-4510-82fe-5eb391065620",
+"Columns": [
+{
+"ColumnId": "1646",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1649",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "1653",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1657",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1661",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "1665",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1669",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "1673",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "1678",
+"TableName": "LocalDateTable_24176a1b-a961-44a0-b46e-4073422289d1",
+"Columns": [
+{
+"ColumnId": "1679",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1682",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "1686",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1690",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1694",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "1698",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1702",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "1706",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "1711",
+"TableName": "LocalDateTable_7853eb4f-06fb-42ab-b8b0-365a43b8a2d3",
+"Columns": [
+{
+"ColumnId": "1712",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1715",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "1719",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1723",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1727",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "1731",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1735",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "1739",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "1744",
+"TableName": "LocalDateTable_8f257f4e-ace4-457e-8b5f-2d63bca4d6a1",
+"Columns": [
+{
+"ColumnId": "1745",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1748",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "1752",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1756",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1760",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "1764",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1768",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "1772",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "1777",
+"TableName": "LocalDateTable_3f10166e-8796-4c54-9926-1e2e77a13a86",
+"Columns": [
+{
+"ColumnId": "1778",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1781",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "1785",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1789",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1793",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "1797",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1801",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "1805",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "1810",
+"TableName": "LocalDateTable_98553a1e-09ef-410c-9ff8-cc7c88d4e970",
+"Columns": [
+{
+"ColumnId": "1811",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1814",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "1818",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1822",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1826",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "1830",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1834",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "1838",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "1843",
+"TableName": "LocalDateTable_dc00b4c9-4c1b-4aef-b6ca-355350805996",
+"Columns": [
+{
+"ColumnId": "1844",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1847",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "1851",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1855",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1859",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "1863",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1867",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "1871",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "1876",
+"TableName": "LocalDateTable_12232145-bc62-424d-8754-63b0517ef54e",
+"Columns": [
+{
+"ColumnId": "1877",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1880",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "1884",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1888",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1892",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "1896",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1900",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "1904",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "1909",
+"TableName": "LocalDateTable_d415283e-0572-4164-9a96-02a9587342a4",
+"Columns": [
+{
+"ColumnId": "1910",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1913",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "1917",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1921",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1925",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "1929",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1933",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "1937",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "1942",
+"TableName": "LocalDateTable_00854709-2485-4b9a-ad71-63cb56d4a0d7",
+"Columns": [
+{
+"ColumnId": "1943",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1946",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "1950",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1954",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1958",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "1962",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1966",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "1970",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "1975",
+"TableName": "view_SAP_Gastos_Energias",
+"Columns": [
+{
+"ColumnId": "1976",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "1982",
+"ColumnName": "codigo_empresa",
+"DataType": "String"
+},
+{
+"ColumnId": "1989",
+"ColumnName": "codigo_hotel",
+"DataType": "String"
+},
+{
+"ColumnId": "1996",
+"ColumnName": "anyo_natural_mes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2003",
+"ColumnName": "mes_natural",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2010",
+"ColumnName": "anyo_natural",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2017",
+"ColumnName": "clave_moneda",
+"DataType": "String"
+},
+{
+"ColumnId": "2024",
+"ColumnName": "clase_coste",
+"DataType": "String"
+},
+{
+"ColumnId": "2031",
+"ColumnName": "grupo_clase_coste",
+"DataType": "String"
+},
+{
+"ColumnId": "2038",
+"ColumnName": "n0_cta_rdo",
+"DataType": "String"
+},
+{
+"ColumnId": "2045",
+"ColumnName": "n1_cta_rdo",
+"DataType": "String"
+},
+{
+"ColumnId": "2052",
+"ColumnName": "n2_cta_rdo",
+"DataType": "String"
+},
+{
+"ColumnId": "2059",
+"ColumnName": "centro_coste",
+"DataType": "String"
+},
+{
+"ColumnId": "2066",
+"ColumnName": "material",
+"DataType": "String"
+},
+{
+"ColumnId": "2073",
+"ColumnName": "grupo_articulos",
+"DataType": "String"
+},
+{
+"ColumnId": "2080",
+"ColumnName": "n0_grupo_articulos",
+"DataType": "String"
+},
+{
+"ColumnId": "2087",
+"ColumnName": "n1_grupo_articulos",
+"DataType": "String"
+},
+{
+"ColumnId": "2094",
+"ColumnName": "n2_grupo_articulos",
+"DataType": "String"
+},
+{
+"ColumnId": "2101",
+"ColumnName": "n3_grupo_articulos",
+"DataType": "String"
+},
+{
+"ColumnId": "2108",
+"ColumnName": "categoria_profesional",
+"DataType": "String"
+},
+{
+"ColumnId": "2115",
+"ColumnName": "modificador_categoria",
+"DataType": "String"
+},
+{
+"ColumnId": "2122",
+"ColumnName": "division",
+"DataType": "String"
+},
+{
+"ColumnId": "2129",
+"ColumnName": "nueva_division",
+"DataType": "String"
+},
+{
+"ColumnId": "2136",
+"ColumnName": "sociedad",
+"DataType": "String"
+},
+{
+"ColumnId": "2143",
+"ColumnName": "sociedadCO",
+"DataType": "String"
+},
+{
+"ColumnId": "2150",
+"ColumnName": "tipo_dato",
+"DataType": "String"
+},
+{
+"ColumnId": "2157",
+"ColumnName": "importe",
+"DataType": "Double"
+},
+{
+"ColumnId": "2164",
+"ColumnName": "fecha_contable",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2171",
+"ColumnName": "fecha",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "2178",
+"ColumnName": "key_Hotel",
+"DataType": "String"
+}
+]
+},
+{
+"TableId": "2187",
+"TableName": "CTA_RESULTADOS_EPIGRAFES_NIVEL3",
+"Columns": [
+{
+"ColumnId": "2188",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2191",
+"ColumnName": "NIVEL 1",
+"DataType": "String"
+},
+{
+"ColumnId": "2195",
+"ColumnName": "NIVEL 2",
+"DataType": "String"
+},
+{
+"ColumnId": "2199",
+"ColumnName": "NIVEL 3",
+"DataType": "String"
+},
+{
+"ColumnId": "2203",
+"ColumnName": "CLASE_COSTE",
+"DataType": "String"
+},
+{
+"ColumnId": "2207",
+"ColumnName": "FACTOR",
+"DataType": "String"
+},
+{
+"ColumnId": "2211",
+"ColumnName": "ORDEN",
+"DataType": "Double"
+}
+]
+},
+{
+"TableId": "2215",
+"TableName": "0_MEDIDAS",
+"Columns": [
+{
+"ColumnId": "2216",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2219",
+"ColumnName": "Columna",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "2512",
+"TableName": "IDBOX_SVG_Hoteles",
+"Columns": [
+{
+"ColumnId": "2513",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2516",
+"ColumnName": "codigo_empresa",
+"DataType": "String"
+},
+{
+"ColumnId": "2520",
+"ColumnName": "codigo_hotel",
+"DataType": "String"
+},
+{
+"ColumnId": "2524",
+"ColumnName": "image_base64",
+"DataType": "String"
+},
+{
+"ColumnId": "2528",
+"ColumnName": "Imagen Hotel",
+"DataType": "String"
+},
+{
+"ColumnId": "2532",
+"ColumnName": "Display Images HTML",
+"DataType": "String"
+},
+{
+"ColumnId": "2536",
+"ColumnName": "Key_Hotel",
+"DataType": "String"
+}
+]
+},
+{
+"TableId": "2540",
+"TableName": "IDBOX_Imagenes_Hoteles",
+"Columns": [
+{
+"ColumnId": "2541",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2544",
+"ColumnName": "Name",
+"DataType": "String"
+},
+{
+"ColumnId": "2548",
+"ColumnName": "Pic",
+"DataType": "String"
+},
+{
+"ColumnId": "2552",
+"ColumnName": "Index",
+"DataType": "Double"
+}
+]
+},
+{
+"TableId": "2559",
+"TableName": "Selector KPI",
+"Columns": [
+{
+"ColumnId": "2560",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2563",
+"ColumnName": "Type",
+"DataType": "String"
+}
+]
+},
+{
+"TableId": "2567",
+"TableName": "view_factEspacios_Opera",
+"Columns": [
+{
+"ColumnId": "2568",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2571",
+"ColumnName": "resort",
+"DataType": "String"
+},
+{
+"ColumnId": "2575",
+"ColumnName": "room",
+"DataType": "String"
+},
+{
+"ColumnId": "2579",
+"ColumnName": "space_name",
+"DataType": "String"
+},
+{
+"ColumnId": "2583",
+"ColumnName": "area_m2",
+"DataType": "Double"
+},
+{
+"ColumnId": "2586",
+"ColumnName": "codigo_empresa",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2590",
+"ColumnName": "codigo_hotel",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2593",
+"ColumnName": "Key_Hotel",
+"DataType": "String"
+}
+]
+},
+{
+"TableId": "2597",
+"TableName": "view_factOcupacionEspacios_Opera",
+"Columns": [
+{
+"ColumnId": "2598",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2601",
+"ColumnName": "resort",
+"DataType": "String"
+},
+{
+"ColumnId": "2605",
+"ColumnName": "book_id",
+"DataType": "String"
+},
+{
+"ColumnId": "2609",
+"ColumnName": "event_id",
+"DataType": "String"
+},
+{
+"ColumnId": "2613",
+"ColumnName": "ev_name",
+"DataType": "String"
+},
+{
+"ColumnId": "2617",
+"ColumnName": "start_date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "2621",
+"ColumnName": "start_time",
+"DataType": "String"
+},
+{
+"ColumnId": "2625",
+"ColumnName": "end_date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "2629",
+"ColumnName": "end_time",
+"DataType": "String"
+},
+{
+"ColumnId": "2633",
+"ColumnName": "room",
+"DataType": "String"
+},
+{
+"ColumnId": "2637",
+"ColumnName": "space_name",
+"DataType": "String"
+},
+{
+"ColumnId": "2641",
+"ColumnName": "attendees",
+"DataType": "Double"
+},
+{
+"ColumnId": "2645",
+"ColumnName": "codigo_empresa",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2649",
+"ColumnName": "codigo_hotel",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2653",
+"ColumnName": "Key_Hotel",
+"DataType": "String"
+},
+{
+"ColumnId": "2657",
+"ColumnName": "Fecha",
+"DataType": "DateTime"
+}
+]
+},
+{
+"TableId": "2664",
+"TableName": "LocalDateTable_19aa5f39-82a3-499a-93f0-1fab62fcfc81",
+"Columns": [
+{
+"ColumnId": "2665",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2668",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "2672",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2676",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2680",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "2684",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2688",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "2692",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "2697",
+"TableName": "LocalDateTable_3f9c080b-0f5e-4c25-92d9-e85a769fadf0",
+"Columns": [
+{
+"ColumnId": "2698",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2701",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "2705",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2709",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2713",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "2717",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2721",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "2725",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "2730",
+"TableName": "view_factEspacios_Produccion_Opera",
+"Columns": [
+{
+"ColumnId": "2731",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2734",
+"ColumnName": "resort",
+"DataType": "String"
+},
+{
+"ColumnId": "2738",
+"ColumnName": "book_id",
+"DataType": "String"
+},
+{
+"ColumnId": "2742",
+"ColumnName": "event_id",
+"DataType": "String"
+},
+{
+"ColumnId": "2746",
+"ColumnName": "ev_name",
+"DataType": "String"
+},
+{
+"ColumnId": "2750",
+"ColumnName": "start_date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "2754",
+"ColumnName": "start_time",
+"DataType": "String"
+},
+{
+"ColumnId": "2758",
+"ColumnName": "end_date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "2762",
+"ColumnName": "end_time",
+"DataType": "String"
+},
+{
+"ColumnId": "2766",
+"ColumnName": "room",
+"DataType": "String"
+},
+{
+"ColumnId": "2770",
+"ColumnName": "space_name",
+"DataType": "String"
+},
+{
+"ColumnId": "2774",
+"ColumnName": "attendees",
+"DataType": "Double"
+},
+{
+"ColumnId": "2778",
+"ColumnName": "total_catering_revenue",
+"DataType": "Double"
+},
+{
+"ColumnId": "2781",
+"ColumnName": "codigo_empresa",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2785",
+"ColumnName": "codigo_hotel",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2789",
+"ColumnName": "Key_Hotel",
+"DataType": "String"
+},
+{
+"ColumnId": "2793",
+"ColumnName": "Fecha",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "2797",
+"ColumnName": "cat_revenue_diario",
+"DataType": "Double"
+}
+]
+},
+{
+"TableId": "2801",
+"TableName": "LocalDateTable_cb4df0b5-1abc-467c-807e-878ed32cbed6",
+"Columns": [
+{
+"ColumnId": "2802",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2805",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "2809",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2813",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2817",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "2821",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2825",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "2829",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "2834",
+"TableName": "LocalDateTable_5d87af3f-0203-446c-861f-c775ca09eb1a",
+"Columns": [
+{
+"ColumnId": "2835",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2838",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "2842",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2846",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2850",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "2854",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2858",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "2862",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "2867",
+"TableName": "view_OLIVO_Consumos_Gas_Historicos_Diario",
+"Columns": [
+{
+"ColumnId": "2868",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2871",
+"ColumnName": "COD_OPERA",
+"DataType": "String"
+},
+{
+"ColumnId": "2875",
+"ColumnName": "CUPS",
+"DataType": "String"
+},
+{
+"ColumnId": "2879",
+"ColumnName": "NUEVO TITULAR",
+"DataType": "String"
+},
+{
+"ColumnId": "2883",
+"ColumnName": "CIF",
+"DataType": "String"
+},
+{
+"ColumnId": "2887",
+"ColumnName": "HOTEL",
+"DataType": "String"
+},
+{
+"ColumnId": "2891",
+"ColumnName": "DIRECCIÓN",
+"DataType": "String"
+},
+{
+"ColumnId": "2895",
+"ColumnName": "CIUDAD",
+"DataType": "String"
+},
+{
+"ColumnId": "2899",
+"ColumnName": "TARIFA DE ACCESO",
+"DataType": "String"
+},
+{
+"ColumnId": "2903",
+"ColumnName": "QD CONTRATADA",
+"DataType": "String"
+},
+{
+"ColumnId": "2907",
+"ColumnName": "EMISORA",
+"DataType": "String"
+},
+{
+"ColumnId": "2911",
+"ColumnName": "REFERENCIA DE CONTRATO",
+"DataType": "String"
+},
+{
+"ColumnId": "2915",
+"ColumnName": "Nº DE FACTURA",
+"DataType": "String"
+},
+{
+"ColumnId": "2919",
+"ColumnName": "FECHA FACTURA",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "2923",
+"ColumnName": "DESDE",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "2927",
+"ColumnName": "HASTA",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "2931",
+"ColumnName": "CONSUMO kWh",
+"DataType": "Double"
+},
+{
+"ColumnId": "2935",
+"ColumnName": "TERMINO FIJO",
+"DataType": "Double"
+},
+{
+"ColumnId": "2939",
+"ColumnName": "TERMINO VARIABLE",
+"DataType": "Double"
+},
+{
+"ColumnId": "2943",
+"ColumnName": "IMPUESTO DE HIDROCARBUROS",
+"DataType": "Double"
+},
+{
+"ColumnId": "2947",
+"ColumnName": "ALQUILER",
+"DataType": "Double"
+},
+{
+"ColumnId": "2951",
+"ColumnName": "IMPORTE SIN IVA",
+"DataType": "Double"
+},
+{
+"ColumnId": "2955",
+"ColumnName": "IVA",
+"DataType": "Double"
+},
+{
+"ColumnId": "2959",
+"ColumnName": "TOTAL FRA",
+"DataType": "Double"
+},
+{
+"ColumnId": "2963",
+"ColumnName": "FECHA",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "2967",
+"ColumnName": "Key_Hotel",
+"DataType": "String"
+}
+]
+},
+{
+"TableId": "2971",
+"TableName": "LocalDateTable_ae5745c0-d7f6-43dd-985f-68e2b68f6936",
+"Columns": [
+{
+"ColumnId": "2972",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2975",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "2979",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2983",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2987",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "2991",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "2995",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "2999",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "3004",
+"TableName": "LocalDateTable_d09534c8-1c60-4802-b91a-bc54186e208e",
+"Columns": [
+{
+"ColumnId": "3005",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3008",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "3012",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3016",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3020",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "3024",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3028",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "3032",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "3037",
+"TableName": "LocalDateTable_c9af9f93-8082-48a9-98c1-ffcd1847e317",
+"Columns": [
+{
+"ColumnId": "3038",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3041",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "3045",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3049",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3053",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "3057",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3061",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "3065",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "3070",
+"TableName": "view_OLIVO_Consumos_Electricidad_Historicos_Diario",
+"Columns": [
+{
+"ColumnId": "3071",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3074",
+"ColumnName": "COD_OPERA",
+"DataType": "String"
+},
+{
+"ColumnId": "3078",
+"ColumnName": "CUPS",
+"DataType": "String"
+},
+{
+"ColumnId": "3082",
+"ColumnName": "RAZON SOCIAL",
+"DataType": "String"
+},
+{
+"ColumnId": "3086",
+"ColumnName": "CIF",
+"DataType": "String"
+},
+{
+"ColumnId": "3090",
+"ColumnName": "ESTADO",
+"DataType": "String"
+},
+{
+"ColumnId": "3094",
+"ColumnName": "NEGOCIO",
+"DataType": "String"
+},
+{
+"ColumnId": "3098",
+"ColumnName": "DIRECCION",
+"DataType": "String"
+},
+{
+"ColumnId": "3102",
+"ColumnName": "MUNICIPIO",
+"DataType": "String"
+},
+{
+"ColumnId": "3106",
+"ColumnName": "POTENCIA CONTRATADA P1",
+"DataType": "String"
+},
+{
+"ColumnId": "3110",
+"ColumnName": "POTENCIA CONTRATADA P2",
+"DataType": "String"
+},
+{
+"ColumnId": "3114",
+"ColumnName": "POTENCIA CONTRATADA P3",
+"DataType": "String"
+},
+{
+"ColumnId": "3118",
+"ColumnName": "POTENCIA CONTRATADA P4",
+"DataType": "String"
+},
+{
+"ColumnId": "3122",
+"ColumnName": "POTENCIA CONTRATADA P5",
+"DataType": "String"
+},
+{
+"ColumnId": "3126",
+"ColumnName": "POTENCIA CONTRATADA P6",
+"DataType": "String"
+},
+{
+"ColumnId": "3130",
+"ColumnName": "TARIFADEACCESO",
+"DataType": "String"
+},
+{
+"ColumnId": "3134",
+"ColumnName": "EMISORA",
+"DataType": "String"
+},
+{
+"ColumnId": "3138",
+"ColumnName": "REFERENCIA CONTRATO",
+"DataType": "String"
+},
+{
+"ColumnId": "3142",
+"ColumnName": "Nº FACTURA",
+"DataType": "String"
+},
+{
+"ColumnId": "3146",
+"ColumnName": "FECHA EMISION",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "3150",
+"ColumnName": "PERIODO DE LECTURA DESDE",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "3154",
+"ColumnName": "PERIODO DE LECTURA HASTA",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "3158",
+"ColumnName": "CONSUMO ACTIVA PERIODO 1 (kWh)",
+"DataType": "Double"
+},
+{
+"ColumnId": "3162",
+"ColumnName": "CONSUMO ACTIVA PERIODO 2 (kWh)",
+"DataType": "Double"
+},
+{
+"ColumnId": "3166",
+"ColumnName": "CONSUMO ACTIVA PERIODO 3 (kWh)",
+"DataType": "Double"
+},
+{
+"ColumnId": "3170",
+"ColumnName": "CONSUMO ACTIVA PERIODO 4 (kWh)",
+"DataType": "Double"
+},
+{
+"ColumnId": "3174",
+"ColumnName": "CONSUMO ACTIVA PERIODO 5 (kWh)",
+"DataType": "Double"
+},
+{
+"ColumnId": "3178",
+"ColumnName": "CONSUMO ACTIVA PERIODO 6 (kWh)",
+"DataType": "Double"
+},
+{
+"ColumnId": "3182",
+"ColumnName": "CONSUMO ACTIVA TOTAL (kWh)",
+"DataType": "Double"
+},
+{
+"ColumnId": "3186",
+"ColumnName": "CONSUMO REACTIVA PERIODO 1 (kVArh)",
+"DataType": "Double"
+},
+{
+"ColumnId": "3190",
+"ColumnName": "CONSUMO REACTIVA PERIODO 2 (kVArh)",
+"DataType": "Double"
+},
+{
+"ColumnId": "3194",
+"ColumnName": "CONSUMO REACTIVA PERIODO 3 (kVArh)",
+"DataType": "Double"
+},
+{
+"ColumnId": "3198",
+"ColumnName": "CONSUMO REACTIVA PERIODO 4 (kVArh)",
+"DataType": "Double"
+},
+{
+"ColumnId": "3202",
+"ColumnName": "CONSUMO REACTIVA PERIODO 5 (kVArh)",
+"DataType": "Double"
+},
+{
+"ColumnId": "3206",
+"ColumnName": "CONSUMO REACTIVA PERIODO 6 (kVArh)",
+"DataType": "Double"
+},
+{
+"ColumnId": "3210",
+"ColumnName": "CONSUMO REACTIVA TOTAL (kVArh)",
+"DataType": "Double"
+},
+{
+"ColumnId": "3214",
+"ColumnName": "POTENCIA DEMANDADA PERIODO 1 (kW)",
+"DataType": "Double"
+},
+{
+"ColumnId": "3218",
+"ColumnName": "POTENCIA DEMANDADA PERIODO 2 (kW)",
+"DataType": "Double"
+},
+{
+"ColumnId": "3222",
+"ColumnName": "POTENCIA DEMANDADA PERIODO 3 (kW)",
+"DataType": "Double"
+},
+{
+"ColumnId": "3226",
+"ColumnName": "POTENCIA DEMANDADA PERIODO 4 (kW)",
+"DataType": "Double"
+},
+{
+"ColumnId": "3230",
+"ColumnName": "POTENCIA DEMANDADA PERIODO 5 (kW)",
+"DataType": "Double"
+},
+{
+"ColumnId": "3234",
+"ColumnName": "POTENCIA DEMANDADA PERIODO 6 (kW)",
+"DataType": "Double"
+},
+{
+"ColumnId": "3238",
+"ColumnName": "POTENCIA DEMANDADA MAXIMA",
+"DataType": "Double"
+},
+{
+"ColumnId": "3242",
+"ColumnName": "COSTE DE POTENCIA + EXCESOS",
+"DataType": "Double"
+},
+{
+"ColumnId": "3246",
+"ColumnName": "IMPORTE ENERGIA",
+"DataType": "Double"
+},
+{
+"ColumnId": "3250",
+"ColumnName": "EXCESOS REACTIVA",
+"DataType": "Double"
+},
+{
+"ColumnId": "3254",
+"ColumnName": "I.E.",
+"DataType": "Double"
+},
+{
+"ColumnId": "3258",
+"ColumnName": "ALQUILER EQUIPO DE MEDIDA",
+"DataType": "Double"
+},
+{
+"ColumnId": "3262",
+"ColumnName": "IMPORTE SIN IVA",
+"DataType": "Double"
+},
+{
+"ColumnId": "3266",
+"ColumnName": "IVA",
+"DataType": "Double"
+},
+{
+"ColumnId": "3270",
+"ColumnName": "TOTAL FRA",
+"DataType": "Double"
+},
+{
+"ColumnId": "3274",
+"ColumnName": "FECHA",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "3278",
+"ColumnName": "Key_Hotel",
+"DataType": "String"
+}
+]
+},
+{
+"TableId": "3282",
+"TableName": "LocalDateTable_983179fb-4566-4f88-bbe5-3e29fc09e8a9",
+"Columns": [
+{
+"ColumnId": "3283",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3286",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "3290",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3294",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3298",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "3302",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3306",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "3310",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "3315",
+"TableName": "LocalDateTable_af9c3d02-ac88-4029-a748-26b7331dff9f",
+"Columns": [
+{
+"ColumnId": "3316",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3319",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "3323",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3327",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3331",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "3335",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3339",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "3343",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "3348",
+"TableName": "LocalDateTable_d7014950-900c-48e9-af69-8b32acdf6434",
+"Columns": [
+{
+"ColumnId": "3349",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3352",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "3356",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3360",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3364",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "3368",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3372",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "3376",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "3381",
+"TableName": "view_OLIVO_Consumos_Agua_Historicos_Diario",
+"Columns": [
+{
+"ColumnId": "3382",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3385",
+"ColumnName": "COD_OPERA",
+"DataType": "String"
+},
+{
+"ColumnId": "3389",
+"ColumnName": "Titular",
+"DataType": "String"
+},
+{
+"ColumnId": "3393",
+"ColumnName": "CIF",
+"DataType": "String"
+},
+{
+"ColumnId": "3397",
+"ColumnName": "Nº Centro",
+"DataType": "String"
+},
+{
+"ColumnId": "3401",
+"ColumnName": "HOTEL",
+"DataType": "String"
+},
+{
+"ColumnId": "3405",
+"ColumnName": "Domicilio",
+"DataType": "String"
+},
+{
+"ColumnId": "3409",
+"ColumnName": "Compañia",
+"DataType": "String"
+},
+{
+"ColumnId": "3413",
+"ColumnName": "Nº poliza - contrato",
+"DataType": "String"
+},
+{
+"ColumnId": "3417",
+"ColumnName": "Contador",
+"DataType": "String"
+},
+{
+"ColumnId": "3421",
+"ColumnName": "Calibre",
+"DataType": "String"
+},
+{
+"ColumnId": "3425",
+"ColumnName": "nº Factura",
+"DataType": "String"
+},
+{
+"ColumnId": "3429",
+"ColumnName": "Fecha emision",
+"DataType": "String"
+},
+{
+"ColumnId": "3433",
+"ColumnName": "Fecha actual",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "3437",
+"ColumnName": "Lectura actual",
+"DataType": "Double"
+},
+{
+"ColumnId": "3441",
+"ColumnName": "Fecha anterior",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "3445",
+"ColumnName": "Lectura anterior",
+"DataType": "Double"
+},
+{
+"ColumnId": "3449",
+"ColumnName": "Nº dias",
+"DataType": "Double"
+},
+{
+"ColumnId": "3453",
+"ColumnName": "m3 consumidos",
+"DataType": "Double"
+},
+{
+"ColumnId": "3457",
+"ColumnName": "Importe consumo",
+"DataType": "Double"
+},
+{
+"ColumnId": "3461",
+"ColumnName": "Precio medio",
+"DataType": "Double"
+},
+{
+"ColumnId": "3465",
+"ColumnName": "Conservacion contador",
+"DataType": "Double"
+},
+{
+"ColumnId": "3469",
+"ColumnName": "Tasa alcantarillado",
+"DataType": "Double"
+},
+{
+"ColumnId": "3473",
+"ColumnName": "Depuracion",
+"DataType": "Double"
+},
+{
+"ColumnId": "3477",
+"ColumnName": "Cuota fija de abono",
+"DataType": "Double"
+},
+{
+"ColumnId": "3481",
+"ColumnName": "PRORRATEO",
+"DataType": "Double"
+},
+{
+"ColumnId": "3485",
+"ColumnName": "Saneamiento",
+"DataType": "Double"
+},
+{
+"ColumnId": "3489",
+"ColumnName": "Basura",
+"DataType": "Double"
+},
+{
+"ColumnId": "3493",
+"ColumnName": "TRANSPORTE",
+"DataType": "Double"
+},
+{
+"ColumnId": "3497",
+"ColumnName": "ECOCIUDAD",
+"DataType": "Double"
+},
+{
+"ColumnId": "3501",
+"ColumnName": "Canon",
+"DataType": "Double"
+},
+{
+"ColumnId": "3505",
+"ColumnName": "Evacuacion aguas pluviales + Cuotas trasvase",
+"DataType": "Double"
+},
+{
+"ColumnId": "3509",
+"ColumnName": "boca servicio contra incendios",
+"DataType": "Double"
+},
+{
+"ColumnId": "3513",
+"ColumnName": "Cuota trasvase - Confederacion hidrográfica",
+"DataType": "Double"
+},
+{
+"ColumnId": "3517",
+"ColumnName": "Cuota Desalacion",
+"DataType": "Double"
+},
+{
+"ColumnId": "3521",
+"ColumnName": "Mantenimiento integral",
+"DataType": "Double"
+},
+{
+"ColumnId": "3525",
+"ColumnName": "Contador alcantarillado y otros",
+"DataType": "Double"
+},
+{
+"ColumnId": "3529",
+"ColumnName": "Importe sin IVA",
+"DataType": "Double"
+},
+{
+"ColumnId": "3533",
+"ColumnName": "IVA",
+"DataType": "Double"
+},
+{
+"ColumnId": "3537",
+"ColumnName": "Total",
+"DataType": "Double"
+},
+{
+"ColumnId": "3541",
+"ColumnName": "FECHA",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "3545",
+"ColumnName": "Key_Hotel",
+"DataType": "String"
+}
+]
+},
+{
+"TableId": "3549",
+"TableName": "LocalDateTable_75df2c35-264b-4b92-a0b3-11c673dc8c9d",
+"Columns": [
+{
+"ColumnId": "3550",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3553",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "3557",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3561",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3565",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "3569",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3573",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "3577",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "3582",
+"TableName": "LocalDateTable_4227fd04-8674-4d43-848e-0a0209138b81",
+"Columns": [
+{
+"ColumnId": "3583",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3586",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "3590",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3594",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3598",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "3602",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3606",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "3610",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "3615",
+"TableName": "view_OLIVO_IDBOX_Ilunion_Hotels_Tags",
+"Columns": [
+{
+"ColumnId": "3616",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3619",
+"ColumnName": "Tag",
+"DataType": "String"
+},
+{
+"ColumnId": "3623",
+"ColumnName": "Type",
+"DataType": "String"
+},
+{
+"ColumnId": "3627",
+"ColumnName": "Description",
+"DataType": "String"
+},
+{
+"ColumnId": "3631",
+"ColumnName": "HOTEL",
+"DataType": "String"
+},
+{
+"ColumnId": "3635",
+"ColumnName": "ZONA",
+"DataType": "String"
+},
+{
+"ColumnId": "3639",
+"ColumnName": "TIPO",
+"DataType": "String"
+},
+{
+"ColumnId": "3643",
+"ColumnName": "COD_HOTEL",
+"DataType": "String"
+},
+{
+"ColumnId": "3647",
+"ColumnName": "Key_Hotel",
+"DataType": "String"
+},
+{
+"ColumnId": "3651",
+"ColumnName": "Descripcion Tag",
+"DataType": "String"
+}
+]
+},
+{
+"TableId": "3655",
+"TableName": "view_OLIVO_IDBOX_Ilunion_Hotels_SIGNALS_Historical",
+"Columns": [
+{
+"ColumnId": "3656",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3681",
+"ColumnName": "Tag",
+"DataType": "String"
+},
+{
+"ColumnId": "3707",
+"ColumnName": "Fecha",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "3733",
+"ColumnName": "Estado",
+"DataType": "String"
+},
+{
+"ColumnId": "3759",
+"ColumnName": "Valor",
+"DataType": "Double"
+},
+{
+"ColumnId": "3785",
+"ColumnName": "InterpolationType",
+"DataType": "String"
+},
+{
+"ColumnId": "3811",
+"ColumnName": "Provider",
+"DataType": "String"
+},
+{
+"ColumnId": "3837",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "3863",
+"ColumnName": "HORA",
+"DataType": "String"
+}
+]
+},
+{
+"TableId": "3889",
+"TableName": "LocalDateTable_aa3af359-cf7e-4228-9eec-27f9614998f1",
+"Columns": [
+{
+"ColumnId": "3890",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3893",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "3897",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3901",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3905",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "3909",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3913",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "3917",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "3922",
+"TableName": "Hoteles_Unifilar",
+"Columns": [
+{
+"ColumnId": "3923",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3926",
+"ColumnName": "Resort",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3929",
+"ColumnName": "Unifilar",
+"DataType": "String"
+}
+]
+},
+{
+"TableId": "3933",
+"TableName": "view_OLIVO_IDBOX_Ilunion_Hotels_SIGNALS_Historical_Plantas",
+"Columns": [
+{
+"ColumnId": "3934",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3937",
+"ColumnName": "Tag",
+"DataType": "String"
+},
+{
+"ColumnId": "3941",
+"ColumnName": "Valor",
+"DataType": "Double"
+},
+{
+"ColumnId": "3945",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "3949",
+"ColumnName": "HORA",
+"DataType": "String"
+},
+{
+"ColumnId": "3953",
+"ColumnName": "RESORT",
+"DataType": "String"
+},
+{
+"ColumnId": "3957",
+"ColumnName": "PLANTA",
+"DataType": "String"
+},
+{
+"ColumnId": "3961",
+"ColumnName": "Key_Hotel_Planta",
+"DataType": "String"
+},
+{
+"ColumnId": "3965",
+"ColumnName": "Key_Date_Hour_Planta",
+"DataType": "String"
+}
+]
+},
+{
+"TableId": "3971",
+"TableName": "view_OLIVO_HABITACIONES_PLANTA",
+"Columns": [
+{
+"ColumnId": "3972",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "3975",
+"ColumnName": "RESORT",
+"DataType": "String"
+},
+{
+"ColumnId": "3979",
+"ColumnName": "LABEL",
+"DataType": "String"
+},
+{
+"ColumnId": "3983",
+"ColumnName": "SHORT_DESCRIPTION",
+"DataType": "String"
+},
+{
+"ColumnId": "3987",
+"ColumnName": "ROOM",
+"DataType": "String"
+},
+{
+"ColumnId": "3991",
+"ColumnName": "FLOOR",
+"DataType": "String"
+},
+{
+"ColumnId": "3995",
+"ColumnName": "Peso",
+"DataType": "Double"
+},
+{
+"ColumnId": "3999",
+"ColumnName": "Key_Hotel_Planta",
+"DataType": "String"
+}
+]
+},
+{
+"TableId": "4003",
+"TableName": "view_OLIVO_Reservas_Habitaciones_Activas",
+"Columns": [
+{
+"ColumnId": "4004",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "4061",
+"ColumnName": "codigo_empresa",
+"DataType": "Int64"
+},
+{
+"ColumnId": "4119",
+"ColumnName": "codigo_hotel",
+"DataType": "Int64"
+},
+{
+"ColumnId": "4177",
+"ColumnName": "fecha_modificacion",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "4235",
+"ColumnName": "fecha_reserva",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "4293",
+"ColumnName": "reserva",
+"DataType": "Int64"
+},
+{
+"ColumnId": "4351",
+"ColumnName": "numero_habitacion",
+"DataType": "Int64"
+},
+{
+"ColumnId": "4409",
+"ColumnName": "RESORT",
+"DataType": "String"
+},
+{
+"ColumnId": "4467",
+"ColumnName": "LABEL",
+"DataType": "String"
+},
+{
+"ColumnId": "4525",
+"ColumnName": "SHORT_DESCRIPTION",
+"DataType": "String"
+},
+{
+"ColumnId": "4583",
+"ColumnName": "ROOM",
+"DataType": "String"
+},
+{
+"ColumnId": "4641",
+"ColumnName": "FLOOR",
+"DataType": "String"
+},
+{
+"ColumnId": "4699",
+"ColumnName": "Peso",
+"DataType": "Double"
+},
+{
+"ColumnId": "4757",
+"ColumnName": "HORA",
+"DataType": "String"
+},
+{
+"ColumnId": "4815",
+"ColumnName": "Key_Date_Hour_Planta",
+"DataType": "String"
+}
+]
+},
+{
+"TableId": "4874",
+"TableName": "LocalDateTable_320241c2-e79d-4c85-a527-2f3cca3ddc60",
+"Columns": [
+{
+"ColumnId": "4875",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "4878",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "4882",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "4886",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "4890",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "4894",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "4898",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "4902",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "4907",
+"TableName": "LocalDateTable_30e5634d-c1a7-44fb-a256-e077960fe5a6",
+"Columns": [
+{
+"ColumnId": "4908",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "4911",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "4915",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "4919",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "4923",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "4927",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "4931",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "4935",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "4940",
+"TableName": "DimCalendar_Comparativa",
+"Columns": [
+{
+"ColumnId": "4941",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "4944",
+"ColumnName": "TheDate",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "4948",
+"ColumnName": "TheDay",
+"DataType": "Int64"
+},
+{
+"ColumnId": "4952",
+"ColumnName": "TheDaySuffix",
+"DataType": "String"
+},
+{
+"ColumnId": "4956",
+"ColumnName": "TheDayName",
+"DataType": "String"
+},
+{
+"ColumnId": "4960",
+"ColumnName": "TheDayOfWeek",
+"DataType": "Int64"
+},
+{
+"ColumnId": "4964",
+"ColumnName": "TheDayOfWeekInMonth",
+"DataType": "Int64"
+},
+{
+"ColumnId": "4968",
+"ColumnName": "TheDayOfYear",
+"DataType": "Int64"
+},
+{
+"ColumnId": "4971",
+"ColumnName": "IsWeekend",
+"DataType": "Int64"
+},
+{
+"ColumnId": "4975",
+"ColumnName": "TheWeek",
+"DataType": "Int64"
+},
+{
+"ColumnId": "4979",
+"ColumnName": "TheISOweek",
+"DataType": "Int64"
+},
+{
+"ColumnId": "4983",
+"ColumnName": "TheFirstOfWeek",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "4986",
+"ColumnName": "TheLastOfWeek",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "4989",
+"ColumnName": "TheWeekOfMonth",
+"DataType": "Int64"
+},
+{
+"ColumnId": "4993",
+"ColumnName": "TheMonth",
+"DataType": "Int64"
+},
+{
+"ColumnId": "4997",
+"ColumnName": "TheMonthName",
+"DataType": "String"
+},
+{
+"ColumnId": "5001",
+"ColumnName": "TheFirstOfMonth",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5005",
+"ColumnName": "TheLastOfMonth",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5009",
+"ColumnName": "TheFirstOfNextMonth",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5013",
+"ColumnName": "TheLastOfNextMonth",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5017",
+"ColumnName": "TheQuarter",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5021",
+"ColumnName": "TheFirstOfQuarter",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5025",
+"ColumnName": "TheLastOfQuarter",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5029",
+"ColumnName": "TheYear",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5033",
+"ColumnName": "TheISOYear",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5037",
+"ColumnName": "TheFirstOfYear",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5041",
+"ColumnName": "TheLastOfYear",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5045",
+"ColumnName": "IsLeapYear",
+"DataType": "Boolean"
+},
+{
+"ColumnId": "5049",
+"ColumnName": "Has53Weeks",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5053",
+"ColumnName": "Has53ISOWeeks",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5057",
+"ColumnName": "MMYYYY",
+"DataType": "String"
+},
+{
+"ColumnId": "5061",
+"ColumnName": "Style101",
+"DataType": "String"
+},
+{
+"ColumnId": "5065",
+"ColumnName": "Style103",
+"DataType": "String"
+},
+{
+"ColumnId": "5069",
+"ColumnName": "Style112",
+"DataType": "String"
+},
+{
+"ColumnId": "5073",
+"ColumnName": "Style120",
+"DataType": "String"
+},
+{
+"ColumnId": "5077",
+"ColumnName": "EOM",
+"DataType": "DateTime"
+}
+]
+},
+{
+"TableId": "5081",
+"TableName": "LocalDateTable_5025985e-8afa-4d52-965e-48391c71bca4",
+"Columns": [
+{
+"ColumnId": "5082",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5085",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5089",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5093",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5097",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "5101",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5105",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "5109",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "5114",
+"TableName": "DimCalendar_Secundaria",
+"Columns": [
+{
+"ColumnId": "5115",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5118",
+"ColumnName": "TheDate",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5122",
+"ColumnName": "TheDay",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5126",
+"ColumnName": "TheDaySuffix",
+"DataType": "String"
+},
+{
+"ColumnId": "5130",
+"ColumnName": "TheDayName",
+"DataType": "String"
+},
+{
+"ColumnId": "5134",
+"ColumnName": "TheDayOfWeek",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5138",
+"ColumnName": "TheDayOfWeekInMonth",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5142",
+"ColumnName": "TheDayOfYear",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5145",
+"ColumnName": "IsWeekend",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5149",
+"ColumnName": "TheWeek",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5153",
+"ColumnName": "TheISOweek",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5157",
+"ColumnName": "TheFirstOfWeek",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5161",
+"ColumnName": "TheLastOfWeek",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5165",
+"ColumnName": "TheWeekOfMonth",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5169",
+"ColumnName": "TheMonth",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5173",
+"ColumnName": "TheMonthName",
+"DataType": "String"
+},
+{
+"ColumnId": "5177",
+"ColumnName": "TheFirstOfMonth",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5181",
+"ColumnName": "TheLastOfMonth",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5185",
+"ColumnName": "TheFirstOfNextMonth",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5189",
+"ColumnName": "TheLastOfNextMonth",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5193",
+"ColumnName": "TheQuarter",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5197",
+"ColumnName": "TheFirstOfQuarter",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5201",
+"ColumnName": "TheLastOfQuarter",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5205",
+"ColumnName": "TheYear",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5209",
+"ColumnName": "TheISOYear",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5213",
+"ColumnName": "TheFirstOfYear",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5217",
+"ColumnName": "TheLastOfYear",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5221",
+"ColumnName": "IsLeapYear",
+"DataType": "Boolean"
+},
+{
+"ColumnId": "5225",
+"ColumnName": "Has53Weeks",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5229",
+"ColumnName": "Has53ISOWeeks",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5233",
+"ColumnName": "MMYYYY",
+"DataType": "String"
+},
+{
+"ColumnId": "5237",
+"ColumnName": "Style101",
+"DataType": "String"
+},
+{
+"ColumnId": "5241",
+"ColumnName": "Style103",
+"DataType": "String"
+},
+{
+"ColumnId": "5245",
+"ColumnName": "Style112",
+"DataType": "String"
+},
+{
+"ColumnId": "5249",
+"ColumnName": "Style120",
+"DataType": "String"
+},
+{
+"ColumnId": "5253",
+"ColumnName": "EOM",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5257",
+"ColumnName": "TheDayNameSP",
+"DataType": "String"
+},
+{
+"ColumnId": "5261",
+"ColumnName": "TheDayOfWeekSP",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "5265",
+"TableName": "LocalDateTable_aefa67e9-bce4-4a00-8f1d-eba7f89852d3",
+"Columns": [
+{
+"ColumnId": "5266",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5269",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5273",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5277",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5281",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "5285",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5289",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "5293",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "5298",
+"TableName": "LocalDateTable_da413ff2-3755-4bab-86ba-198071b5f6dd",
+"Columns": [
+{
+"ColumnId": "5299",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5302",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5306",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5310",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5314",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "5318",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5322",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "5326",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "5331",
+"TableName": "LocalDateTable_0e6c2929-44cd-4795-b757-0f15d3902dc3",
+"Columns": [
+{
+"ColumnId": "5332",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5335",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5339",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5343",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5347",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "5351",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5355",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "5359",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "5364",
+"TableName": "LocalDateTable_73225189-d9c8-4bfb-b474-ad564a099ad5",
+"Columns": [
+{
+"ColumnId": "5365",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5368",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5372",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5376",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5380",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "5384",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5388",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "5392",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "5397",
+"TableName": "LocalDateTable_262715bd-7a52-4158-bf74-720c8d56e440",
+"Columns": [
+{
+"ColumnId": "5398",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5401",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5405",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5409",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5413",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "5417",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5421",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "5425",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "5430",
+"TableName": "LocalDateTable_c0e7d273-23d3-424c-95d5-02d59ad64c51",
+"Columns": [
+{
+"ColumnId": "5431",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5434",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5438",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5442",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5446",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "5450",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5454",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "5458",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "5463",
+"TableName": "LocalDateTable_ba0f4142-f42c-4949-8785-f1081a44ef55",
+"Columns": [
+{
+"ColumnId": "5464",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5467",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5471",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5475",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5479",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "5483",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5487",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "5491",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "5496",
+"TableName": "LocalDateTable_ac227d86-5dc7-441f-826f-9e74b8d7b477",
+"Columns": [
+{
+"ColumnId": "5497",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5500",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5504",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5508",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5512",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "5516",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5520",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "5524",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "5529",
+"TableName": "LocalDateTable_8d4c53f1-83fb-41a9-9d98-d7546903ff7a",
+"Columns": [
+{
+"ColumnId": "5530",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5533",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5537",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5541",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5545",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "5549",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5553",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "5557",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "5562",
+"TableName": "LocalDateTable_512eedbf-e551-4a31-93fc-1c4e43537620",
+"Columns": [
+{
+"ColumnId": "5563",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5566",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5570",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5574",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5578",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "5582",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5586",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "5590",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "5595",
+"TableName": "LocalDateTable_410f0a6f-6c98-4375-9b4e-acc5f6565b2b",
+"Columns": [
+{
+"ColumnId": "5596",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5599",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5603",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5607",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5611",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "5615",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5619",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "5623",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "5628",
+"TableName": "LocalDateTable_0abbdd1e-e6c2-4e64-b6fd-8df8d0b87ad5",
+"Columns": [
+{
+"ColumnId": "5629",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5632",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5636",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5640",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5644",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "5648",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5652",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "5656",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "5661",
+"TableName": "Selector KPI Early Bird",
+"Columns": [
+{
+"ColumnId": "5662",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5665",
+"ColumnName": "Type",
+"DataType": "String"
+}
+]
+},
+{
+"TableId": "5669",
+"TableName": "IDBOX_RealTimeData",
+"Columns": [
+{
+"ColumnId": "5670",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5673",
+"ColumnName": "SIGNAL",
+"DataType": "String"
+},
+{
+"ColumnId": "5675",
+"ColumnName": "VALOR",
+"DataType": "Double"
+},
+{
+"ColumnId": "5677",
+"ColumnName": "FECHA",
+"DataType": "DateTime"
+}
+]
+},
+{
+"TableId": "5679",
+"TableName": "view_OPERA_EVENTOS_PAX",
+"Columns": [
+{
+"ColumnId": "5680",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5683",
+"ColumnName": "RESORT",
+"DataType": "String"
+},
+{
+"ColumnId": "5687",
+"ColumnName": "BOOK_ID",
+"DataType": "String"
+},
+{
+"ColumnId": "5691",
+"ColumnName": "EVENT_ID",
+"DataType": "String"
+},
+{
+"ColumnId": "5695",
+"ColumnName": "EV_TYPE",
+"DataType": "String"
+},
+{
+"ColumnId": "5699",
+"ColumnName": "EV_NAME",
+"DataType": "String"
+},
+{
+"ColumnId": "5703",
+"ColumnName": "START_DATE_EV",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5707",
+"ColumnName": "START_TIME_EV",
+"DataType": "String"
+},
+{
+"ColumnId": "5711",
+"ColumnName": "END_DATE_EV",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5715",
+"ColumnName": "END_TIME_EV",
+"DataType": "String"
+},
+{
+"ColumnId": "5719",
+"ColumnName": "PAX_EVENT",
+"DataType": "Double"
+}
+]
+},
+{
+"TableId": "5724",
+"TableName": "LocalDateTable_2d12505e-7516-465f-909e-56414730de31",
+"Columns": [
+{
+"ColumnId": "5725",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5728",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5732",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5736",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5740",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "5744",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5748",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "5752",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "5757",
+"TableName": "gemweb_inventory",
+"Columns": [
+{
+"ColumnId": "5758",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5761",
+"ColumnName": "comptador",
+"DataType": "String"
+},
+{
+"ColumnId": "5765",
+"ColumnName": "cups",
+"DataType": "String"
+},
+{
+"ColumnId": "5769",
+"ColumnName": "data_alta",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5773",
+"ColumnName": "data_alta_inicial",
+"DataType": "String"
+},
+{
+"ColumnId": "5777",
+"ColumnName": "data_creacio",
+"DataType": "String"
+},
+{
+"ColumnId": "5781",
+"ColumnName": "data_mod",
+"DataType": "String"
+},
+{
+"ColumnId": "5785",
+"ColumnName": "id",
+"DataType": "String"
+},
+{
+"ColumnId": "5789",
+"ColumnName": "id_centres_consum",
+"DataType": "String"
+},
+{
+"ColumnId": "5793",
+"ColumnName": "id_companyies",
+"DataType": "String"
+},
+{
+"ColumnId": "5797",
+"ColumnName": "id_dispositius",
+"DataType": "String"
+},
+{
+"ColumnId": "5801",
+"ColumnName": "id_entitats",
+"DataType": "String"
+},
+{
+"ColumnId": "5805",
+"ColumnName": "polissa",
+"DataType": "String"
+},
+{
+"ColumnId": "5809",
+"ColumnName": "pot_contract_p1",
+"DataType": "String"
+},
+{
+"ColumnId": "5813",
+"ColumnName": "pot_contract_p2",
+"DataType": "String"
+},
+{
+"ColumnId": "5817",
+"ColumnName": "pot_contract_p3",
+"DataType": "String"
+},
+{
+"ColumnId": "5821",
+"ColumnName": "pot_contract_p4",
+"DataType": "String"
+},
+{
+"ColumnId": "5825",
+"ColumnName": "pot_contract_p5",
+"DataType": "String"
+},
+{
+"ColumnId": "5829",
+"ColumnName": "pot_contract_p6",
+"DataType": "String"
+},
+{
+"ColumnId": "5833",
+"ColumnName": "punt_mesura",
+"DataType": "String"
+},
+{
+"ColumnId": "5837",
+"ColumnName": "tarifa_acces",
+"DataType": "String"
+},
+{
+"ColumnId": "5841",
+"ColumnName": "tipus_lectura",
+"DataType": "String"
+},
+{
+"ColumnId": "5845",
+"ColumnName": "tipus_submin",
+"DataType": "String"
+}
+]
+},
+{
+"TableId": "5849",
+"TableName": "gemweb_invoices",
+"Columns": [
+{
+"ColumnId": "5850",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5853",
+"ColumnName": "abonada",
+"DataType": "Boolean"
+},
+{
+"ColumnId": "5857",
+"ColumnName": "abonament",
+"DataType": "Boolean"
+},
+{
+"ColumnId": "5861",
+"ColumnName": "altres_imports_iva",
+"DataType": "Double"
+},
+{
+"ColumnId": "5865",
+"ColumnName": "anulada",
+"DataType": "Boolean"
+},
+{
+"ColumnId": "5869",
+"ColumnName": "arxiu_factura",
+"DataType": "String"
+},
+{
+"ColumnId": "5873",
+"ColumnName": "canvis_tarifaris",
+"DataType": "Int64"
+},
+{
+"ColumnId": "5877",
+"ColumnName": "cargo_tope_gas",
+"DataType": "Double"
+},
+{
+"ColumnId": "5881",
+"ColumnName": "cif_comercialitzadora",
+"DataType": "String"
+},
+{
+"ColumnId": "5885",
+"ColumnName": "comercialitzadora",
+"DataType": "String"
+},
+{
+"ColumnId": "5889",
+"ColumnName": "complementaria",
+"DataType": "Boolean"
+},
+{
+"ColumnId": "5893",
+"ColumnName": "consum_fact_p1",
+"DataType": "Double"
+},
+{
+"ColumnId": "5896",
+"ColumnName": "consum_fact_p1_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "5900",
+"ColumnName": "consum_fact_p1_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "5904",
+"ColumnName": "consum_fact_p2",
+"DataType": "Double"
+},
+{
+"ColumnId": "5907",
+"ColumnName": "consum_fact_p2_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "5911",
+"ColumnName": "consum_fact_p2_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "5915",
+"ColumnName": "consum_fact_p3",
+"DataType": "Double"
+},
+{
+"ColumnId": "5918",
+"ColumnName": "consum_fact_p3_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "5922",
+"ColumnName": "consum_fact_p3_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "5926",
+"ColumnName": "consum_fact_p4",
+"DataType": "Double"
+},
+{
+"ColumnId": "5929",
+"ColumnName": "consum_fact_p4_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "5933",
+"ColumnName": "consum_fact_p4_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "5937",
+"ColumnName": "consum_fact_p5",
+"DataType": "Double"
+},
+{
+"ColumnId": "5941",
+"ColumnName": "consum_fact_p5_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "5945",
+"ColumnName": "consum_fact_p5_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "5949",
+"ColumnName": "consum_fact_p6",
+"DataType": "Double"
+},
+{
+"ColumnId": "5952",
+"ColumnName": "consum_fact_p6_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "5956",
+"ColumnName": "consum_fact_p6_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "5960",
+"ColumnName": "correctiva",
+"DataType": "Boolean"
+},
+{
+"ColumnId": "5964",
+"ColumnName": "data_creacio",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5968",
+"ColumnName": "data_emissio",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5972",
+"ColumnName": "data_mod",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5976",
+"ColumnName": "data_verificada",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "5980",
+"ColumnName": "id",
+"DataType": "String"
+},
+{
+"ColumnId": "5984",
+"ColumnName": "id_centres_consum",
+"DataType": "String"
+},
+{
+"ColumnId": "5988",
+"ColumnName": "id_companyies",
+"DataType": "String"
+},
+{
+"ColumnId": "5992",
+"ColumnName": "id_entitats",
+"DataType": "String"
+},
+{
+"ColumnId": "5996",
+"ColumnName": "id_factures",
+"DataType": "String"
+},
+{
+"ColumnId": "6000",
+"ColumnName": "id_importacions",
+"DataType": "String"
+},
+{
+"ColumnId": "6004",
+"ColumnName": "id_subministraments",
+"DataType": "String"
+},
+{
+"ColumnId": "6008",
+"ColumnName": "id_tarifes_elec",
+"DataType": "String"
+},
+{
+"ColumnId": "6012",
+"ColumnName": "import_ene_p1",
+"DataType": "Double"
+},
+{
+"ColumnId": "6015",
+"ColumnName": "import_ene_p1_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6019",
+"ColumnName": "import_ene_p1_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6023",
+"ColumnName": "import_ene_p2",
+"DataType": "Double"
+},
+{
+"ColumnId": "6026",
+"ColumnName": "import_ene_p2_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6030",
+"ColumnName": "import_ene_p2_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6034",
+"ColumnName": "import_ene_p3",
+"DataType": "Double"
+},
+{
+"ColumnId": "6037",
+"ColumnName": "import_ene_p3_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6041",
+"ColumnName": "import_ene_p3_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6045",
+"ColumnName": "import_ene_p4",
+"DataType": "Double"
+},
+{
+"ColumnId": "6048",
+"ColumnName": "import_ene_p4_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6052",
+"ColumnName": "import_ene_p4_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6056",
+"ColumnName": "import_ene_p5",
+"DataType": "Double"
+},
+{
+"ColumnId": "6059",
+"ColumnName": "import_ene_p5_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6063",
+"ColumnName": "import_ene_p5_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6067",
+"ColumnName": "import_ene_p6",
+"DataType": "Double"
+},
+{
+"ColumnId": "6070",
+"ColumnName": "import_ene_p6_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6074",
+"ColumnName": "import_ene_p6_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6078",
+"ColumnName": "import_pool_p1",
+"DataType": "Double"
+},
+{
+"ColumnId": "6082",
+"ColumnName": "import_pool_p1_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6086",
+"ColumnName": "import_pool_p1_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6090",
+"ColumnName": "import_pool_p2",
+"DataType": "Double"
+},
+{
+"ColumnId": "6094",
+"ColumnName": "import_pool_p2_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6098",
+"ColumnName": "import_pool_p2_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6102",
+"ColumnName": "import_pool_p3",
+"DataType": "Double"
+},
+{
+"ColumnId": "6106",
+"ColumnName": "import_pool_p3_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6110",
+"ColumnName": "import_pool_p3_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6114",
+"ColumnName": "import_pool_p4",
+"DataType": "Double"
+},
+{
+"ColumnId": "6118",
+"ColumnName": "import_pool_p5",
+"DataType": "Double"
+},
+{
+"ColumnId": "6122",
+"ColumnName": "import_pool_p6",
+"DataType": "Double"
+},
+{
+"ColumnId": "6125",
+"ColumnName": "import_pool_p6_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6129",
+"ColumnName": "import_pool_p6_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6133",
+"ColumnName": "import_react_p1",
+"DataType": "Double"
+},
+{
+"ColumnId": "6137",
+"ColumnName": "import_react_p2",
+"DataType": "Double"
+},
+{
+"ColumnId": "6141",
+"ColumnName": "import_react_p3",
+"DataType": "Double"
+},
+{
+"ColumnId": "6145",
+"ColumnName": "import_react_p4",
+"DataType": "Double"
+},
+{
+"ColumnId": "6149",
+"ColumnName": "import_react_p5",
+"DataType": "Double"
+},
+{
+"ColumnId": "6153",
+"ColumnName": "import_react_p6",
+"DataType": "Double"
+},
+{
+"ColumnId": "6157",
+"ColumnName": "num_contracte",
+"DataType": "String"
+},
+{
+"ColumnId": "6161",
+"ColumnName": "num_factura",
+"DataType": "String"
+},
+{
+"ColumnId": "6165",
+"ColumnName": "num_factura_complementada",
+"DataType": "String"
+},
+{
+"ColumnId": "6169",
+"ColumnName": "periode_fin",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "6173",
+"ColumnName": "periode_ini",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "6177",
+"ColumnName": "preu_pot_exces_p1",
+"DataType": "Double"
+},
+{
+"ColumnId": "6181",
+"ColumnName": "preu_pot_exces_p2",
+"DataType": "Double"
+},
+{
+"ColumnId": "6185",
+"ColumnName": "preu_pot_exces_p3",
+"DataType": "Double"
+},
+{
+"ColumnId": "6189",
+"ColumnName": "preu_pot_exces_p4",
+"DataType": "Double"
+},
+{
+"ColumnId": "6193",
+"ColumnName": "preu_pot_exces_p5",
+"DataType": "Double"
+},
+{
+"ColumnId": "6197",
+"ColumnName": "preu_pot_exces_p6",
+"DataType": "Double"
+},
+{
+"ColumnId": "6201",
+"ColumnName": "preu_pot_p1",
+"DataType": "Double"
+},
+{
+"ColumnId": "6205",
+"ColumnName": "preu_pot_p1_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6209",
+"ColumnName": "preu_pot_p1_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6213",
+"ColumnName": "preu_pot_p2",
+"DataType": "Double"
+},
+{
+"ColumnId": "6217",
+"ColumnName": "preu_pot_p2_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6221",
+"ColumnName": "preu_pot_p2_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6225",
+"ColumnName": "preu_pot_p3",
+"DataType": "Double"
+},
+{
+"ColumnId": "6229",
+"ColumnName": "preu_pot_p3_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6233",
+"ColumnName": "preu_pot_p4",
+"DataType": "Double"
+},
+{
+"ColumnId": "6237",
+"ColumnName": "preu_pot_p4_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6241",
+"ColumnName": "preu_pot_p5",
+"DataType": "Double"
+},
+{
+"ColumnId": "6245",
+"ColumnName": "preu_pot_p5_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6249",
+"ColumnName": "preu_pot_p6",
+"DataType": "Double"
+},
+{
+"ColumnId": "6253",
+"ColumnName": "preu_pot_p6_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6257",
+"ColumnName": "reclamada",
+"DataType": "Boolean"
+},
+{
+"ColumnId": "6261",
+"ColumnName": "retornada",
+"DataType": "Boolean"
+},
+{
+"ColumnId": "6265",
+"ColumnName": "simulada",
+"DataType": "Boolean"
+},
+{
+"ColumnId": "6269",
+"ColumnName": "substituent",
+"DataType": "Boolean"
+},
+{
+"ColumnId": "6273",
+"ColumnName": "tarifa",
+"DataType": "String"
+},
+{
+"ColumnId": "6277",
+"ColumnName": "verificada",
+"DataType": "Boolean"
+},
+{
+"ColumnId": "6281",
+"ColumnName": "import_pool_p4_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6285",
+"ColumnName": "import_pool_p4_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6289",
+"ColumnName": "import_pool_p5_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6293",
+"ColumnName": "import_pool_p5_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6297",
+"ColumnName": "preu_pot_p3_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6301",
+"ColumnName": "preu_pot_p4_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6305",
+"ColumnName": "preu_pot_p5_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6309",
+"ColumnName": "preu_pot_p6_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6313",
+"ColumnName": "import_pot",
+"DataType": "Double"
+},
+{
+"ColumnId": "6316",
+"ColumnName": "import_pot_exces",
+"DataType": "Double"
+},
+{
+"ColumnId": "6319",
+"ColumnName": "import_pot_exces_p1",
+"DataType": "Double"
+},
+{
+"ColumnId": "6323",
+"ColumnName": "import_pot_exces_p2",
+"DataType": "Double"
+},
+{
+"ColumnId": "6327",
+"ColumnName": "import_pot_exces_p3",
+"DataType": "Double"
+},
+{
+"ColumnId": "6331",
+"ColumnName": "import_pot_exces_p4",
+"DataType": "Double"
+},
+{
+"ColumnId": "6335",
+"ColumnName": "import_pot_exces_p5",
+"DataType": "Double"
+},
+{
+"ColumnId": "6339",
+"ColumnName": "import_pot_exces_p6",
+"DataType": "Double"
+},
+{
+"ColumnId": "6343",
+"ColumnName": "import_pot_p1",
+"DataType": "Double"
+},
+{
+"ColumnId": "6346",
+"ColumnName": "import_pot_p1_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6350",
+"ColumnName": "import_pot_p1_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6354",
+"ColumnName": "import_pot_p2",
+"DataType": "Double"
+},
+{
+"ColumnId": "6357",
+"ColumnName": "import_pot_p2_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6361",
+"ColumnName": "import_pot_p2_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6365",
+"ColumnName": "import_pot_p3",
+"DataType": "Double"
+},
+{
+"ColumnId": "6368",
+"ColumnName": "import_pot_p3_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6372",
+"ColumnName": "import_pot_p3_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6376",
+"ColumnName": "import_pot_p4",
+"DataType": "Double"
+},
+{
+"ColumnId": "6379",
+"ColumnName": "import_pot_p4_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6383",
+"ColumnName": "import_pot_p4_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6387",
+"ColumnName": "import_pot_p5",
+"DataType": "Double"
+},
+{
+"ColumnId": "6390",
+"ColumnName": "import_pot_p5_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6394",
+"ColumnName": "import_pot_p5_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6398",
+"ColumnName": "import_pot_p6",
+"DataType": "Double"
+},
+{
+"ColumnId": "6401",
+"ColumnName": "import_pot_p6_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6405",
+"ColumnName": "import_pot_p6_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6409",
+"ColumnName": "Tipo",
+"DataType": "String"
+},
+{
+"ColumnId": "6413",
+"ColumnName": "base",
+"DataType": "Double"
+},
+{
+"ColumnId": "6416",
+"ColumnName": "import_tot",
+"DataType": "Double"
+},
+{
+"ColumnId": "6419",
+"ColumnName": "temps_facturat",
+"DataType": "Double"
+},
+{
+"ColumnId": "6423",
+"ColumnName": "temps_facturat_tarifari",
+"DataType": "Double"
+},
+{
+"ColumnId": "6427",
+"ColumnName": "temps_facturat_tarifari_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6431",
+"ColumnName": "temps_facturat_tarifari_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6435",
+"ColumnName": "pot_contract_p1",
+"DataType": "Double"
+},
+{
+"ColumnId": "6439",
+"ColumnName": "pot_contract_p2",
+"DataType": "Double"
+},
+{
+"ColumnId": "6443",
+"ColumnName": "pot_contract_p3",
+"DataType": "Double"
+},
+{
+"ColumnId": "6447",
+"ColumnName": "pot_contract_p4",
+"DataType": "Double"
+},
+{
+"ColumnId": "6451",
+"ColumnName": "pot_contract_p5",
+"DataType": "Double"
+},
+{
+"ColumnId": "6455",
+"ColumnName": "pot_contract_p6",
+"DataType": "Double"
+},
+{
+"ColumnId": "6459",
+"ColumnName": "pot_exces_p1",
+"DataType": "Double"
+},
+{
+"ColumnId": "6463",
+"ColumnName": "pot_exces_p2",
+"DataType": "Double"
+},
+{
+"ColumnId": "6467",
+"ColumnName": "pot_exces_p3",
+"DataType": "Double"
+},
+{
+"ColumnId": "6471",
+"ColumnName": "pot_exces_p4",
+"DataType": "Double"
+},
+{
+"ColumnId": "6475",
+"ColumnName": "pot_exces_p5",
+"DataType": "Double"
+},
+{
+"ColumnId": "6479",
+"ColumnName": "pot_exces_p6",
+"DataType": "Double"
+},
+{
+"ColumnId": "6483",
+"ColumnName": "pot_fact",
+"DataType": "Double"
+},
+{
+"ColumnId": "6487",
+"ColumnName": "pot_fact_p1",
+"DataType": "Double"
+},
+{
+"ColumnId": "6491",
+"ColumnName": "pot_fact_p1_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6495",
+"ColumnName": "pot_fact_p1_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6499",
+"ColumnName": "pot_fact_p2",
+"DataType": "Double"
+},
+{
+"ColumnId": "6503",
+"ColumnName": "pot_fact_p2_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6507",
+"ColumnName": "pot_fact_p2_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6511",
+"ColumnName": "pot_fact_p3",
+"DataType": "Double"
+},
+{
+"ColumnId": "6515",
+"ColumnName": "pot_fact_p3_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6519",
+"ColumnName": "pot_fact_p3_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6523",
+"ColumnName": "pot_fact_p4",
+"DataType": "Double"
+},
+{
+"ColumnId": "6527",
+"ColumnName": "pot_fact_p4_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6531",
+"ColumnName": "pot_fact_p4_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6535",
+"ColumnName": "pot_fact_p5",
+"DataType": "Double"
+},
+{
+"ColumnId": "6539",
+"ColumnName": "pot_fact_p5_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6543",
+"ColumnName": "pot_fact_p5_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6547",
+"ColumnName": "pot_fact_p6",
+"DataType": "Double"
+},
+{
+"ColumnId": "6551",
+"ColumnName": "pot_fact_p6_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6555",
+"ColumnName": "pot_fact_p6_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6559",
+"ColumnName": "preu_ene_mig",
+"DataType": "Double"
+},
+{
+"ColumnId": "6562",
+"ColumnName": "preu_ene_p1",
+"DataType": "Double"
+},
+{
+"ColumnId": "6566",
+"ColumnName": "preu_ene_p1_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6570",
+"ColumnName": "preu_ene_p1_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6574",
+"ColumnName": "preu_ene_p2",
+"DataType": "Double"
+},
+{
+"ColumnId": "6577",
+"ColumnName": "preu_ene_p2_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6581",
+"ColumnName": "preu_ene_p2_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6585",
+"ColumnName": "preu_ene_p3",
+"DataType": "Double"
+},
+{
+"ColumnId": "6589",
+"ColumnName": "preu_ene_p3_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6593",
+"ColumnName": "preu_ene_p3_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6597",
+"ColumnName": "preu_ene_p4",
+"DataType": "Double"
+},
+{
+"ColumnId": "6601",
+"ColumnName": "preu_ene_p4_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6605",
+"ColumnName": "preu_ene_p4_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6609",
+"ColumnName": "preu_ene_p5",
+"DataType": "Double"
+},
+{
+"ColumnId": "6613",
+"ColumnName": "preu_ene_p5_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6617",
+"ColumnName": "preu_ene_p5_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6621",
+"ColumnName": "preu_ene_p6",
+"DataType": "Double"
+},
+{
+"ColumnId": "6624",
+"ColumnName": "preu_ene_p6_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6628",
+"ColumnName": "preu_ene_p6_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6632",
+"ColumnName": "preu_omel",
+"DataType": "Double"
+},
+{
+"ColumnId": "6636",
+"ColumnName": "preu_pool_p1",
+"DataType": "Double"
+},
+{
+"ColumnId": "6640",
+"ColumnName": "preu_pool_p1_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6644",
+"ColumnName": "preu_pool_p1_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6648",
+"ColumnName": "preu_pool_p2",
+"DataType": "Double"
+},
+{
+"ColumnId": "6652",
+"ColumnName": "preu_pool_p2_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6656",
+"ColumnName": "preu_pool_p2_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6660",
+"ColumnName": "preu_pool_p3",
+"DataType": "Double"
+},
+{
+"ColumnId": "6664",
+"ColumnName": "preu_pool_p3_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6668",
+"ColumnName": "preu_pool_p3_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6672",
+"ColumnName": "preu_pool_p4",
+"DataType": "Double"
+},
+{
+"ColumnId": "6676",
+"ColumnName": "preu_pool_p5",
+"DataType": "Double"
+},
+{
+"ColumnId": "6680",
+"ColumnName": "preu_pool_p6",
+"DataType": "Double"
+},
+{
+"ColumnId": "6683",
+"ColumnName": "preu_pool_p6_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "6687",
+"ColumnName": "preu_pool_p6_03",
+"DataType": "Double"
+},
+{
+"ColumnId": "6691",
+"ColumnName": "preu_pot",
+"DataType": "Double"
+},
+{
+"ColumnId": "6695",
+"ColumnName": "preu_react",
+"DataType": "Double"
+},
+{
+"ColumnId": "6699",
+"ColumnName": "preu_react_p1",
+"DataType": "Double"
+},
+{
+"ColumnId": "6703",
+"ColumnName": "preu_react_p2",
+"DataType": "Double"
+},
+{
+"ColumnId": "6707",
+"ColumnName": "preu_react_p3",
+"DataType": "Double"
+},
+{
+"ColumnId": "6711",
+"ColumnName": "preu_react_p4",
+"DataType": "Double"
+},
+{
+"ColumnId": "6715",
+"ColumnName": "preu_react_p5",
+"DataType": "Double"
+},
+{
+"ColumnId": "6719",
+"ColumnName": "import_pot_p1_calc",
+"DataType": "Double"
+},
+{
+"ColumnId": "6723",
+"ColumnName": "import_pot_p2_calc",
+"DataType": "Double"
+},
+{
+"ColumnId": "6727",
+"ColumnName": "import_pot_p3_calc",
+"DataType": "Double"
+},
+{
+"ColumnId": "6731",
+"ColumnName": "import_pot_p4_calc",
+"DataType": "Double"
+},
+{
+"ColumnId": "6735",
+"ColumnName": "import_pot_p5_calc",
+"DataType": "Double"
+},
+{
+"ColumnId": "6739",
+"ColumnName": "import_pot_p6_calc",
+"DataType": "Double"
+},
+{
+"ColumnId": "6743",
+"ColumnName": "import_ene",
+"DataType": "Double"
+},
+{
+"ColumnId": "6746",
+"ColumnName": "import_impost_elec",
+"DataType": "Double"
+},
+{
+"ColumnId": "6749",
+"ColumnName": "import_iva",
+"DataType": "Double"
+},
+{
+"ColumnId": "6752",
+"ColumnName": "import_lloguer_equips",
+"DataType": "Double"
+},
+{
+"ColumnId": "6755",
+"ColumnName": "import_pool",
+"DataType": "Double"
+},
+{
+"ColumnId": "6758",
+"ColumnName": "import_react",
+"DataType": "Double"
+},
+{
+"ColumnId": "6761",
+"ColumnName": "import_recarrecs",
+"DataType": "Double"
+},
+{
+"ColumnId": "6765",
+"ColumnName": "consum_p1",
+"DataType": "Double"
+},
+{
+"ColumnId": "6768",
+"ColumnName": "consum_p2",
+"DataType": "Double"
+},
+{
+"ColumnId": "6771",
+"ColumnName": "consum_p3",
+"DataType": "Double"
+},
+{
+"ColumnId": "6774",
+"ColumnName": "consum_p4",
+"DataType": "Double"
+},
+{
+"ColumnId": "6777",
+"ColumnName": "consum_p5",
+"DataType": "Double"
+},
+{
+"ColumnId": "6780",
+"ColumnName": "consum_p6",
+"DataType": "Double"
+},
+{
+"ColumnId": "6783",
+"ColumnName": "consum_react",
+"DataType": "Double"
+},
+{
+"ColumnId": "6786",
+"ColumnName": "consum_react_fact_p1",
+"DataType": "Double"
+},
+{
+"ColumnId": "6790",
+"ColumnName": "consum_react_fact_p2",
+"DataType": "Double"
+},
+{
+"ColumnId": "6794",
+"ColumnName": "consum_react_fact_p3",
+"DataType": "Double"
+},
+{
+"ColumnId": "6798",
+"ColumnName": "consum_react_fact_p4",
+"DataType": "Double"
+},
+{
+"ColumnId": "6802",
+"ColumnName": "consum_react_fact_p5",
+"DataType": "Double"
+},
+{
+"ColumnId": "6806",
+"ColumnName": "consum_react_fact_p6",
+"DataType": "Double"
+},
+{
+"ColumnId": "6810",
+"ColumnName": "consum_react_p1",
+"DataType": "Double"
+},
+{
+"ColumnId": "6813",
+"ColumnName": "consum_react_p2",
+"DataType": "Double"
+},
+{
+"ColumnId": "6816",
+"ColumnName": "consum_react_p3",
+"DataType": "Double"
+},
+{
+"ColumnId": "6819",
+"ColumnName": "consum_react_p4",
+"DataType": "Double"
+},
+{
+"ColumnId": "6822",
+"ColumnName": "consum_react_p5",
+"DataType": "Double"
+},
+{
+"ColumnId": "6825",
+"ColumnName": "consum_react_p6",
+"DataType": "Double"
+},
+{
+"ColumnId": "6828",
+"ColumnName": "cosphi_p1",
+"DataType": "Double"
+},
+{
+"ColumnId": "6832",
+"ColumnName": "cosphi_p2",
+"DataType": "Double"
+},
+{
+"ColumnId": "6836",
+"ColumnName": "cosphi_p3",
+"DataType": "Double"
+},
+{
+"ColumnId": "6840",
+"ColumnName": "cosphi_p4",
+"DataType": "Double"
+},
+{
+"ColumnId": "6844",
+"ColumnName": "cosphi_p5",
+"DataType": "Double"
+},
+{
+"ColumnId": "6848",
+"ColumnName": "cosphi_p6",
+"DataType": "Double"
+},
+{
+"ColumnId": "6852",
+"ColumnName": "import_consum_estimat_abonat",
+"DataType": "Double"
+},
+{
+"ColumnId": "6856",
+"ColumnName": "import_descomptes_ene",
+"DataType": "Double"
+},
+{
+"ColumnId": "6860",
+"ColumnName": "import_descomptes_pot",
+"DataType": "Double"
+},
+{
+"ColumnId": "6864",
+"ColumnName": "import_diposit_garantia",
+"DataType": "Double"
+},
+{
+"ColumnId": "6868",
+"ColumnName": "import_index_si3",
+"DataType": "Double"
+},
+{
+"ColumnId": "6872",
+"ColumnName": "import_md",
+"DataType": "Double"
+},
+{
+"ColumnId": "6876",
+"ColumnName": "import_omel",
+"DataType": "Double"
+},
+{
+"ColumnId": "6880",
+"ColumnName": "import_react_p1_calc",
+"DataType": "Double"
+},
+{
+"ColumnId": "6884",
+"ColumnName": "import_react_p2_calc",
+"DataType": "Double"
+},
+{
+"ColumnId": "6888",
+"ColumnName": "import_react_p3_calc",
+"DataType": "Double"
+},
+{
+"ColumnId": "6892",
+"ColumnName": "import_react_p4_calc",
+"DataType": "Double"
+},
+{
+"ColumnId": "6896",
+"ColumnName": "import_react_p5_calc",
+"DataType": "Double"
+},
+{
+"ColumnId": "6900",
+"ColumnName": "import_react_p6_calc",
+"DataType": "Double"
+},
+{
+"ColumnId": "6904",
+"ColumnName": "ene+pool",
+"DataType": "Double"
+},
+{
+"ColumnId": "6908",
+"ColumnName": "Factura_Abono",
+"DataType": "String"
+},
+{
+"ColumnId": "6912",
+"ColumnName": "Filtro TIPO",
+"DataType": "String"
+},
+{
+"ColumnId": "6916",
+"ColumnName": "Key_id_Factura",
+"DataType": "String"
+},
+{
+"ColumnId": "6920",
+"ColumnName": "Key_Date_Periodo",
+"DataType": "String"
+}
+]
+},
+{
+"TableId": "6924",
+"TableName": "LocalDateTable_1d3ba3f2-b2ec-4776-9386-4701269a60ab",
+"Columns": [
+{
+"ColumnId": "6925",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "6928",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "6932",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "6936",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "6940",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "6944",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "6948",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "6952",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "6957",
+"TableName": "LocalDateTable_e5e36238-57ae-4375-855b-6760f1d58c9e",
+"Columns": [
+{
+"ColumnId": "6958",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "6961",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "6965",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "6969",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "6973",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "6977",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "6981",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "6985",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "6990",
+"TableName": "LocalDateTable_845499f6-4e89-42e9-994f-c606190b73e8",
+"Columns": [
+{
+"ColumnId": "6991",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "6994",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "6998",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7002",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7006",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "7010",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7014",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "7018",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "7023",
+"TableName": "LocalDateTable_b6b1e36b-01c9-470f-9d6d-c68afc784b9a",
+"Columns": [
+{
+"ColumnId": "7024",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7027",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "7031",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7035",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7039",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "7043",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7047",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "7051",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "7055",
+"TableName": "LocalDateTable_2eb740cb-2fa9-477f-9c35-97ba71adbe21",
+"Columns": [
+{
+"ColumnId": "7056",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7059",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "7063",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7067",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7071",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "7075",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7079",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "7083",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "7088",
+"TableName": "gemweb_centres_consum",
+"Columns": [
+{
+"ColumnId": "7089",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7092",
+"ColumnName": "codi",
+"DataType": "String"
+},
+{
+"ColumnId": "7096",
+"ColumnName": "codi_postal",
+"DataType": "String"
+},
+{
+"ColumnId": "7100",
+"ColumnName": "data_creacio",
+"DataType": "String"
+},
+{
+"ColumnId": "7104",
+"ColumnName": "data_mod",
+"DataType": "String"
+},
+{
+"ColumnId": "7108",
+"ColumnName": "direccio",
+"DataType": "String"
+},
+{
+"ColumnId": "7112",
+"ColumnName": "id",
+"DataType": "String"
+},
+{
+"ColumnId": "7116",
+"ColumnName": "id_entitats",
+"DataType": "String"
+},
+{
+"ColumnId": "7120",
+"ColumnName": "id_subtipus",
+"DataType": "String"
+},
+{
+"ColumnId": "7124",
+"ColumnName": "id_tipus",
+"DataType": "String"
+},
+{
+"ColumnId": "7128",
+"ColumnName": "inactiu",
+"DataType": "String"
+},
+{
+"ColumnId": "7132",
+"ColumnName": "latitud",
+"DataType": "String"
+},
+{
+"ColumnId": "7136",
+"ColumnName": "longitud",
+"DataType": "String"
+},
+{
+"ColumnId": "7140",
+"ColumnName": "nom",
+"DataType": "String"
+},
+{
+"ColumnId": "7144",
+"ColumnName": "poblacio",
+"DataType": "String"
+},
+{
+"ColumnId": "7148",
+"ColumnName": "provincia",
+"DataType": "String"
+},
+{
+"ColumnId": "7152",
+"ColumnName": "subtipus",
+"DataType": "String"
+},
+{
+"ColumnId": "7156",
+"ColumnName": "tipus",
+"DataType": "String"
+},
+{
+"ColumnId": "7160",
+"ColumnName": "Código Hotel Opera",
+"DataType": "String"
+}
+]
+},
+{
+"TableId": "7164",
+"TableName": "gemweb_periodos",
+"Columns": [
+{
+"ColumnId": "7165",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7168",
+"ColumnName": "Periodo",
+"DataType": "String"
+}
+]
+},
+{
+"TableId": "7172",
+"TableName": "LocalDateTable_459d6727-287c-43c5-8bb9-c8f878f8f15e",
+"Columns": [
+{
+"ColumnId": "7173",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7176",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "7180",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7184",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7188",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "7192",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7196",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "7200",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "7205",
+"TableName": "gemweb_metering",
+"Columns": [
+{
+"ColumnId": "7206",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7209",
+"ColumnName": "Codigo Hotel Opera",
+"DataType": "String"
+},
+{
+"ColumnId": "7213",
+"ColumnName": "Nombre Hotel Gemweb",
+"DataType": "String"
+},
+{
+"ColumnId": "7217",
+"ColumnName": "fecha",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "7221",
+"ColumnName": "valor",
+"DataType": "Double"
+},
+{
+"ColumnId": "7225",
+"ColumnName": "hora",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7229",
+"ColumnName": "keydate",
+"DataType": "String"
+}
+]
+},
+{
+"TableId": "7233",
+"TableName": "LocalDateTable_adb4da3a-6cb6-4e07-9f34-d3b74b3f2e18",
+"Columns": [
+{
+"ColumnId": "7234",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7237",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "7241",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7245",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7249",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "7253",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7257",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "7261",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "7266",
+"TableName": "LocalDateTable_e45e17a1-caf9-42fd-82a3-393946c195ec",
+"Columns": [
+{
+"ColumnId": "7267",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7270",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "7274",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7278",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7282",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "7286",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7290",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "7294",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "7299",
+"TableName": "gemweb_invoices_PROFORMA",
+"Columns": [
+{
+"ColumnId": "7300",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7303",
+"ColumnName": "id_subministraments",
+"DataType": "String"
+},
+{
+"ColumnId": "7307",
+"ColumnName": "periode_ini",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "7311",
+"ColumnName": "num_factura",
+"DataType": "String"
+},
+{
+"ColumnId": "7315",
+"ColumnName": "PROFORMA",
+"DataType": "String"
+},
+{
+"ColumnId": "7319",
+"ColumnName": "Key_id_Factura",
+"DataType": "String"
+}
+]
+},
+{
+"TableId": "7323",
+"TableName": "LocalDateTable_bc77afff-6b9a-4763-b778-d370a49e51ba",
+"Columns": [
+{
+"ColumnId": "7324",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7327",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "7331",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7335",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7339",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "7343",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7347",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "7351",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "7356",
+"TableName": "gemweb_gas_invoices",
+"Columns": [
+{
+"ColumnId": "7357",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7360",
+"ColumnName": "IEH_consum",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7363",
+"ColumnName": "IEH_import",
+"DataType": "Double"
+},
+{
+"ColumnId": "7366",
+"ColumnName": "IEH_preu",
+"DataType": "Double"
+},
+{
+"ColumnId": "7370",
+"ColumnName": "abonada",
+"DataType": "Boolean"
+},
+{
+"ColumnId": "7374",
+"ColumnName": "abonament",
+"DataType": "Boolean"
+},
+{
+"ColumnId": "7378",
+"ColumnName": "altres_imports",
+"DataType": "Double"
+},
+{
+"ColumnId": "7382",
+"ColumnName": "altres_imports_iva",
+"DataType": "Double"
+},
+{
+"ColumnId": "7386",
+"ColumnName": "anulada",
+"DataType": "Boolean"
+},
+{
+"ColumnId": "7390",
+"ColumnName": "arxiu_factura",
+"DataType": "String"
+},
+{
+"ColumnId": "7394",
+"ColumnName": "base",
+"DataType": "Double"
+},
+{
+"ColumnId": "7397",
+"ColumnName": "canvis_tarifaris",
+"DataType": "Boolean"
+},
+{
+"ColumnId": "7401",
+"ColumnName": "cif_comercialitzadora",
+"DataType": "String"
+},
+{
+"ColumnId": "7405",
+"ColumnName": "comercialitzadora",
+"DataType": "String"
+},
+{
+"ColumnId": "7409",
+"ColumnName": "complementaria",
+"DataType": "Boolean"
+},
+{
+"ColumnId": "7413",
+"ColumnName": "comptador_num_fact",
+"DataType": "String"
+},
+{
+"ColumnId": "7417",
+"ColumnName": "consum_fact",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7420",
+"ColumnName": "consum_fact_02",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7423",
+"ColumnName": "consum_fact_03",
+"DataType": "Boolean"
+},
+{
+"ColumnId": "7427",
+"ColumnName": "consum_fact_fix",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7431",
+"ColumnName": "consum_m3",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7434",
+"ColumnName": "consum_m3_PT",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7437",
+"ColumnName": "consum_tot",
+"DataType": "Double"
+},
+{
+"ColumnId": "7440",
+"ColumnName": "conversio_m3_kwh",
+"DataType": "Double"
+},
+{
+"ColumnId": "7443",
+"ColumnName": "correctiva",
+"DataType": "Boolean"
+},
+{
+"ColumnId": "7447",
+"ColumnName": "data_creacio",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "7451",
+"ColumnName": "data_emissio",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "7455",
+"ColumnName": "data_mod",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "7459",
+"ColumnName": "data_reimportada",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "7463",
+"ColumnName": "divisa",
+"DataType": "String"
+},
+{
+"ColumnId": "7467",
+"ColumnName": "id",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7470",
+"ColumnName": "id_centres_consum",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7474",
+"ColumnName": "id_companyies",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7478",
+"ColumnName": "id_entitats",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7482",
+"ColumnName": "id_factures",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7485",
+"ColumnName": "id_importacions",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7488",
+"ColumnName": "id_subministraments",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7492",
+"ColumnName": "id_tarifes_gas",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7496",
+"ColumnName": "import_consum",
+"DataType": "Double"
+},
+{
+"ColumnId": "7499",
+"ColumnName": "import_consum_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "7502",
+"ColumnName": "import_consum_03",
+"DataType": "Boolean"
+},
+{
+"ColumnId": "7506",
+"ColumnName": "import_descomptes",
+"DataType": "Double"
+},
+{
+"ColumnId": "7509",
+"ColumnName": "import_iva",
+"DataType": "Double"
+},
+{
+"ColumnId": "7512",
+"ColumnName": "import_lloguer",
+"DataType": "Double"
+},
+{
+"ColumnId": "7515",
+"ColumnName": "import_terme_fix",
+"DataType": "Double"
+},
+{
+"ColumnId": "7518",
+"ColumnName": "import_tot",
+"DataType": "Double"
+},
+{
+"ColumnId": "7521",
+"ColumnName": "incoherent",
+"DataType": "Boolean"
+},
+{
+"ColumnId": "7525",
+"ColumnName": "iva",
+"DataType": "Double"
+},
+{
+"ColumnId": "7529",
+"ColumnName": "lect_act",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7532",
+"ColumnName": "lect_ant",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7535",
+"ColumnName": "mesos",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7539",
+"ColumnName": "notes",
+"DataType": "String"
+},
+{
+"ColumnId": "7543",
+"ColumnName": "num_contracte",
+"DataType": "String"
+},
+{
+"ColumnId": "7547",
+"ColumnName": "num_factura",
+"DataType": "String"
+},
+{
+"ColumnId": "7551",
+"ColumnName": "num_factura_complementada",
+"DataType": "String"
+},
+{
+"ColumnId": "7555",
+"ColumnName": "periode_fin",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "7559",
+"ColumnName": "periode_fin_tarifari",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "7563",
+"ColumnName": "periode_fin_tarifari_02",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "7567",
+"ColumnName": "periode_ini",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "7571",
+"ColumnName": "periode_ini_tarifari",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "7575",
+"ColumnName": "periode_ini_tarifari_02",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "7579",
+"ColumnName": "preu_kwh",
+"DataType": "Double"
+},
+{
+"ColumnId": "7582",
+"ColumnName": "preu_kwh_02",
+"DataType": "Double"
+},
+{
+"ColumnId": "7586",
+"ColumnName": "preu_kwh_03",
+"DataType": "Boolean"
+},
+{
+"ColumnId": "7590",
+"ColumnName": "qd_aplicada",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7594",
+"ColumnName": "qd_mitjana",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7597",
+"ColumnName": "reclamada",
+"DataType": "Boolean"
+},
+{
+"ColumnId": "7601",
+"ColumnName": "regularitzacio_consum1",
+"DataType": "Double"
+},
+{
+"ColumnId": "7605",
+"ColumnName": "regularitzacio_consum2",
+"DataType": "Double"
+},
+{
+"ColumnId": "7609",
+"ColumnName": "regularitzacio_consums",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7613",
+"ColumnName": "regularitzacio_import1",
+"DataType": "Double"
+},
+{
+"ColumnId": "7617",
+"ColumnName": "regularitzacio_import2",
+"DataType": "Double"
+},
+{
+"ColumnId": "7621",
+"ColumnName": "regularitzacio_preu1",
+"DataType": "Double"
+},
+{
+"ColumnId": "7625",
+"ColumnName": "regularitzacio_preu2",
+"DataType": "Double"
+},
+{
+"ColumnId": "7629",
+"ColumnName": "retornada",
+"DataType": "Boolean"
+},
+{
+"ColumnId": "7633",
+"ColumnName": "simulada",
+"DataType": "Boolean"
+},
+{
+"ColumnId": "7637",
+"ColumnName": "substituent",
+"DataType": "Boolean"
+},
+{
+"ColumnId": "7641",
+"ColumnName": "tarifa",
+"DataType": "String"
+},
+{
+"ColumnId": "7645",
+"ColumnName": "temps_facturat_tarifari",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7649",
+"ColumnName": "temps_facturat_tarifari_02",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7653",
+"ColumnName": "terme_fix",
+"DataType": "Double"
+},
+{
+"ColumnId": "7657",
+"ColumnName": "tipus_lectura",
+"DataType": "String"
+},
+{
+"ColumnId": "7661",
+"ColumnName": "tipus_periode",
+"DataType": "String"
+},
+{
+"ColumnId": "7665",
+"ColumnName": "tipus_submin",
+"DataType": "String"
+},
+{
+"ColumnId": "7669",
+"ColumnName": "usuari_verificada",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7673",
+"ColumnName": "verificada",
+"DataType": "Boolean"
+},
+{
+"ColumnId": "7677",
+"ColumnName": "Tipo",
+"DataType": "String"
+},
+{
+"ColumnId": "7681",
+"ColumnName": "Key_Date_Periodo",
+"DataType": "String"
+}
+]
+},
+{
+"TableId": "7685",
+"TableName": "LocalDateTable_ddae6fd4-7fad-4350-8966-db0f6d5937d9",
+"Columns": [
+{
+"ColumnId": "7686",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7689",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "7693",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7697",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7701",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "7705",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7709",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "7713",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "7718",
+"TableName": "LocalDateTable_3169c5e3-7659-42fb-a8d2-c68b200f243f",
+"Columns": [
+{
+"ColumnId": "7719",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7722",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "7726",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7730",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7734",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "7738",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7742",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "7746",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "7751",
+"TableName": "LocalDateTable_0fd59b42-f5ee-45c9-aea6-68f3e682d8d3",
+"Columns": [
+{
+"ColumnId": "7752",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7755",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "7759",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7763",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7767",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "7771",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7775",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "7779",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "7784",
+"TableName": "LocalDateTable_0d8a7b01-5a47-4519-9ccd-ecb4e90ff431",
+"Columns": [
+{
+"ColumnId": "7785",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7788",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "7792",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7796",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7800",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "7804",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7808",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "7812",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "7817",
+"TableName": "LocalDateTable_49279194-d9a1-4730-9595-0d8d9292107c",
+"Columns": [
+{
+"ColumnId": "7818",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7821",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "7825",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7829",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7833",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "7837",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7841",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "7845",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "7850",
+"TableName": "LocalDateTable_6819046f-384b-489a-b1da-bb1e0396ccf7",
+"Columns": [
+{
+"ColumnId": "7851",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7854",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "7858",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7862",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7866",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "7870",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7874",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "7878",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "7883",
+"TableName": "LocalDateTable_15c559f3-6742-47b6-9665-05646d4b455a",
+"Columns": [
+{
+"ColumnId": "7884",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7887",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "7891",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7895",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7899",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "7903",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7907",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "7911",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "7916",
+"TableName": "LocalDateTable_f3e4b68c-3159-4973-9352-596a6311f287",
+"Columns": [
+{
+"ColumnId": "7917",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7920",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "7924",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7928",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7932",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "7936",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7940",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "7944",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+},
+{
+"TableId": "7949",
+"TableName": "LocalDateTable_cb329632-fd40-4355-8aea-5fe29313a411",
+"Columns": [
+{
+"ColumnId": "7950",
+"ColumnName": "RowNumber-2662979B-1795-4F74-8F37-6A1BA8059B61",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7953",
+"ColumnName": "Date",
+"DataType": "DateTime"
+},
+{
+"ColumnId": "7957",
+"ColumnName": "Año",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7961",
+"ColumnName": "NroMes",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7965",
+"ColumnName": "Mes",
+"DataType": "String"
+},
+{
+"ColumnId": "7969",
+"ColumnName": "NroTrimestre",
+"DataType": "Int64"
+},
+{
+"ColumnId": "7973",
+"ColumnName": "Trimestre",
+"DataType": "String"
+},
+{
+"ColumnId": "7977",
+"ColumnName": "Día",
+"DataType": "Int64"
+}
+]
+}
+],
+"Measures": null,
+"Relationships": [
+{
+"RelationshipId": "7982",
+"FromColumnId": "262",
+"FromCardinalityType": "Many",
+"ToColumnId": "1333",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "7983",
+"FromColumnId": "719",
+"FromCardinalityType": "Many",
+"ToColumnId": "1366",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "7984",
+"FromColumnId": "736",
+"FromCardinalityType": "Many",
+"ToColumnId": "1399",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "7985",
+"FromColumnId": "753",
+"FromCardinalityType": "Many",
+"ToColumnId": "1432",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "7986",
+"FromColumnId": "770",
+"FromCardinalityType": "Many",
+"ToColumnId": "1465",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "7987",
+"FromColumnId": "1537",
+"FromCardinalityType": "Many",
+"ToColumnId": "1649",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "7988",
+"FromColumnId": "1541",
+"FromCardinalityType": "Many",
+"ToColumnId": "1682",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "7989",
+"FromColumnId": "1557",
+"FromCardinalityType": "Many",
+"ToColumnId": "1715",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "7990",
+"FromColumnId": "1561",
+"FromCardinalityType": "Many",
+"ToColumnId": "1748",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "7991",
+"FromColumnId": "1565",
+"FromCardinalityType": "Many",
+"ToColumnId": "1781",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "7992",
+"FromColumnId": "1569",
+"FromCardinalityType": "Many",
+"ToColumnId": "1814",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "7993",
+"FromColumnId": "1577",
+"FromCardinalityType": "Many",
+"ToColumnId": "1847",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "7994",
+"FromColumnId": "1581",
+"FromCardinalityType": "Many",
+"ToColumnId": "1880",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "7995",
+"FromColumnId": "1593",
+"FromCardinalityType": "Many",
+"ToColumnId": "1913",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "7996",
+"FromColumnId": "1597",
+"FromCardinalityType": "Many",
+"ToColumnId": "1946",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "7997",
+"FromColumnId": "279",
+"FromCardinalityType": "Many",
+"ToColumnId": "1498",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "7998",
+"FromColumnId": "1280",
+"FromCardinalityType": "Many",
+"ToColumnId": "142",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "7999",
+"FromColumnId": "2178",
+"FromCardinalityType": "Many",
+"ToColumnId": "142",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8000",
+"FromColumnId": "2171",
+"FromCardinalityType": "Many",
+"ToColumnId": "1498",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8001",
+"FromColumnId": "2203",
+"FromCardinalityType": "Many",
+"ToColumnId": "2024",
+"ToCardinalityType": "Many",
+"CrossFilteringBehavior": "BothDirections",
+"IsActive": true
+},
+{
+"RelationshipId": "8002",
+"FromColumnId": "2544",
+"FromCardinalityType": "Many",
+"ToColumnId": "142",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8003",
+"FromColumnId": "2617",
+"FromCardinalityType": "Many",
+"ToColumnId": "2668",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8004",
+"FromColumnId": "2625",
+"FromCardinalityType": "Many",
+"ToColumnId": "2701",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8005",
+"FromColumnId": "2593",
+"FromCardinalityType": "Many",
+"ToColumnId": "142",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8006",
+"FromColumnId": "2653",
+"FromCardinalityType": "Many",
+"ToColumnId": "142",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8007",
+"FromColumnId": "2657",
+"FromCardinalityType": "Many",
+"ToColumnId": "1498",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8008",
+"FromColumnId": "2750",
+"FromCardinalityType": "Many",
+"ToColumnId": "2805",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8009",
+"FromColumnId": "2758",
+"FromCardinalityType": "Many",
+"ToColumnId": "2838",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8010",
+"FromColumnId": "2789",
+"FromCardinalityType": "Many",
+"ToColumnId": "142",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8011",
+"FromColumnId": "2793",
+"FromCardinalityType": "Many",
+"ToColumnId": "1498",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8012",
+"FromColumnId": "2919",
+"FromCardinalityType": "Many",
+"ToColumnId": "2975",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8013",
+"FromColumnId": "2923",
+"FromCardinalityType": "Many",
+"ToColumnId": "3008",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8014",
+"FromColumnId": "2927",
+"FromCardinalityType": "Many",
+"ToColumnId": "3041",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8015",
+"FromColumnId": "3146",
+"FromCardinalityType": "Many",
+"ToColumnId": "3286",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8016",
+"FromColumnId": "3150",
+"FromCardinalityType": "Many",
+"ToColumnId": "3319",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8017",
+"FromColumnId": "3154",
+"FromCardinalityType": "Many",
+"ToColumnId": "3352",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8018",
+"FromColumnId": "3278",
+"FromCardinalityType": "Many",
+"ToColumnId": "142",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8019",
+"FromColumnId": "2967",
+"FromCardinalityType": "Many",
+"ToColumnId": "142",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8020",
+"FromColumnId": "2963",
+"FromCardinalityType": "Many",
+"ToColumnId": "1498",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8021",
+"FromColumnId": "3274",
+"FromCardinalityType": "Many",
+"ToColumnId": "1498",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8022",
+"FromColumnId": "3433",
+"FromCardinalityType": "Many",
+"ToColumnId": "3553",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8023",
+"FromColumnId": "3441",
+"FromCardinalityType": "Many",
+"ToColumnId": "3586",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8024",
+"FromColumnId": "3545",
+"FromCardinalityType": "Many",
+"ToColumnId": "142",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8025",
+"FromColumnId": "3541",
+"FromCardinalityType": "Many",
+"ToColumnId": "1498",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8026",
+"FromColumnId": "3707",
+"FromCardinalityType": "Many",
+"ToColumnId": "3893",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8027",
+"FromColumnId": "3647",
+"FromCardinalityType": "Many",
+"ToColumnId": "142",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8028",
+"FromColumnId": "3681",
+"FromCardinalityType": "Many",
+"ToColumnId": "3619",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8029",
+"FromColumnId": "3837",
+"FromCardinalityType": "Many",
+"ToColumnId": "1498",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8030",
+"FromColumnId": "3937",
+"FromCardinalityType": "Many",
+"ToColumnId": "3619",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8031",
+"FromColumnId": "3945",
+"FromCardinalityType": "Many",
+"ToColumnId": "1498",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8032",
+"FromColumnId": "3999",
+"FromCardinalityType": "Many",
+"ToColumnId": "3961",
+"ToCardinalityType": "Many",
+"CrossFilteringBehavior": "BothDirections",
+"IsActive": true
+},
+{
+"RelationshipId": "8033",
+"FromColumnId": "4177",
+"FromCardinalityType": "Many",
+"ToColumnId": "4878",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8034",
+"FromColumnId": "4235",
+"FromCardinalityType": "Many",
+"ToColumnId": "4911",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8035",
+"FromColumnId": "3965",
+"FromCardinalityType": "Many",
+"ToColumnId": "4815",
+"ToCardinalityType": "Many",
+"CrossFilteringBehavior": "BothDirections",
+"IsActive": true
+},
+{
+"RelationshipId": "8036",
+"FromColumnId": "2171",
+"FromCardinalityType": "Many",
+"ToColumnId": "4944",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": null
+},
+{
+"RelationshipId": "8037",
+"FromColumnId": "1633",
+"FromCardinalityType": "Many",
+"ToColumnId": "5085",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8038",
+"FromColumnId": "5118",
+"FromCardinalityType": "Many",
+"ToColumnId": "5269",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8039",
+"FromColumnId": "5157",
+"FromCardinalityType": "Many",
+"ToColumnId": "5302",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8040",
+"FromColumnId": "5161",
+"FromCardinalityType": "Many",
+"ToColumnId": "5335",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8041",
+"FromColumnId": "5177",
+"FromCardinalityType": "Many",
+"ToColumnId": "5368",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8042",
+"FromColumnId": "5181",
+"FromCardinalityType": "Many",
+"ToColumnId": "5401",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8043",
+"FromColumnId": "5185",
+"FromCardinalityType": "Many",
+"ToColumnId": "5434",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8044",
+"FromColumnId": "5189",
+"FromCardinalityType": "Many",
+"ToColumnId": "5467",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8045",
+"FromColumnId": "5197",
+"FromCardinalityType": "Many",
+"ToColumnId": "5500",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8046",
+"FromColumnId": "5201",
+"FromCardinalityType": "Many",
+"ToColumnId": "5533",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8047",
+"FromColumnId": "5213",
+"FromCardinalityType": "Many",
+"ToColumnId": "5566",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8048",
+"FromColumnId": "5217",
+"FromCardinalityType": "Many",
+"ToColumnId": "5599",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8049",
+"FromColumnId": "5253",
+"FromCardinalityType": "Many",
+"ToColumnId": "5632",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8050",
+"FromColumnId": "2171",
+"FromCardinalityType": "Many",
+"ToColumnId": "5118",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8051",
+"FromColumnId": "2536",
+"FromCardinalityType": "Many",
+"ToColumnId": "142",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8052",
+"FromColumnId": "279",
+"FromCardinalityType": "Many",
+"ToColumnId": "4944",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": null
+},
+{
+"RelationshipId": "8053",
+"FromColumnId": "279",
+"FromCardinalityType": "Many",
+"ToColumnId": "5118",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8054",
+"FromColumnId": "3619",
+"FromCardinalityType": "Many",
+"ToColumnId": "5673",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "BothDirections",
+"IsActive": true
+},
+{
+"RelationshipId": "8055",
+"FromColumnId": "5711",
+"FromCardinalityType": "Many",
+"ToColumnId": "5728",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8056",
+"FromColumnId": "5683",
+"FromCardinalityType": "Many",
+"ToColumnId": "150",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8057",
+"FromColumnId": "5703",
+"FromCardinalityType": "Many",
+"ToColumnId": "1498",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8058",
+"FromColumnId": "5964",
+"FromCardinalityType": "Many",
+"ToColumnId": "6928",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8059",
+"FromColumnId": "5968",
+"FromCardinalityType": "Many",
+"ToColumnId": "6961",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8060",
+"FromColumnId": "5972",
+"FromCardinalityType": "Many",
+"ToColumnId": "6994",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8061",
+"FromColumnId": "5976",
+"FromCardinalityType": "Many",
+"ToColumnId": "7027",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8062",
+"FromColumnId": "6169",
+"FromCardinalityType": "Many",
+"ToColumnId": "7059",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8063",
+"FromColumnId": "6004",
+"FromCardinalityType": "Many",
+"ToColumnId": "5785",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8064",
+"FromColumnId": "5789",
+"FromCardinalityType": "Many",
+"ToColumnId": "7112",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "BothDirections",
+"IsActive": true
+},
+{
+"RelationshipId": "8065",
+"FromColumnId": "6173",
+"FromCardinalityType": "Many",
+"ToColumnId": "1498",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": null
+},
+{
+"RelationshipId": "8066",
+"FromColumnId": "5769",
+"FromCardinalityType": "Many",
+"ToColumnId": "7176",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8067",
+"FromColumnId": "7160",
+"FromCardinalityType": "Many",
+"ToColumnId": "150",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8068",
+"FromColumnId": "7217",
+"FromCardinalityType": "Many",
+"ToColumnId": "7237",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8069",
+"FromColumnId": "7209",
+"FromCardinalityType": "Many",
+"ToColumnId": "150",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8070",
+"FromColumnId": "7229",
+"FromCardinalityType": "Many",
+"ToColumnId": "1625",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8071",
+"FromColumnId": "1498",
+"FromCardinalityType": "Many",
+"ToColumnId": "7270",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8072",
+"FromColumnId": "4944",
+"FromCardinalityType": "Many",
+"ToColumnId": "1498",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": null
+},
+{
+"RelationshipId": "8073",
+"FromColumnId": "7307",
+"FromCardinalityType": "Many",
+"ToColumnId": "7327",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8074",
+"FromColumnId": "6916",
+"FromCardinalityType": "One",
+"ToColumnId": "7319",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "BothDirections",
+"IsActive": true
+},
+{
+"RelationshipId": "8075",
+"FromColumnId": "7447",
+"FromCardinalityType": "Many",
+"ToColumnId": "7689",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8076",
+"FromColumnId": "7451",
+"FromCardinalityType": "Many",
+"ToColumnId": "7722",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8077",
+"FromColumnId": "7455",
+"FromCardinalityType": "Many",
+"ToColumnId": "7755",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8078",
+"FromColumnId": "7459",
+"FromCardinalityType": "Many",
+"ToColumnId": "7788",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8079",
+"FromColumnId": "7559",
+"FromCardinalityType": "Many",
+"ToColumnId": "7821",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8080",
+"FromColumnId": "7563",
+"FromCardinalityType": "Many",
+"ToColumnId": "7854",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8081",
+"FromColumnId": "7571",
+"FromCardinalityType": "Many",
+"ToColumnId": "7887",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8082",
+"FromColumnId": "7575",
+"FromCardinalityType": "Many",
+"ToColumnId": "7920",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8083",
+"FromColumnId": "7488",
+"FromCardinalityType": "Many",
+"ToColumnId": "5785",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8084",
+"FromColumnId": "7555",
+"FromCardinalityType": "Many",
+"ToColumnId": "7953",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8085",
+"FromColumnId": "7567",
+"FromCardinalityType": "Many",
+"ToColumnId": "1498",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": null
+},
+{
+"RelationshipId": "8086",
+"FromColumnId": "6920",
+"FromCardinalityType": "Many",
+"ToColumnId": "1625",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+},
+{
+"RelationshipId": "8087",
+"FromColumnId": "7681",
+"FromCardinalityType": "Many",
+"ToColumnId": "1625",
+"ToCardinalityType": "One",
+"CrossFilteringBehavior": "OneDirection",
+"IsActive": true
+}
+]
+}

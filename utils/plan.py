@@ -49,12 +49,12 @@ def get_plan_response(llm, instructions, notes):
     ])
     stuff_documents_chain = create_stuff_documents_chain(llm, prompt)
 
-    return stuff_documents_chain.stream({ "context": retriever_chain, "input": notes, "instructions": instructions})
+    return stuff_documents_chain.invoke({ "context": retriever_chain, "input": notes, "instructions": instructions})
             
 
     
 def stream_llm_plan_response(llm_stream, messages, instructions, notes):
-    conversation_rag_chain = get_plan_rag_chain(llm_stream, instructions, notes)
+    conversation_rag_chain = get_plan_response(llm_stream, instructions, notes)
     response_message = "*(RAG Response)*\n"
     for chunk in conversation_rag_chain.pick("answer").stream({"messages": messages[:-1], "input": messages[-1].content}):
         response_message += chunk
