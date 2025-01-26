@@ -65,14 +65,14 @@ def plan():
     llm_stream = ChatOpenAI(model="gpt-4o", temperature=0.4)
     cols = st.columns(2)
     with cols[0]:
-        notes = st.text_area("Copia aqui las notas para el plan de acción", height=360)
+        st.session_state.notes = st.text_area("Copia aqui las notas para el plan de acción", height=360)
 
-        instructions = st.text_area("Instrucciones addicionales", height=140)
+        st.session_state.plan_instructions = st.text_area("Instrucciones addicionales", height=140)
 
         instructions = f"Instrucciones adicionales: {instructions}"
 
         if st.button("Crear el Plan de Acción"):
-            notas_instrucciones = f"{notes}\n{instructions}"
+            notas_instrucciones = f"{st.session_state.notes}\n{st.session_state.plan_instructions}"
 
             with cols[1]:
                 st.write_stream(stream_llm_plan_response(llm_stream, notas_instrucciones))
