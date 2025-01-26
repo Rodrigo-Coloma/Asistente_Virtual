@@ -41,7 +41,7 @@ def get_plan_response(llm):
         ("system",
         """Eres un asistente de redacción de planes de acción para el departamento de datos de una empresa hotelera. Ayudame a redactar un plan de acción en base a la siguiente plantilla: 
         \n {context}\n"""),
-        ("user", """"{input}""")
+        ("user", "{input}"),
     ])
     stuff_documents_chain = create_stuff_documents_chain(llm, prompt)
 
@@ -49,10 +49,10 @@ def get_plan_response(llm):
             
 
     
-def stream_llm_plan_response(llm_stream, messages):
+def stream_llm_plan_response(llm_stream, input):
     conversation_rag_chain = get_plan_response(llm_stream)
     response_message = "*(RAG Response)*\n"
-    for chunk in conversation_rag_chain.pick("answer").stream({ "input" : messages[-1].content}):
+    for chunk in conversation_rag_chain.pick("answer").stream({ "input" : input}):
         response_message += chunk
         yield chunk
 
@@ -73,8 +73,7 @@ def plan():
         instructions = f"Instrucciones adicionales: {instructions}"
 
     if st.button("Crear el Plan de Acción"):
-        plan_messages = [
-            {"role": "user", "content": f"Estas son las notas tomadas en la reunión en las que te tienes que basar para elaborar el plan de acción\n{notes}\n{instructions}"}
-]
+        input = f"Estas son las notas tomadas en la reunión en las que te tienes que basar para elaborar el plan de acción\n{notes}\n{instructions}"
+
         with cols[1]:
-            st.write_stream(stream_llm_plan_response(llm_stream, plan_messages))
+            st.write_stream(stream_llm_plan_response(llm_stream, input))
