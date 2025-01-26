@@ -41,7 +41,7 @@ def get_plan_response(llm):
         ("system",
         """Eres un asistente de redacción de planes de acción para el departamento de datos de una empresa hotelera. Ayudame a redactar un plan de acción en base a la siguiente plantilla: 
         \n {context}\n"""),
-        MessagesPlaceholder(variable_name="messages")
+        ("user", """"{input}""")
     ])
     stuff_documents_chain = create_stuff_documents_chain(llm, prompt)
 
@@ -52,7 +52,7 @@ def get_plan_response(llm):
 def stream_llm_plan_response(llm_stream, messages):
     conversation_rag_chain = get_plan_response(llm_stream)
     response_message = "*(RAG Response)*\n"
-    for chunk in conversation_rag_chain.pick("answer").stream({"messages": messages[:]}):
+    for chunk in conversation_rag_chain.pick("answer").stream({ "input" : messages[-1].content}):
         response_message += chunk
         yield chunk
 
