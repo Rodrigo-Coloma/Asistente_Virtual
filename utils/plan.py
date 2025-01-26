@@ -34,29 +34,25 @@ def get_plan_context(vector_db, llm):
 
     return retriever_chain
 
-def get_plan_response(llm, instructions, notes):
+def get_plan_response(llm):
     retriever_chain = get_plan_context(st.session_state.vector_db, llm,)
 
     prompt = ChatPromptTemplate.from_messages([
         ("system",
         """Eres un asistente de redacción de planes de acción para el departamento de datos de una empresa hotelera. Ayudame a redactar un plan de acción en base a la siguiente plantilla: 
-        \n {context}\n
-          y las notas aportadas por el usuario\n
-          {instructions}\n
-        """),
-        MessagesPlaceholder(variable_name="messages"),
-        ("user", "{input}"),
+        \n {context}\n"""),
+        MessagesPlaceholder(variable_name="messages")
     ])
     stuff_documents_chain = create_stuff_documents_chain(llm, prompt)
 
-    return stuff_documents_chain.invoke({ "context": retriever_chain, "input": notes, "instructions": instructions})
+    return create_retrieval_chain(retriever_chain, stuff_documents_chain)
             
 
     
-def stream_llm_plan_response(llm_stream, messages, instructions, notes):
-    conversation_rag_chain = get_plan_response(llm_stream, instructions, notes)
+def stream_llm_plan_response(llm_stream, messages):
+    conversation_rag_chain = get_plan_response(llm_stream)
     response_message = "*(RAG Response)*\n"
-    for chunk in conversation_rag_chain.pick("answer").stream({"messages": messages[:-1], "input": messages[-1].content}):
+    for chunk in conversation_rag_chain.pick("answer").stream({"messages": messages[:]}):
         response_message += chunk
         yield chunk
 
@@ -77,5 +73,8 @@ def plan():
         instructions = f"Instrucciones adicionales: {instructions}"
 
     if st.button("Crear el Plan de Acción"):
+        st.session_state.messages = [
+            {"role": "user", "content": f"Estas son las notas tomadas en la reunión en las que te tienes que basar para elaborar el plan de acción\n{notes}\n{instructions}"}
+]
         with cols[1]:
-            st.write_stream(get_plan_response(llm_stream, notes, instructions))
+            st.write_stream(stream_llm_plan_response(llm_stream, notes, instructions))
