@@ -27,7 +27,7 @@ def gpt_connect():
 def get_plan_context(vector_db, llm):
     retriever = vector_db.as_retriever()
     prompt = ChatPromptTemplate.from_messages([
-        ("user", "Retrieve all the available information about the Plantilla Plan de acción"),
+        ("user", "Retrieve all the available information about the Plantilla Plan de acción{input}"),
     ])
     retriever_chain = create_history_aware_retriever(llm, retriever, prompt)
 
@@ -39,7 +39,7 @@ def get_plan_response(llm):
     prompt = ChatPromptTemplate.from_messages([
         ("system",
         """Eres un asistente de redacción de planes de acción para el departamento de datos de una empresa hotelera. Ayudame a redactar un plan de acción utilizando la estructura y formato de la siguiente plantilla: 
-        \n {context}\n El contenido del plan de acción generado debe estar basado en las siguientes notas generadas durante una reunión con el departamento correspondiente {notas_instrucciones}
+        \n {context}\n El contenido del plan de acción generado debe estar basado en las siguientes notas generadas durante una reunión con el departamento correspondiente {notas_instrucciones}{input}
         El plan resultante debe tener unicamente cuatro apartados: necesidad, objetivos, Acciones por parte de Data & Analytics y Medición del éxito""")
     ])
     stuff_documents_chain = create_stuff_documents_chain(llm, prompt)
@@ -51,7 +51,7 @@ def get_plan_response(llm):
 def stream_llm_plan_response(llm_stream, notas_instrucciones):
     conversation_rag_chain = get_plan_response(llm_stream)
     response_message = "*(RAG Response)*\n"
-    for chunk in conversation_rag_chain.pick("answer").stream({ "input" : [],"notas_instrucciones": notas_instrucciones}):
+    for chunk in conversation_rag_chain.pick("answer").stream({ "input" : " ","notas_instrucciones": notas_instrucciones}):
         response_message += chunk
         yield chunk
 
