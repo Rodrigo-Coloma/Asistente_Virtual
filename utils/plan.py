@@ -73,8 +73,8 @@ def plan():
         instructions = f"Instrucciones adicionales: {instructions}"
 
     if st.button("Crear el Plan de Acción"):
-        st.session_state.messages = [
+        plan_messages = [
             {"role": "user", "content": f"Estas son las notas tomadas en la reunión en las que te tienes que basar para elaborar el plan de acción\n{notes}\n{instructions}"}
 ]
         with cols[1]:
-            st.write_stream(stream_llm_plan_response(llm_stream, notes, instructions))
+            st.write_stream(stream_llm_plan_response(llm_stream, plan_messages))
