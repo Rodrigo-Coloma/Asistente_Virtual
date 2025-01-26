@@ -69,10 +69,10 @@ def plan():
 
         st.session_state.plan_instructions = st.text_area("Instrucciones addicionales", height=140)
 
-        instructions = f"Instrucciones adicionales: {instructions}"
+        st.session_state.plan_instructions_promt = f"Instrucciones adicionales: {st.session_state.plan_instructions}"
 
         if st.button("Crear el Plan de Acción"):
-            notas_instrucciones = f"{st.session_state.notes}\n{st.session_state.plan_instructions}"
+            notas_instrucciones = f"{st.session_state.notes}\n{st.session_state.plan_instructions_promt}"
 
             with cols[1]:
                 st.write_stream(stream_llm_plan_response(llm_stream, notas_instrucciones))
