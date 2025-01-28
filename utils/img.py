@@ -10,10 +10,11 @@ def img():
     prompt=st.text_input("Describe aquí la imagen que deseas generar")
 
     if st.button("Generar imagen",type= "primary"):
-        response = openai.Image.create(
+        response = openai.images.generate(
             prompt = prompt,
             n = n_img,
             size = resolution
+            model = "dall-e-4"
         )
         for img in response['data']:
             st.image(img['url'])
