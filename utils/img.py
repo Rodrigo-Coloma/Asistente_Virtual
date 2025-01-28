@@ -13,7 +13,7 @@ def img():
         response = openai.images.generate(
             prompt = prompt,
             n = n_img,
-            size = resolution
+            size = resolution,
             model = "dall-e-4"
         )
         for img in response['data']:
