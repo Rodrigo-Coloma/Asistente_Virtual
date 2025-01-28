@@ -15,7 +15,6 @@ def img():
             model = "dall-e-3"
         )
         img_url = response.data[0].url
-        os.mkdir("../data/images/", exists_ok=True)
         req_response = requests.get(url=img_url, timeout=20)
         path = "../data/images/temp.png"
         if req_response.status_code == 200:
