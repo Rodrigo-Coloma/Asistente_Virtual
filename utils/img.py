@@ -9,7 +9,7 @@ def img():
     openai.api_key = st.secrets['GPTAPIKEY']
     prompt=st.text_input("Describe aquí la imagen que deseas generar")
 
-    if st.button("Generar imagen",primary=True):
+    if st.button("Generar imagen",type= "primary"):
         response = openai.Image.create(
             prompt = prompt,
             n = n_img,
