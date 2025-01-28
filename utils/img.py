@@ -14,7 +14,7 @@ def img():
             prompt = prompt,
             n = n_img,
             size = resolution,
-            model = "dall-e-4"
+            model = "dall-e-3"
         )
         for img in response['data']:
             st.image(img['url'])
