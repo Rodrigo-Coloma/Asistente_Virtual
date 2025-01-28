@@ -12,5 +12,4 @@ def img():
             prompt = prompt,
             model = "dall-e-3"
         )
-        for img in response['data']:
-            st.image(img['url'])
+        st.image(response.data[0].url)
