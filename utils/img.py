@@ -19,13 +19,14 @@ def img():
                 size = resolution,
                 n = n_img
             )
-            img_url = response.data[0].url
-            req_response = requests.get(url=img_url, timeout=20)
+        for img in response.data:
+            img_url = img.url
+            req_response = requests.get(url=img_url, timeout=30)
             path = "./data/images/temp.png"
-        if req_response.status_code == 200:
-            with open(path, "wb") as output:
-                output.write(req_response.content)
-        else: 
-            req_response.raise_for_status()
-        st.image(path)
-        st.write(img_url)
+            if req_response.status_code == 200:
+                with open(path, "wb") as output:
+                    output.write(req_response.content)
+            else: 
+                req_response.raise_for_status()
+            st.image(path)
+            st.write(img_url)
