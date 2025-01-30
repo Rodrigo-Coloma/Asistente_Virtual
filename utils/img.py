@@ -9,7 +9,7 @@ def img():
     openai.api_key = st.secrets['GPTAPIKEY']
     prompt=st.text_input("Describe aquí la imagen que deseas generar")
     resolution = st.sidebar.selectbox('Resolución',["256x256","512x512","1024x1024"])
-    n_img = st.slider("Número de imás")
+    n_img = st.sidebar.slider("Número de imágenes",1,3,1)
 
     if st.button("Generar imagen",type= "primary"):
         with st.spinner("generando la imagen..."):
