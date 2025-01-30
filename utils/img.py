@@ -15,7 +15,7 @@ def img():
         with st.spinner("generando la imagen..."):
             response = openai.images.generate(
                 prompt = prompt,
-                model = "dall-e-3",
+                model = "dall-e-2",
                 size = resolution,
                 n = n_img
             )
