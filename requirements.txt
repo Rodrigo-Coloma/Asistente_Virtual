@@ -140,7 +140,7 @@ regex==2024.11.6
 requests==2.32.3
 requests-oauthlib==2.0.0
 requests-toolbelt==1.0.0
-rich==14.0.0
+rich==13.9.4
 rpds-py==0.22.3
 rsa==4.9
 seaborn==0.13.2
