@@ -14,6 +14,7 @@ import utils.eml as eml
 import utils.code as code
 import utils.plan as plan
 import utils.img as img
+import utils.pandas as pan
 
 st.set_page_config(layout="wide")
 
@@ -43,7 +44,7 @@ def main():
                 if st.form_submit_button('Login',type='primary'):
                     mgt.user_login(username,password)
     else:
-        st.session_state.tools = ['Chat', 'Email', 'Code', 'Plan', 'Imagen']
+        st.session_state.tools = ['Chat', 'Email', 'Code', 'Plan', 'Imagen', 'Pandas']
         st.session_state.tool = st.sidebar.selectbox('Herramienta', st.session_state.tools,0)
         if st.session_state.tool == 'Chat':
             chat.chat()
@@ -58,6 +59,8 @@ def main():
          
         if st.session_state.tool == 'Imagen':
             img.img()
+        if st.session_state.tool == 'Pandas':
+            pan.play_pandas()
             
 if __name__=="__main__":
     main()
