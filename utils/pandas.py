@@ -57,8 +57,7 @@ def play_pandas():
 
     if st.sidebar.button("Auto Dashboard", type="primary"):
         if "error" not in st.session_state:
-                st.session_state.error = ""
-        st.session_state.autoprompt = [{"role": "assistant", "content": f"""Create the most awesome streamlit dashboard with the dataframe provided.
+                st.session_state.autoprompt = [{"role": "user", "content": f"""Create the most awesome streamlit dashboard with the dataframe provided.
                                         First clean the dataframe and handdle missing data and different data types paying special attention not to perform unsupported operations, then create a dashboard that provides business inteligence insights.
                                         The dashboard needs to provide summary of the data and the ability to filter it (st.multiselect) for all the relevant fieldvisualy describe the dataframe as well as to visualy describe the dataframe.
                                         You may change the name of the columns so they are more descriptive.
@@ -73,10 +72,11 @@ def play_pandas():
                                         correlation_matrix = numeric_df.corr() and plot it in a heatmap.
                                         Be speciallly carefull not to treat object columns as numeric, and to only treat numeric columns as numeric
                                         Also try to identify those columns which are parseable to datetime and parse them as such, you may create month and year columns and use them in visualizations.
-                                        Your response must include necessary imports, be complete and ready to run in streamlit. No need to define the dataframe again, just use the one you have (df)
-                                        
-
-                                        Last time I asked you to perform this task, the execution of the script led to this error: {st.session_state.error}, please avoid it this time"""}]
+                                        Your response must include necessary imports, be complete and ready to run in streamlit. No need to define the dataframe again, just use the one you have (df) """}]
+        else:
+             correction_prompt = f"""The script you provided led to this error: {st.session_state.error}. Can you please fix it?. """
+             st.session_state.autoprompt.append({"role": "user", "content": correction_prompt})   
+                
         llm_auto = ChatOpenAI(
             temperature=0.00, model="gpt-4o", openai_api_key=openai_api_key, streaming=True
         )
@@ -90,6 +90,7 @@ def play_pandas():
         )   
         response = pandas_df_agent_auto.run(st.session_state.autoprompt)
         if response != None and "```python" in response:
+            st.session_state.messages.append({"role": "assistant", "content": response})
             st.session_state.script = response.split("```python")[1].split("```")[0].strip()
             st.rerun()
 
