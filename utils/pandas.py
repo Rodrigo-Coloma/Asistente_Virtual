@@ -100,7 +100,7 @@ def play_pandas():
             exec(st.session_state.script)
             st.sidebar.success("Script executed successfully!")
         except Exception as e:
-            st.sidebar.error(f"Error executing script: {e}")
+            st.sidebar.error(f"Error executing script: {traceback.format_exc()}")
             tb = traceback.format_exc()
             if tb != st.session_state.error:
                 st.session_state.error = tb
@@ -121,7 +121,7 @@ def play_pandas():
         st.chat_message("user").write(prompt)
 
         llm = ChatOpenAI(
-            temperature=0, model="gpt-4o", openai_api_key=openai_api_key, streaming=True
+            temperature=0.1, model="gpt-4o", openai_api_key=openai_api_key, streaming=True
         )
 
         pandas_df_agent = create_pandas_dataframe_agent(
