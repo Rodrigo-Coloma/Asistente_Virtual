@@ -101,8 +101,10 @@ def play_pandas():
             st.sidebar.success("Script executed successfully!")
         except Exception as e:
             st.sidebar.error(f"Error executing script: {e}")
-            st.session_state.error = traceback.format_exc()
-            st.rerun()
+            tb = traceback.format_exc()
+            if tb != st.session_state.error:
+                st.session_state.error = tb
+                st.rerun()
 
     if "messages" not in st.session_state or st.sidebar.button("Clear conversation history"):
         st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
