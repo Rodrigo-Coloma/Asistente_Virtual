@@ -74,7 +74,7 @@ def play_pandas():
                                         Your response must include necessary imports, be complete and ready to run in streamlit. No need to define the dataframe again, just use the one you have (df)
                                         """}]
         llm_auto = ChatOpenAI(
-            temperature=0.25, model="gpt-4o", openai_api_key=openai_api_key, streaming=True
+            temperature=0.45, model="gpt-4o", openai_api_key=openai_api_key, streaming=True
         )
         pandas_df_agent_auto = create_pandas_dataframe_agent(
             llm_auto,
