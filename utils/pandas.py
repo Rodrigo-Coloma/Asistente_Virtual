@@ -90,7 +90,7 @@ def play_pandas():
         )   
         response = pandas_df_agent_auto.run(st.session_state.autoprompt)
         if response != None and "```python" in response:
-            st.session_state.messages.append({"role": "assistant", "content": response})
+            st.session_state.autoprompt.append({"role": "assistant", "content": response})
             st.session_state.script = response.split("```python")[1].split("```")[0].strip()
             st.rerun()
 
