@@ -74,7 +74,7 @@ def play_pandas():
                                         Also try to identify those columns which are parseable to datetime and parse them as such, you may create month and year columns and use them in visualizations.
                                         Your response must include necessary imports, be complete and ready to run in streamlit. No need to define the dataframe again, just use the one you have (df) """}]
         else:
-             correction_prompt = f"""The script you provided led to this error: {st.session_state.error}. Can you please fix it?. """
+             correction_prompt = f"""The script you provided led to this error: {st.session_state.error}. Can you please fix it?. If it is a visualization that is giving problems just substitute it for another one and move on. Remember that the dashboard should have at least 10 visualizations """
              st.session_state.autoprompt.append({"role": "user", "content": correction_prompt})   
                 
         llm_auto = ChatOpenAI(
