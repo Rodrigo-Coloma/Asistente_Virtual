@@ -57,6 +57,7 @@ def play_pandas():
 
     if st.sidebar.button("Auto Dashboard", type="primary"):
         st.session_state.autoprompt = [{"role": "assistant", "content": """Create the most awesome streamlit dashboard qith th dataframe provided.
+                                        First clean the dataframe and handdle missing data, then create a dashboard that provides business inteligence insights.
                                         The dashboard needs to visualy describe the dataframe as well as to provide summary of the data and the ability to filter it (st.multiselect) for all the relevant fields.
                                         You may change the name of the columns so they are more descriptive.
                                         The dashboard should be interactive and user friendly and in spanish.
@@ -66,13 +67,14 @@ def play_pandas():
                                         Create an extensive insightfull analysis of the dataframe (EDA) using diferent visualizations.
                                         Include at least 10 visualizations distributed in the 2 st.columns.
                                         Add as many coments as st.write() as you can, so the user can understand what is going on.
-                                        You may include barcharts, column charts, scatter plots, piecharts and correlation heatmaps (only use numneric columns for this purpose).
+                                        You may include barcharts, column charts, scatter plots, piecharts. Using numeric_df = df.select_dtypes(include=['number']) select numeric columns andn create a correlation matrix with
+                                        correlation_matrix = numeric_df.corr() and plot it in a heatmap.
                                         Be speciallly carefull not to treat object columns as numeric, and to only treat numeric columns as numeric
                                         Also try to identify those columns which are parseable to datetime and parse them as such.
                                         Your response must include necessary imports, be complete and ready to run in streamlit. No need to define the dataframe again, just use the one you have (df)
                                         """}]
         llm_auto = ChatOpenAI(
-            temperature=0.15, model="gpt-4o", openai_api_key=openai_api_key, streaming=True
+            temperature=0.25, model="gpt-4o", openai_api_key=openai_api_key, streaming=True
         )
         pandas_df_agent_auto = create_pandas_dataframe_agent(
             llm_auto,
