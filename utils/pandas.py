@@ -103,7 +103,7 @@ def play_pandas():
         except Exception as e:
             st.sidebar.error(f"Error executing script: {traceback.format_exc()}")
             tb = traceback.format_exc()
-            if tb != st.session_state.error:
+            if "error" not in st.session_state or tb != st.session_state.error:
                 st.session_state.error = tb
                 st.rerun()
 
