@@ -34,7 +34,6 @@ def load_data(uploaded_file):
     else:
         st.error(f"Unsupported file format: {ext}")
         return None
-    
 
 def play_pandas():
     """st.session_state.gpt_key = st.secrets['GPTAPIKEY']
@@ -56,9 +55,11 @@ def play_pandas():
         df = load_data(uploaded_file)
 
     if st.sidebar.button("Auto Dashboard", type="primary"):
-        st.session_state.autoprompt = [{"role": "assistant", "content": """Create the most awesome streamlit dashboard qith th dataframe provided.
+        if "error" not in st.session_state:
+                st.session_state.error = ""
+        st.session_state.autoprompt = [{"role": "assistant", "content": f"""Create the most awesome streamlit dashboard with the dataframe provided.
                                         First clean the dataframe and handdle missing data and different data types paying special attention not to perform unsupported operations, then create a dashboard that provides business inteligence insights.
-                                        The dashboard needs to visualy describe the dataframe as well as to provide summary of the data and the ability to filter it (st.multiselect) for all the relevant fields.
+                                        The dashboard needs to provide summary of the data and the ability to filter it (st.multiselect) for all the relevant fieldvisualy describe the dataframe as well as to visualy describe the dataframe.
                                         You may change the name of the columns so they are more descriptive.
                                         The dashboard should be interactive and user friendly and in spanish.
                                         The dashboard should be able to handle large datasets and provide insights into the data.
@@ -72,7 +73,9 @@ def play_pandas():
                                         Be speciallly carefull not to treat object columns as numeric, and to only treat numeric columns as numeric
                                         Also try to identify those columns which are parseable to datetime and parse them as such, you may create month and year columns and use them in visualizations.
                                         Your response must include necessary imports, be complete and ready to run in streamlit. No need to define the dataframe again, just use the one you have (df)
-                                        """}]
+                                        
+
+                                        Last time I asked you to perform this task, the execution of the script led to this error: {st.session_state.error}, please avoid it this time"""}]
         llm_auto = ChatOpenAI(
             temperature=0.00, model="gpt-4o", openai_api_key=openai_api_key, streaming=True
         )
@@ -97,6 +100,8 @@ def play_pandas():
             st.sidebar.success("Script executed successfully!")
         except Exception as e:
             st.sidebar.error(f"Error executing script: {e}")
+            st.session_state.error = traceback.format_exc()
+            st.rerun()
 
     if "messages" not in st.session_state or st.sidebar.button("Clear conversation history"):
         st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]
