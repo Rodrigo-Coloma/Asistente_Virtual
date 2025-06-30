@@ -4,6 +4,7 @@ from langchain.callbacks import StreamlitCallbackHandler
 from langchain.chat_models import ChatOpenAI
 import streamlit as st
 import pandas as pd
+import traceback
 import os
 
 file_formats = {
