@@ -70,7 +70,7 @@ def play_pandas():
                                         You may include barcharts, column charts, scatter plots, piecharts. Using numeric_df = df.select_dtypes(include=['number']) select numeric columns andn create a correlation matrix with
                                         correlation_matrix = numeric_df.corr() and plot it in a heatmap.
                                         Be speciallly carefull not to treat object columns as numeric, and to only treat numeric columns as numeric
-                                        Also try to identify those columns which are parseable to datetime and parse them as such.
+                                        Also try to identify those columns which are parseable to datetime and parse them as such, you may create month and year columns and use them in visualizations.
                                         Your response must include necessary imports, be complete and ready to run in streamlit. No need to define the dataframe again, just use the one you have (df)
                                         """}]
         llm_auto = ChatOpenAI(
