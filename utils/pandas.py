@@ -59,7 +59,7 @@ def play_pandas():
         if "error" not in st.session_state:
                 st.session_state.autoprompt = [{"role": "user", "content": f"""Create the most awesome streamlit dashboard with the dataframe provided.
                                         First clean the dataframe and handdle missing data and different data types paying special attention not to perform unsupported operations, then create a dashboard that provides business inteligence insights.
-                                        The dashboard needs to provide summary of the data and the ability to filter it (st.multiselect) for all the relevant fieldvisualy describe the dataframe as well as to visualy describe the dataframe.
+                                        The dashboard needs to provide summary of the data and the ability to filter it (st.sidebar.multiselect) for all the relevant fieldvisualy describe the dataframe as well as to visualy describe the dataframe.
                                         You may change the name of the columns so they are more descriptive.
                                         The dashboard should be interactive and user friendly and in spanish.
                                         The dashboard should be able to handle large datasets and provide insights into the data.
